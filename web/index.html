@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>North Cross Consulting — Avisos Automáticos SE</title>
+  <meta name="description" content="Aceleramos la autorización de Avisos Automáticos ante la Secretaría de Economía para liberar importaciones atascadas en México." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    :root { --brand:#0078D7; --dark:#111827; --mid:#374151; --lite:#F3F4F6;}
+    html,body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+    .glass { background: rgba(255,255,255,.7); backdrop-filter: blur(10px); }
+    .badge { border:1px solid rgba(0,0,0,.06); }
+  </style>
+</head>
+<body class="bg-white text-slate-900">
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <img src="assets/logo.png" alt="North Cross Consulting" class="h-9 w-auto" onerror="this.src='https://dummyimage.com/200x60/111827/ffffff&text=North+Cross';">
+        <span class="font-extrabold tracking-tight text-slate-900">North Cross Consulting</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#checker" class="hover:text-[color:var(--brand)]">Verificar Aviso</a>
+        <a href="#servicios" class="hover:text-[color:var(--brand)]">Servicios</a>
+        <a href="#contacto" class="px-4 py-2 rounded-xl bg-[color:var(--brand)] text-white hover:opacity-90">Contáctanos</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+      <div class="w-[80rem] h-[80rem] rounded-full bg-[color:var(--brand)]/5 blur-3xl -translate-x-1/3 -translate-y-1/3"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 relative">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[color:var(--brand)]/10 text-[color:var(--brand)] text-xs font-semibold badge">Importaciones a México, sin fricción</span>
+          <h1 class="mt-5 text-4xl md:text-5xl font-extrabold leading-tight">
+            Desatoramos tu <span class="text-[color:var(--brand)]">Aviso Automático</span> ante la SE
+          </h1>
+          <p class="mt-5 text-lg text-slate-600 max-w-xl">
+            Si tu importación lleva días o semanas atorada, intervenimos con experiencia operativa y regulatoria para liberar el flujo. Especialistas en **Siderúrgico, Textil, Calzado, Químico, Electrónica y Automotriz**.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="#checker" class="px-5 py-3 rounded-xl bg-[color:var(--brand)] text-white font-semibold hover:opacity-90">Verificar si requiere Aviso</a>
+            <a href="#contacto" class="px-5 py-3 rounded-xl bg-slate-900 text-white font-semibold hover:opacity-90">Solicitar ayuda</a>
+          </div>
+          <div class="mt-6 text-sm text-slate-500">Tiempo típico de respuesta: &lt; 24h.</div>
+        </div>
+        <div class="relative">
+          <img class="rounded-2xl shadow-2xl ring-1 ring-black/5"
+               src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?q=80&w=1600&auto=format&fit=crop"
+               alt="Operaciones e importación" />
+          <div class="absolute -bottom-6 -left-6 bg-white shadow-xl rounded-2xl p-4 w-64 glass">
+            <p class="text-sm text-slate-700">“Llegaban 60+ días atorados. Con North Cross, la autorización fluyó.”</p>
+            <p class="mt-2 text-xs text-slate-500">Gerente de Supply Chain — Acero</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Verificador -->
+  <section id="checker" class="py-16 bg-[color:var(--lite)]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="bg-white rounded-2xl shadow-lg p-8">
+        <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">Verificar Aviso Automático</h2>
+        <p class="mt-2 text-slate-600">Selecciona tu industria e ingresa tu **fracción arancelaria** (formato <code class="font-mono">####.##.##</code> o <code class="font-mono">########</code>).</p>
+
+        <form id="checkForm" class="grid md:grid-cols-3 gap-4 mt-6">
+          <div class="md:col-span-1">
+            <label class="block text-sm font-medium text-slate-700 mb-1">Industria</label>
+            <select id="industria" class="w-full border rounded-xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand)]">
+              <option value="">Selecciona…</option>
+              <option>Quimicos</option>
+              <option>Plasticos</option>
+              <option>Textil y Confeccion</option>
+              <option>Calzado</option>
+              <option>Siderurgicos</option>
+              <option>Electronica</option>
+              <option>Automotriz</option>
+            </select>
+          </div>
+          <div class="md:col-span-1">
+            <label class="block text-sm font-medium text-slate-700 mb-1">Fracción arancelaria</label>
+            <input id="fraccion" type="text" placeholder="72081001 o 7208.10.01" class="w-full border rounded-xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand)]" />
+          </div>
+          <div class="md:col-span-1 flex items-end">
+            <button type="submit" class="w-full px-5 py-3 rounded-xl bg-[color:var(--brand)] text-white font-semibold hover:opacity-90">Verificar</button>
+          </div>
+        </form>
+
+        <div id="resultBox" class="mt-6 hidden">
+          <div id="resultPill" class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold"></div>
+          <p id="resultNote" class="mt-3 text-slate-600"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-extrabold text-center">Qué hacemos</h2>
+      <p class="mt-3 text-slate-600 text-center max-w-3xl mx-auto">Aceleramos la autorización ante la Secretaría de Economía y coordinamos con aduana y actores clave para que tus importaciones fluyan.</p>
+
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border bg-white">
+          <div class="text-[color:var(--brand)] font-extrabold text-lg">1. Diagnóstico express</div>
+          <p class="mt-2 text-slate-600">Revisión normativa, fracción y expediente. Rutas de liberación en horas.</p>
+        </div>
+        <div class="p-6 rounded-2xl border bg-white">
+          <div class="text-[color:var(--brand)] font-extrabold text-lg">2. Gestión operativa</div>
+          <p class="mt-2 text-slate-600">Interacción con ventanillas, trámites y aclaraciones documentales.</p>
+        </div>
+        <div class="p-6 rounded-2xl border bg-white">
+          <div class="text-[color:var(--brand)] font-extrabold text-lg">3. Liberación y seguimiento</div>
+          <p class="mt-2 text-slate-600">Cierre del aviso/permiso y monitoreo de entrada a México.</p>
+        </div>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-3 gap-6">
+        <img class="rounded-2xl shadow object-cover h-64 w-full"
+             src="https://images.unsplash.com/photo-1533514114760-4389f572ae82?q=80&w=1600&auto=format&fit=crop" alt="Siderurgia" />
+        <img class="rounded-2xl shadow object-cover h-64 w-full"
+             src="https://images.unsplash.com/photo-1554806124-1e96d73677e4?q=80&w=1600&auto=format&fit=crop" alt="Textil" />
+        <img class="rounded-2xl shadow object-cover h-64 w-full"
+             src="https://images.unsplash.com/photo-1581091215367-59ab6dcef1ea?q=80&w=1600&auto=format&fit=crop" alt="Electrónica" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-16 bg-[color:var(--lite)]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="bg-white rounded-2xl shadow-lg p-8">
+        <h2 class="text-3xl font-extrabold">Contáctanos</h2>
+        <p class="mt-2 text-slate-600">Cuéntanos tu caso. Respondemos en menos de 24h.</p>
+
+        <!-- Formspree: reemplaza YOUR_FORMSPREE_ID por el tuyo o deja mailto como fallback -->
+        <form id="contactForm" class="grid md:grid-cols-2 gap-4 mt-6" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+          <div>
+            <label class="block text-sm font-medium text-slate-700 mb-1">Nombre</label>
+            <input name="nombre" required class="w-full border rounded-xl px-3 py-2">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-700 mb-1">Apellido</label>
+            <input name="apellido" required class="w-full border rounded-xl px-3 py-2">
+          </div>
+          <div class="md:col-span-2">
+            <label class="block text-sm font-medium text-slate-700 mb-1">Empresa</label>
+            <input name="empresa" required class="w-full border rounded-xl px-3 py-2">
+          </div>
+          <div class="md:col-span-2">
+            <label class="block text-sm font-medium text-slate-700 mb-1">Email</label>
+            <input name="email" type="email" required class="w-full border rounded-xl px-3 py-2">
+          </div>
+          <div class="md:col-span-2">
+            <label class="block text-sm font-medium text-slate-700 mb-1">Mensaje</label>
+            <textarea name="mensaje" rows="5" class="w-full border rounded-xl px-3 py-2"></textarea>
+          </div>
+          <div class="md:col-span-2 flex gap-3 items-center">
+            <button class="px-5 py-3 rounded-xl bg-[color:var(--brand)] text-white font-semibold hover:opacity-90" type="submit">Enviar</button>
+            <a id="mailtoFallback" href="#" class="text-sm text-slate-500 underline">O enviar por correo</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 border-t">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <img src="assets/logo.png" class="h-7 w-auto" alt="North Cross" onerror="this.src='https://dummyimage.com/160x40/111827/ffffff&text=NC';">
+        <span class="text-slate-600 text-sm">© <span id="year"></span> North Cross Consulting. Todos los derechos reservados.</span>
+      </div>
+      <a href="#checker" class="text-sm text-slate-600 hover:text-[color:var(--brand)]">Verificar Aviso</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
