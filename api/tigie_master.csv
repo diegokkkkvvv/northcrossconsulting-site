@@ -1,0 +1,2344 @@
+fraccion,industria,aviso_automatico
+5001.00.01,Textil y Confeccion,True
+5002.00.01,Textil y Confeccion,True
+5003.00.01,Textil y Confeccion,True
+5003.00.99,Textil y Confeccion,True
+5004.00.01,Textil y Confeccion,True
+5005.00.01,Textil y Confeccion,True
+5006.00.01,Textil y Confeccion,True
+5007.10.01,Textil y Confeccion,True
+5007.20.01,Textil y Confeccion,True
+5007.90.01,Textil y Confeccion,True
+5101.11.01,Textil y Confeccion,True
+5101.11.99,Textil y Confeccion,True
+5101.19.01,Textil y Confeccion,True
+5101.19.99,Textil y Confeccion,True
+5101.21.01,Textil y Confeccion,True
+5101.21.99,Textil y Confeccion,True
+5101.29.01,Textil y Confeccion,True
+5101.29.99,Textil y Confeccion,True
+5101.30.01,Textil y Confeccion,True
+5101.30.99,Textil y Confeccion,True
+5102.11.01,Textil y Confeccion,True
+5102.19.01,Textil y Confeccion,True
+5102.19.02,Textil y Confeccion,True
+5102.19.99,Textil y Confeccion,True
+5102.20.01,Textil y Confeccion,True
+5102.20.99,Textil y Confeccion,True
+5103.10.01,Textil y Confeccion,True
+5103.10.02,Textil y Confeccion,True
+5103.10.99,Textil y Confeccion,True
+5103.20.01,Textil y Confeccion,True
+5103.20.02,Textil y Confeccion,True
+5103.20.99,Textil y Confeccion,True
+5103.30.01,Textil y Confeccion,True
+5104.00.01,Textil y Confeccion,True
+5105.10.01,Textil y Confeccion,True
+5105.21.01,Textil y Confeccion,True
+5105.29.01,Textil y Confeccion,True
+5105.29.99,Textil y Confeccion,True
+5105.31.01,Textil y Confeccion,True
+5105.39.01,Textil y Confeccion,True
+5105.39.02,Textil y Confeccion,True
+5105.39.99,Textil y Confeccion,True
+5105.40.01,Textil y Confeccion,True
+5106.10.01,Textil y Confeccion,True
+5106.20.01,Textil y Confeccion,True
+5107.10.01,Textil y Confeccion,True
+5107.20.01,Textil y Confeccion,True
+5108.10.01,Textil y Confeccion,True
+5108.20.01,Textil y Confeccion,True
+5109.10.01,Textil y Confeccion,True
+5109.90.99,Textil y Confeccion,True
+5110.00.01,Textil y Confeccion,True
+5111.11.01,Textil y Confeccion,True
+5111.11.99,Textil y Confeccion,True
+5111.19.01,Textil y Confeccion,True
+5111.19.99,Textil y Confeccion,True
+5111.20.01,Textil y Confeccion,True
+5111.20.99,Textil y Confeccion,True
+5111.30.01,Textil y Confeccion,True
+5111.30.99,Textil y Confeccion,True
+5111.90.99,Textil y Confeccion,True
+5112.11.01,Textil y Confeccion,True
+5112.11.99,Textil y Confeccion,True
+5112.19.01,Textil y Confeccion,True
+5112.19.02,Textil y Confeccion,True
+5112.19.99,Textil y Confeccion,True
+5112.20.01,Textil y Confeccion,True
+5112.20.99,Textil y Confeccion,True
+5112.30.01,Textil y Confeccion,True
+5112.30.02,Textil y Confeccion,True
+5112.30.99,Textil y Confeccion,True
+5112.90.99,Textil y Confeccion,True
+5113.00.01,Textil y Confeccion,True
+5113.00.99,Textil y Confeccion,True
+5201.00.01,Textil y Confeccion,True
+5201.00.02,Textil y Confeccion,True
+5201.00.99,Textil y Confeccion,True
+5202.10.01,Textil y Confeccion,True
+5202.91.01,Textil y Confeccion,True
+5202.99.01,Textil y Confeccion,True
+5202.99.99,Textil y Confeccion,True
+5203.00.01,Textil y Confeccion,True
+5204.11.01,Textil y Confeccion,True
+5204.19.99,Textil y Confeccion,True
+5204.20.01,Textil y Confeccion,True
+5205.11.01,Textil y Confeccion,True
+5205.12.01,Textil y Confeccion,True
+5205.13.01,Textil y Confeccion,True
+5205.14.01,Textil y Confeccion,True
+5205.15.01,Textil y Confeccion,True
+5205.21.01,Textil y Confeccion,True
+5205.22.01,Textil y Confeccion,True
+5205.23.01,Textil y Confeccion,True
+5205.24.01,Textil y Confeccion,True
+5205.26.01,Textil y Confeccion,True
+5205.27.01,Textil y Confeccion,True
+5205.28.01,Textil y Confeccion,True
+5205.31.01,Textil y Confeccion,True
+5205.32.01,Textil y Confeccion,True
+5205.33.01,Textil y Confeccion,True
+5205.34.01,Textil y Confeccion,True
+5205.35.01,Textil y Confeccion,True
+5205.41.01,Textil y Confeccion,True
+5205.42.01,Textil y Confeccion,True
+5205.43.01,Textil y Confeccion,True
+5205.44.01,Textil y Confeccion,True
+5205.46.01,Textil y Confeccion,True
+5205.47.01,Textil y Confeccion,True
+5205.48.01,Textil y Confeccion,True
+5206.11.01,Textil y Confeccion,True
+5206.12.01,Textil y Confeccion,True
+5206.13.01,Textil y Confeccion,True
+5206.14.01,Textil y Confeccion,True
+5206.15.01,Textil y Confeccion,True
+5206.21.01,Textil y Confeccion,True
+5206.22.01,Textil y Confeccion,True
+5206.23.01,Textil y Confeccion,True
+5206.24.01,Textil y Confeccion,True
+5206.25.01,Textil y Confeccion,True
+5206.31.01,Textil y Confeccion,True
+5206.32.01,Textil y Confeccion,True
+5206.33.01,Textil y Confeccion,True
+5206.34.01,Textil y Confeccion,True
+5206.35.01,Textil y Confeccion,True
+5206.41.01,Textil y Confeccion,True
+5206.42.01,Textil y Confeccion,True
+5206.43.01,Textil y Confeccion,True
+5206.44.01,Textil y Confeccion,True
+5206.45.01,Textil y Confeccion,True
+5207.10.01,Textil y Confeccion,True
+5207.90.99,Textil y Confeccion,True
+5208.11.01,Textil y Confeccion,True
+5208.12.01,Textil y Confeccion,True
+5208.13.01,Textil y Confeccion,True
+5208.19.01,Textil y Confeccion,True
+5208.19.02,Textil y Confeccion,True
+5208.19.99,Textil y Confeccion,True
+5208.21.01,Textil y Confeccion,True
+5208.22.01,Textil y Confeccion,True
+5208.23.01,Textil y Confeccion,True
+5208.29.01,Textil y Confeccion,True
+5208.29.99,Textil y Confeccion,True
+5208.31.01,Textil y Confeccion,True
+5208.32.01,Textil y Confeccion,True
+5208.33.01,Textil y Confeccion,True
+5208.39.01,Textil y Confeccion,True
+5208.39.99,Textil y Confeccion,True
+5208.41.01,Textil y Confeccion,True
+5208.42.01,Textil y Confeccion,True
+5208.43.01,Textil y Confeccion,True
+5208.49.01,Textil y Confeccion,True
+5208.51.01,Textil y Confeccion,True
+5208.52.01,Textil y Confeccion,True
+5208.59.01,Textil y Confeccion,True
+5208.59.02,Textil y Confeccion,True
+5208.59.99,Textil y Confeccion,True
+5209.11.01,Textil y Confeccion,True
+5209.12.01,Textil y Confeccion,True
+5209.19.01,Textil y Confeccion,True
+5209.19.99,Textil y Confeccion,True
+5209.21.01,Textil y Confeccion,True
+5209.22.01,Textil y Confeccion,True
+5209.29.01,Textil y Confeccion,True
+5209.29.99,Textil y Confeccion,True
+5209.31.01,Textil y Confeccion,True
+5209.32.01,Textil y Confeccion,True
+5209.39.01,Textil y Confeccion,True
+5209.39.99,Textil y Confeccion,True
+5209.41.01,Textil y Confeccion,True
+5209.42.02,Textil y Confeccion,True
+5209.42.03,Textil y Confeccion,True
+5209.42.91,Textil y Confeccion,True
+5209.42.92,Textil y Confeccion,True
+5209.43.01,Textil y Confeccion,True
+5209.49.01,Textil y Confeccion,True
+5209.51.01,Textil y Confeccion,True
+5209.52.01,Textil y Confeccion,True
+5209.59.01,Textil y Confeccion,True
+5209.59.99,Textil y Confeccion,True
+5210.11.01,Textil y Confeccion,True
+5210.11.99,Textil y Confeccion,True
+5210.19.01,Textil y Confeccion,True
+5210.19.02,Textil y Confeccion,True
+5210.19.99,Textil y Confeccion,True
+5210.21.01,Textil y Confeccion,True
+5210.29.01,Textil y Confeccion,True
+5210.29.02,Textil y Confeccion,True
+5210.29.99,Textil y Confeccion,True
+5210.31.01,Textil y Confeccion,True
+5210.32.01,Textil y Confeccion,True
+5210.39.01,Textil y Confeccion,True
+5210.39.99,Textil y Confeccion,True
+5210.41.01,Textil y Confeccion,True
+5210.49.01,Textil y Confeccion,True
+5210.49.99,Textil y Confeccion,True
+5210.51.01,Textil y Confeccion,True
+5210.59.01,Textil y Confeccion,True
+5210.59.02,Textil y Confeccion,True
+5210.59.99,Textil y Confeccion,True
+5211.11.01,Textil y Confeccion,True
+5211.11.99,Textil y Confeccion,True
+5211.12.01,Textil y Confeccion,True
+5211.19.01,Textil y Confeccion,True
+5211.19.99,Textil y Confeccion,True
+5211.20.01,Textil y Confeccion,True
+5211.20.02,Textil y Confeccion,True
+5211.20.03,Textil y Confeccion,True
+5211.20.99,Textil y Confeccion,True
+5211.31.01,Textil y Confeccion,True
+5211.32.01,Textil y Confeccion,True
+5211.39.01,Textil y Confeccion,True
+5211.39.99,Textil y Confeccion,True
+5211.41.01,Textil y Confeccion,True
+5211.42.02,Textil y Confeccion,True
+5211.42.03,Textil y Confeccion,True
+5211.42.91,Textil y Confeccion,True
+5211.42.92,Textil y Confeccion,True
+5211.43.01,Textil y Confeccion,True
+5211.49.01,Textil y Confeccion,True
+5211.51.01,Textil y Confeccion,True
+5211.52.01,Textil y Confeccion,True
+5211.59.01,Textil y Confeccion,True
+5211.59.99,Textil y Confeccion,True
+5212.11.01,Textil y Confeccion,True
+5212.12.01,Textil y Confeccion,True
+5212.13.01,Textil y Confeccion,True
+5212.14.01,Textil y Confeccion,True
+5212.15.01,Textil y Confeccion,True
+5212.21.01,Textil y Confeccion,True
+5212.22.01,Textil y Confeccion,True
+5212.23.01,Textil y Confeccion,True
+5212.24.01,Textil y Confeccion,True
+5212.24.99,Textil y Confeccion,True
+5212.25.01,Textil y Confeccion,True
+5301.10.01,Textil y Confeccion,True
+5301.21.01,Textil y Confeccion,True
+5301.29.99,Textil y Confeccion,True
+5301.30.01,Textil y Confeccion,True
+5302.10.01,Textil y Confeccion,True
+5302.90.99,Textil y Confeccion,True
+5303.10.01,Textil y Confeccion,True
+5303.90.99,Textil y Confeccion,True
+5305.00.01,Textil y Confeccion,True
+5305.00.02,Textil y Confeccion,True
+5305.00.03,Textil y Confeccion,True
+5305.00.04,Textil y Confeccion,True
+5305.00.05,Textil y Confeccion,True
+5305.00.06,Textil y Confeccion,True
+5305.00.07,Textil y Confeccion,True
+5305.00.99,Textil y Confeccion,True
+5306.10.01,Textil y Confeccion,True
+5306.20.01,Textil y Confeccion,True
+5307.10.01,Textil y Confeccion,True
+5307.20.01,Textil y Confeccion,True
+5308.10.01,Textil y Confeccion,True
+5308.20.01,Textil y Confeccion,True
+5308.90.01,Textil y Confeccion,True
+5308.90.02,Textil y Confeccion,True
+5308.90.99,Textil y Confeccion,True
+5309.11.01,Textil y Confeccion,True
+5309.19.99,Textil y Confeccion,True
+5309.21.01,Textil y Confeccion,True
+5309.29.99,Textil y Confeccion,True
+5310.10.01,Textil y Confeccion,True
+5310.90.99,Textil y Confeccion,True
+5311.00.01,Textil y Confeccion,True
+5311.00.99,Textil y Confeccion,True
+5401.10.01,Textil y Confeccion,True
+5401.20.01,Textil y Confeccion,True
+5402.11.01,Textil y Confeccion,True
+5402.19.01,Textil y Confeccion,True
+5402.19.99,Textil y Confeccion,True
+5402.20.01,Textil y Confeccion,True
+5402.20.99,Textil y Confeccion,True
+5402.31.01,Textil y Confeccion,True
+5402.32.01,Textil y Confeccion,True
+5402.33.01,Textil y Confeccion,True
+5402.34.01,Textil y Confeccion,True
+5402.39.01,Textil y Confeccion,True
+5402.39.99,Textil y Confeccion,True
+5402.44.01,Textil y Confeccion,True
+5402.44.99,Textil y Confeccion,True
+5402.45.01,Textil y Confeccion,True
+5402.45.02,Textil y Confeccion,True
+5402.45.03,Textil y Confeccion,True
+5402.45.04,Textil y Confeccion,True
+5402.45.99,Textil y Confeccion,True
+5402.46.01,Textil y Confeccion,True
+5402.47.01,Textil y Confeccion,True
+5402.47.02,Textil y Confeccion,True
+5402.47.99,Textil y Confeccion,True
+5402.48.01,Textil y Confeccion,True
+5402.48.02,Textil y Confeccion,True
+5402.48.99,Textil y Confeccion,True
+5402.49.01,Textil y Confeccion,True
+5402.49.02,Textil y Confeccion,True
+5402.49.03,Textil y Confeccion,True
+5402.49.04,Textil y Confeccion,True
+5402.49.05,Textil y Confeccion,True
+5402.49.99,Textil y Confeccion,True
+5402.51.01,Textil y Confeccion,True
+5402.51.99,Textil y Confeccion,True
+5402.52.01,Textil y Confeccion,True
+5402.52.02,Textil y Confeccion,True
+5402.52.99,Textil y Confeccion,True
+5402.59.01,Textil y Confeccion,True
+5402.59.02,Textil y Confeccion,True
+5402.59.03,Textil y Confeccion,True
+5402.59.04,Textil y Confeccion,True
+5402.59.05,Textil y Confeccion,True
+5402.59.99,Textil y Confeccion,True
+5402.61.01,Textil y Confeccion,True
+5402.61.99,Textil y Confeccion,True
+5402.62.01,Textil y Confeccion,True
+5402.62.99,Textil y Confeccion,True
+5402.69.01,Textil y Confeccion,True
+5402.69.02,Textil y Confeccion,True
+5402.69.03,Textil y Confeccion,True
+5402.69.04,Textil y Confeccion,True
+5402.69.05,Textil y Confeccion,True
+5402.69.99,Textil y Confeccion,True
+5403.10.01,Textil y Confeccion,True
+5403.31.01,Textil y Confeccion,True
+5403.31.02,Textil y Confeccion,True
+5403.32.01,Textil y Confeccion,True
+5403.32.02,Textil y Confeccion,True
+5403.33.01,Textil y Confeccion,True
+5403.39.01,Textil y Confeccion,True
+5403.39.99,Textil y Confeccion,True
+5403.41.01,Textil y Confeccion,True
+5403.41.02,Textil y Confeccion,True
+5403.42.01,Textil y Confeccion,True
+5403.49.01,Textil y Confeccion,True
+5403.49.99,Textil y Confeccion,True
+5404.11.01,Textil y Confeccion,True
+5404.11.99,Textil y Confeccion,True
+5404.12.01,Textil y Confeccion,True
+5404.12.99,Textil y Confeccion,True
+5404.19.01,Textil y Confeccion,True
+5404.19.02,Textil y Confeccion,True
+5404.19.03,Textil y Confeccion,True
+5404.19.99,Textil y Confeccion,True
+5404.90.99,Textil y Confeccion,True
+5405.00.01,Textil y Confeccion,True
+5405.00.02,Textil y Confeccion,True
+5405.00.03,Textil y Confeccion,True
+5405.00.04,Textil y Confeccion,True
+5405.00.99,Textil y Confeccion,True
+5406.00.01,Textil y Confeccion,True
+5406.00.02,Textil y Confeccion,True
+5406.00.03,Textil y Confeccion,True
+5406.00.04,Textil y Confeccion,True
+5406.00.05,Textil y Confeccion,True
+5407.10.01,Textil y Confeccion,True
+5407.10.02,Textil y Confeccion,True
+5407.10.99,Textil y Confeccion,True
+5407.20.01,Textil y Confeccion,True
+5407.20.99,Textil y Confeccion,True
+5407.30.01,Textil y Confeccion,True
+5407.30.02,Textil y Confeccion,True
+5407.30.03,Textil y Confeccion,True
+5407.30.99,Textil y Confeccion,True
+5407.41.02,Textil y Confeccion,True
+5407.41.03,Textil y Confeccion,True
+5407.41.04,Textil y Confeccion,True
+5407.42.02,Textil y Confeccion,True
+5407.42.03,Textil y Confeccion,True
+5407.42.04,Textil y Confeccion,True
+5407.43.01,Textil y Confeccion,True
+5407.43.02,Textil y Confeccion,True
+5407.43.03,Textil y Confeccion,True
+5407.43.99,Textil y Confeccion,True
+5407.44.01,Textil y Confeccion,True
+5407.51.02,Textil y Confeccion,True
+5407.51.03,Textil y Confeccion,True
+5407.51.04,Textil y Confeccion,True
+5407.52.02,Textil y Confeccion,True
+5407.52.03,Textil y Confeccion,True
+5407.52.04,Textil y Confeccion,True
+5407.53.01,Textil y Confeccion,True
+5407.53.02,Textil y Confeccion,True
+5407.53.03,Textil y Confeccion,True
+5407.53.91,Textil y Confeccion,True
+5407.53.92,Textil y Confeccion,True
+5407.53.93,Textil y Confeccion,True
+5407.54.02,Textil y Confeccion,True
+5407.54.03,Textil y Confeccion,True
+5407.54.04,Textil y Confeccion,True
+5407.61.01,Textil y Confeccion,True
+5407.61.03,Textil y Confeccion,True
+5407.61.04,Textil y Confeccion,True
+5407.61.05,Textil y Confeccion,True
+5407.61.91,Textil y Confeccion,True
+5407.61.92,Textil y Confeccion,True
+5407.61.93,Textil y Confeccion,True
+5407.69.01,Textil y Confeccion,True
+5407.69.91,Textil y Confeccion,True
+5407.69.92,Textil y Confeccion,True
+5407.69.93,Textil y Confeccion,True
+5407.71.01,Textil y Confeccion,True
+5407.72.01,Textil y Confeccion,True
+5407.73.01,Textil y Confeccion,True
+5407.73.02,Textil y Confeccion,True
+5407.73.03,Textil y Confeccion,True
+5407.73.99,Textil y Confeccion,True
+5407.74.01,Textil y Confeccion,True
+5407.81.01,Textil y Confeccion,True
+5407.82.01,Textil y Confeccion,True
+5407.82.02,Textil y Confeccion,True
+5407.82.03,Textil y Confeccion,True
+5407.82.99,Textil y Confeccion,True
+5407.83.01,Textil y Confeccion,True
+5407.84.01,Textil y Confeccion,True
+5407.91.01,Textil y Confeccion,True
+5407.91.02,Textil y Confeccion,True
+5407.91.03,Textil y Confeccion,True
+5407.91.04,Textil y Confeccion,True
+5407.91.05,Textil y Confeccion,True
+5407.91.06,Textil y Confeccion,True
+5407.91.07,Textil y Confeccion,True
+5407.91.99,Textil y Confeccion,True
+5407.92.01,Textil y Confeccion,True
+5407.92.02,Textil y Confeccion,True
+5407.92.03,Textil y Confeccion,True
+5407.92.04,Textil y Confeccion,True
+5407.92.05,Textil y Confeccion,True
+5407.92.06,Textil y Confeccion,True
+5407.92.99,Textil y Confeccion,True
+5407.93.01,Textil y Confeccion,True
+5407.93.02,Textil y Confeccion,True
+5407.93.03,Textil y Confeccion,True
+5407.93.04,Textil y Confeccion,True
+5407.93.05,Textil y Confeccion,True
+5407.93.06,Textil y Confeccion,True
+5407.93.07,Textil y Confeccion,True
+5407.93.99,Textil y Confeccion,True
+5407.94.01,Textil y Confeccion,True
+5407.94.02,Textil y Confeccion,True
+5407.94.03,Textil y Confeccion,True
+5407.94.04,Textil y Confeccion,True
+5407.94.05,Textil y Confeccion,True
+5407.94.06,Textil y Confeccion,True
+5407.94.07,Textil y Confeccion,True
+5407.94.99,Textil y Confeccion,True
+5408.10.01,Textil y Confeccion,True
+5408.10.02,Textil y Confeccion,True
+5408.10.03,Textil y Confeccion,True
+5408.10.04,Textil y Confeccion,True
+5408.10.99,Textil y Confeccion,True
+5408.21.01,Textil y Confeccion,True
+5408.21.02,Textil y Confeccion,True
+5408.21.03,Textil y Confeccion,True
+5408.21.99,Textil y Confeccion,True
+5408.22.01,Textil y Confeccion,True
+5408.22.02,Textil y Confeccion,True
+5408.22.03,Textil y Confeccion,True
+5408.22.04,Textil y Confeccion,True
+5408.22.99,Textil y Confeccion,True
+5408.23.01,Textil y Confeccion,True
+5408.23.02,Textil y Confeccion,True
+5408.23.03,Textil y Confeccion,True
+5408.23.04,Textil y Confeccion,True
+5408.23.05,Textil y Confeccion,True
+5408.23.99,Textil y Confeccion,True
+5408.24.01,Textil y Confeccion,True
+5408.24.99,Textil y Confeccion,True
+5408.31.01,Textil y Confeccion,True
+5408.31.02,Textil y Confeccion,True
+5408.31.03,Textil y Confeccion,True
+5408.31.04,Textil y Confeccion,True
+5408.31.99,Textil y Confeccion,True
+5408.32.01,Textil y Confeccion,True
+5408.32.02,Textil y Confeccion,True
+5408.32.03,Textil y Confeccion,True
+5408.32.04,Textil y Confeccion,True
+5408.32.05,Textil y Confeccion,True
+5408.32.99,Textil y Confeccion,True
+5408.33.01,Textil y Confeccion,True
+5408.33.02,Textil y Confeccion,True
+5408.33.03,Textil y Confeccion,True
+5408.33.04,Textil y Confeccion,True
+5408.33.99,Textil y Confeccion,True
+5408.34.01,Textil y Confeccion,True
+5408.34.02,Textil y Confeccion,True
+5408.34.03,Textil y Confeccion,True
+5408.34.99,Textil y Confeccion,True
+5414.30.02,Textil y Confeccion,True
+5501.10.01,Textil y Confeccion,True
+5501.20.01,Textil y Confeccion,True
+5501.20.02,Textil y Confeccion,True
+5501.20.03,Textil y Confeccion,True
+5501.20.99,Textil y Confeccion,True
+5501.30.01,Textil y Confeccion,True
+5501.40.01,Textil y Confeccion,True
+5501.90.99,Textil y Confeccion,True
+5502.00.01,Textil y Confeccion,True
+5502.00.99,Textil y Confeccion,True
+5503.11.01,Textil y Confeccion,True
+5503.19.99,Textil y Confeccion,True
+5503.20.01,Textil y Confeccion,True
+5503.20.02,Textil y Confeccion,True
+5503.20.03,Textil y Confeccion,True
+5503.20.99,Textil y Confeccion,True
+5503.30.01,Textil y Confeccion,True
+5503.40.01,Textil y Confeccion,True
+5503.40.99,Textil y Confeccion,True
+5503.90.01,Textil y Confeccion,True
+5503.90.99,Textil y Confeccion,True
+5504.10.01,Textil y Confeccion,True
+5504.10.99,Textil y Confeccion,True
+5504.90.99,Textil y Confeccion,True
+5505.10.01,Textil y Confeccion,True
+5505.20.01,Textil y Confeccion,True
+5506.10.01,Textil y Confeccion,True
+5506.20.01,Textil y Confeccion,True
+5506.30.01,Textil y Confeccion,True
+5506.90.99,Textil y Confeccion,True
+5507.00.01,Textil y Confeccion,True
+5508.10.01,Textil y Confeccion,True
+5508.20.01,Textil y Confeccion,True
+5509.11.01,Textil y Confeccion,True
+5509.12.01,Textil y Confeccion,True
+5509.21.01,Textil y Confeccion,True
+5509.22.01,Textil y Confeccion,True
+5509.31.01,Textil y Confeccion,True
+5509.32.01,Textil y Confeccion,True
+5509.41.01,Textil y Confeccion,True
+5509.42.01,Textil y Confeccion,True
+5509.51.01,Textil y Confeccion,True
+5509.52.01,Textil y Confeccion,True
+5509.53.01,Textil y Confeccion,True
+5509.59.99,Textil y Confeccion,True
+5509.61.01,Textil y Confeccion,True
+5509.62.01,Textil y Confeccion,True
+5509.69.99,Textil y Confeccion,True
+5509.91.01,Textil y Confeccion,True
+5509.92.01,Textil y Confeccion,True
+5509.99.99,Textil y Confeccion,True
+5510.11.01,Textil y Confeccion,True
+5510.12.01,Textil y Confeccion,True
+5510.20.01,Textil y Confeccion,True
+5510.30.01,Textil y Confeccion,True
+5510.90.01,Textil y Confeccion,True
+5511.10.01,Textil y Confeccion,True
+5511.20.01,Textil y Confeccion,True
+5511.30.01,Textil y Confeccion,True
+5512.11.02,Textil y Confeccion,True
+5512.11.03,Textil y Confeccion,True
+5512.11.04,Textil y Confeccion,True
+5512.19.01,Textil y Confeccion,True
+5512.19.91,Textil y Confeccion,True
+5512.19.92,Textil y Confeccion,True
+5512.19.93,Textil y Confeccion,True
+5512.21.01,Textil y Confeccion,True
+5512.29.99,Textil y Confeccion,True
+5512.91.01,Textil y Confeccion,True
+5512.99.99,Textil y Confeccion,True
+5513.11.02,Textil y Confeccion,True
+5513.11.03,Textil y Confeccion,True
+5513.12.01,Textil y Confeccion,True
+5513.13.01,Textil y Confeccion,True
+5513.19.01,Textil y Confeccion,True
+5513.21.02,Textil y Confeccion,True
+5513.21.03,Textil y Confeccion,True
+5513.23.01,Textil y Confeccion,True
+5513.23.99,Textil y Confeccion,True
+5513.29.01,Textil y Confeccion,True
+5513.31.01,Textil y Confeccion,True
+5513.39.01,Textil y Confeccion,True
+5513.39.02,Textil y Confeccion,True
+5513.39.99,Textil y Confeccion,True
+5513.41.01,Textil y Confeccion,True
+5513.49.01,Textil y Confeccion,True
+5513.49.02,Textil y Confeccion,True
+5513.49.99,Textil y Confeccion,True
+5514.11.01,Textil y Confeccion,True
+5514.12.01,Textil y Confeccion,True
+5514.19.01,Textil y Confeccion,True
+5514.19.99,Textil y Confeccion,True
+5514.21.01,Textil y Confeccion,True
+5514.22.01,Textil y Confeccion,True
+5514.23.01,Textil y Confeccion,True
+5514.29.01,Textil y Confeccion,True
+5514.30.01,Textil y Confeccion,True
+5514.30.02,Textil y Confeccion,True
+5514.30.03,Textil y Confeccion,True
+5514.30.04,Textil y Confeccion,True
+5514.30.99,Textil y Confeccion,True
+5514.41.01,Textil y Confeccion,True
+5514.42.01,Textil y Confeccion,True
+5514.43.01,Textil y Confeccion,True
+5514.49.01,Textil y Confeccion,True
+5515.11.01,Textil y Confeccion,True
+5515.12.01,Textil y Confeccion,True
+5515.13.01,Textil y Confeccion,True
+5515.13.99,Textil y Confeccion,True
+5515.19.99,Textil y Confeccion,True
+5515.21.01,Textil y Confeccion,True
+5515.22.01,Textil y Confeccion,True
+5515.22.99,Textil y Confeccion,True
+5515.29.99,Textil y Confeccion,True
+5515.91.01,Textil y Confeccion,True
+5515.99.01,Textil y Confeccion,True
+5515.99.02,Textil y Confeccion,True
+5515.99.99,Textil y Confeccion,True
+5516.11.01,Textil y Confeccion,True
+5516.12.01,Textil y Confeccion,True
+5516.13.01,Textil y Confeccion,True
+5516.14.01,Textil y Confeccion,True
+5516.21.01,Textil y Confeccion,True
+5516.22.01,Textil y Confeccion,True
+5516.23.01,Textil y Confeccion,True
+5516.24.01,Textil y Confeccion,True
+5516.31.01,Textil y Confeccion,True
+5516.31.99,Textil y Confeccion,True
+5516.32.01,Textil y Confeccion,True
+5516.32.99,Textil y Confeccion,True
+5516.33.01,Textil y Confeccion,True
+5516.33.99,Textil y Confeccion,True
+5516.34.01,Textil y Confeccion,True
+5516.34.99,Textil y Confeccion,True
+5516.41.01,Textil y Confeccion,True
+5516.42.01,Textil y Confeccion,True
+5516.43.01,Textil y Confeccion,True
+5516.44.01,Textil y Confeccion,True
+5516.91.01,Textil y Confeccion,True
+5516.92.01,Textil y Confeccion,True
+5516.93.01,Textil y Confeccion,True
+5516.94.01,Textil y Confeccion,True
+5601.21.01,Textil y Confeccion,True
+5601.21.99,Textil y Confeccion,True
+5601.22.01,Textil y Confeccion,True
+5601.22.99,Textil y Confeccion,True
+5601.29.99,Textil y Confeccion,True
+5601.30.01,Textil y Confeccion,True
+5601.30.99,Textil y Confeccion,True
+5602.10.01,Textil y Confeccion,True
+5602.10.99,Textil y Confeccion,True
+5602.21.01,Textil y Confeccion,True
+5602.21.02,Textil y Confeccion,True
+5602.21.99,Textil y Confeccion,True
+5602.29.01,Textil y Confeccion,True
+5602.90.99,Textil y Confeccion,True
+5603.11.01,Textil y Confeccion,True
+5603.12.01,Textil y Confeccion,True
+5603.12.99,Textil y Confeccion,True
+5603.13.01,Textil y Confeccion,True
+5603.13.99,Textil y Confeccion,True
+5603.14.01,Textil y Confeccion,True
+5603.91.01,Textil y Confeccion,True
+5603.92.01,Textil y Confeccion,True
+5603.93.01,Textil y Confeccion,True
+5603.94.01,Textil y Confeccion,True
+5604.10.01,Textil y Confeccion,True
+5604.90.01,Textil y Confeccion,True
+5604.90.02,Textil y Confeccion,True
+5604.90.03,Textil y Confeccion,True
+5604.90.04,Textil y Confeccion,True
+5604.90.05,Textil y Confeccion,True
+5604.90.06,Textil y Confeccion,True
+5604.90.07,Textil y Confeccion,True
+5604.90.08,Textil y Confeccion,True
+5604.90.09,Textil y Confeccion,True
+5604.90.10,Textil y Confeccion,True
+5604.90.11,Textil y Confeccion,True
+5604.90.12,Textil y Confeccion,True
+5604.90.13,Textil y Confeccion,True
+5604.90.14,Textil y Confeccion,True
+5604.90.99,Textil y Confeccion,True
+5605.00.01,Textil y Confeccion,True
+5606.00.01,Textil y Confeccion,True
+5606.00.02,Textil y Confeccion,True
+5606.00.99,Textil y Confeccion,True
+5607.21.01,Textil y Confeccion,True
+5607.29.99,Textil y Confeccion,True
+5607.41.01,Textil y Confeccion,True
+5607.49.99,Textil y Confeccion,True
+5607.50.01,Textil y Confeccion,True
+5607.90.01,Textil y Confeccion,True
+5607.90.02,Textil y Confeccion,True
+5607.90.99,Textil y Confeccion,True
+5608.11.01,Textil y Confeccion,True
+5608.11.99,Textil y Confeccion,True
+5608.19.99,Textil y Confeccion,True
+5608.90.99,Textil y Confeccion,True
+5609.00.01,Textil y Confeccion,True
+5609.00.99,Textil y Confeccion,True
+5701.10.01,Textil y Confeccion,True
+5701.90.01,Textil y Confeccion,True
+5702.10.01,Textil y Confeccion,True
+5702.20.01,Textil y Confeccion,True
+5702.31.01,Textil y Confeccion,True
+5702.32.01,Textil y Confeccion,True
+5702.39.01,Textil y Confeccion,True
+5702.41.01,Textil y Confeccion,True
+5702.42.01,Textil y Confeccion,True
+5702.49.01,Textil y Confeccion,True
+5702.50.01,Textil y Confeccion,True
+5702.50.02,Textil y Confeccion,True
+5702.50.99,Textil y Confeccion,True
+5702.91.01,Textil y Confeccion,True
+5702.92.01,Textil y Confeccion,True
+5702.99.01,Textil y Confeccion,True
+5703.10.01,Textil y Confeccion,True
+5703.20.01,Textil y Confeccion,True
+5703.20.99,Textil y Confeccion,True
+5703.30.01,Textil y Confeccion,True
+5703.30.99,Textil y Confeccion,True
+5703.90.01,Textil y Confeccion,True
+5704.10.01,Textil y Confeccion,True
+5704.90.99,Textil y Confeccion,True
+5705.00.01,Textil y Confeccion,True
+5705.00.99,Textil y Confeccion,True
+5801.10.01,Textil y Confeccion,True
+5801.21.01,Textil y Confeccion,True
+5801.22.01,Textil y Confeccion,True
+5801.23.01,Textil y Confeccion,True
+5801.26.01,Textil y Confeccion,True
+5801.27.01,Textil y Confeccion,True
+5801.31.01,Textil y Confeccion,True
+5801.32.01,Textil y Confeccion,True
+5801.33.01,Textil y Confeccion,True
+5801.36.01,Textil y Confeccion,True
+5801.37.01,Textil y Confeccion,True
+5801.90.01,Textil y Confeccion,True
+5802.11.01,Textil y Confeccion,True
+5802.19.99,Textil y Confeccion,True
+5802.20.01,Textil y Confeccion,True
+5802.30.01,Textil y Confeccion,True
+5803.00.01,Textil y Confeccion,True
+5803.00.02,Textil y Confeccion,True
+5803.00.03,Textil y Confeccion,True
+5803.00.04,Textil y Confeccion,True
+5803.00.99,Textil y Confeccion,True
+5804.10.01,Textil y Confeccion,True
+5804.21.01,Textil y Confeccion,True
+5804.29.01,Textil y Confeccion,True
+5804.30.01,Textil y Confeccion,True
+5805.00.01,Textil y Confeccion,True
+5806.10.01,Textil y Confeccion,True
+5806.10.99,Textil y Confeccion,True
+5806.20.01,Textil y Confeccion,True
+5806.20.99,Textil y Confeccion,True
+5806.31.01,Textil y Confeccion,True
+5806.32.01,Textil y Confeccion,True
+5806.39.01,Textil y Confeccion,True
+5806.39.99,Textil y Confeccion,True
+5806.40.01,Textil y Confeccion,True
+5806.40.99,Textil y Confeccion,True
+5807.10.01,Textil y Confeccion,True
+5807.90.99,Textil y Confeccion,True
+5808.10.01,Textil y Confeccion,True
+5808.90.99,Textil y Confeccion,True
+5809.00.01,Textil y Confeccion,True
+5810.10.01,Textil y Confeccion,True
+5810.91.01,Textil y Confeccion,True
+5810.92.01,Textil y Confeccion,True
+5810.99.01,Textil y Confeccion,True
+5811.00.01,Textil y Confeccion,True
+5901.10.01,Textil y Confeccion,True
+5901.90.01,Textil y Confeccion,True
+5901.90.02,Textil y Confeccion,True
+5901.90.99,Textil y Confeccion,True
+5902.10.01,Textil y Confeccion,True
+5902.20.01,Textil y Confeccion,True
+5902.90.99,Textil y Confeccion,True
+5903.10.01,Textil y Confeccion,True
+5903.10.99,Textil y Confeccion,True
+5903.20.01,Textil y Confeccion,True
+5903.20.99,Textil y Confeccion,True
+5903.90.01,Textil y Confeccion,True
+5903.90.02,Textil y Confeccion,True
+5903.90.99,Textil y Confeccion,True
+5904.10.01,Textil y Confeccion,True
+5904.90.01,Textil y Confeccion,True
+5904.90.02,Textil y Confeccion,True
+5905.00.01,Textil y Confeccion,True
+5906.10.01,Textil y Confeccion,True
+5906.91.01,Textil y Confeccion,True
+5906.91.99,Textil y Confeccion,True
+5906.99.01,Textil y Confeccion,True
+5906.99.02,Textil y Confeccion,True
+5906.99.03,Textil y Confeccion,True
+5906.99.99,Textil y Confeccion,True
+5907.00.01,Textil y Confeccion,True
+5907.00.02,Textil y Confeccion,True
+5907.00.03,Textil y Confeccion,True
+5907.00.04,Textil y Confeccion,True
+5907.00.05,Textil y Confeccion,True
+5907.00.06,Textil y Confeccion,True
+5907.00.99,Textil y Confeccion,True
+5908.00.01,Textil y Confeccion,True
+5908.00.02,Textil y Confeccion,True
+5908.00.03,Textil y Confeccion,True
+5908.00.99,Textil y Confeccion,True
+5909.00.01,Textil y Confeccion,True
+5910.00.01,Textil y Confeccion,True
+5911.10.01,Textil y Confeccion,True
+5911.10.99,Textil y Confeccion,True
+5911.20.01,Textil y Confeccion,True
+5911.31.01,Textil y Confeccion,True
+5911.32.01,Textil y Confeccion,True
+5911.40.01,Textil y Confeccion,True
+5911.90.01,Textil y Confeccion,True
+5911.90.02,Textil y Confeccion,True
+5911.90.03,Textil y Confeccion,True
+5911.90.99,Textil y Confeccion,True
+6001.10.02,Textil y Confeccion,True
+6001.10.99,Textil y Confeccion,True
+6001.21.01,Textil y Confeccion,True
+6001.22.01,Textil y Confeccion,True
+6001.29.01,Textil y Confeccion,True
+6001.29.02,Textil y Confeccion,True
+6001.29.99,Textil y Confeccion,True
+6001.91.01,Textil y Confeccion,True
+6001.92.01,Textil y Confeccion,True
+6001.99.01,Textil y Confeccion,True
+6002.40.01,Textil y Confeccion,True
+6002.40.99,Textil y Confeccion,True
+6002.90.01,Textil y Confeccion,True
+6002.90.99,Textil y Confeccion,True
+6003.10.01,Textil y Confeccion,True
+6003.20.01,Textil y Confeccion,True
+6003.30.01,Textil y Confeccion,True
+6003.40.01,Textil y Confeccion,True
+6003.90.01,Textil y Confeccion,True
+6003.90.99,Textil y Confeccion,True
+6004.10.01,Textil y Confeccion,True
+6004.10.02,Textil y Confeccion,True
+6004.10.03,Textil y Confeccion,True
+6004.10.04,Textil y Confeccion,True
+6004.10.05,Textil y Confeccion,True
+6004.10.06,Textil y Confeccion,True
+6004.10.99,Textil y Confeccion,True
+6004.90.01,Textil y Confeccion,True
+6004.90.99,Textil y Confeccion,True
+6005.21.01,Textil y Confeccion,True
+6005.22.01,Textil y Confeccion,True
+6005.23.01,Textil y Confeccion,True
+6005.24.01,Textil y Confeccion,True
+6005.31.01,Textil y Confeccion,True
+6005.32.01,Textil y Confeccion,True
+6005.32.99,Textil y Confeccion,True
+6005.33.01,Textil y Confeccion,True
+6005.34.01,Textil y Confeccion,True
+6005.41.01,Textil y Confeccion,True
+6005.42.01,Textil y Confeccion,True
+6005.43.01,Textil y Confeccion,True
+6005.44.01,Textil y Confeccion,True
+6005.90.01,Textil y Confeccion,True
+6005.90.99,Textil y Confeccion,True
+6006.10.01,Textil y Confeccion,True
+6006.21.01,Textil y Confeccion,True
+6006.21.99,Textil y Confeccion,True
+6006.22.01,Textil y Confeccion,True
+6006.22.99,Textil y Confeccion,True
+6006.23.01,Textil y Confeccion,True
+6006.23.99,Textil y Confeccion,True
+6006.24.01,Textil y Confeccion,True
+6006.24.99,Textil y Confeccion,True
+6006.31.02,Textil y Confeccion,True
+6006.31.99,Textil y Confeccion,True
+6006.32.02,Textil y Confeccion,True
+6006.32.99,Textil y Confeccion,True
+6006.33.02,Textil y Confeccion,True
+6006.33.99,Textil y Confeccion,True
+6006.34.02,Textil y Confeccion,True
+6006.34.99,Textil y Confeccion,True
+6006.41.01,Textil y Confeccion,True
+6006.42.01,Textil y Confeccion,True
+6006.43.01,Textil y Confeccion,True
+6006.44.01,Textil y Confeccion,True
+6006.90.99,Textil y Confeccion,True
+6101.20.02,Textil y Confeccion,True
+6101.20.99,Textil y Confeccion,True
+6101.30.01,Textil y Confeccion,True
+6101.30.91,Textil y Confeccion,True
+6101.30.92,Textil y Confeccion,True
+6101.90.01,Textil y Confeccion,True
+6101.90.99,Textil y Confeccion,True
+6102.10.01,Textil y Confeccion,True
+6102.20.02,Textil y Confeccion,True
+6102.20.99,Textil y Confeccion,True
+6102.30.01,Textil y Confeccion,True
+6102.30.99,Textil y Confeccion,True
+6102.90.01,Textil y Confeccion,True
+6103.10.01,Textil y Confeccion,True
+6103.10.02,Textil y Confeccion,True
+6103.10.03,Textil y Confeccion,True
+6103.10.04,Textil y Confeccion,True
+6103.10.99,Textil y Confeccion,True
+6103.22.01,Textil y Confeccion,True
+6103.23.01,Textil y Confeccion,True
+6103.29.01,Textil y Confeccion,True
+6103.29.99,Textil y Confeccion,True
+6103.31.01,Textil y Confeccion,True
+6103.32.01,Textil y Confeccion,True
+6103.33.01,Textil y Confeccion,True
+6103.33.99,Textil y Confeccion,True
+6103.39.01,Textil y Confeccion,True
+6103.39.02,Textil y Confeccion,True
+6103.39.99,Textil y Confeccion,True
+6103.41.01,Textil y Confeccion,True
+6103.42.01,Textil y Confeccion,True
+6103.42.02,Textil y Confeccion,True
+6103.42.99,Textil y Confeccion,True
+6103.43.01,Textil y Confeccion,True
+6103.43.02,Textil y Confeccion,True
+6103.43.03,Textil y Confeccion,True
+6103.43.04,Textil y Confeccion,True
+6103.43.05,Textil y Confeccion,True
+6103.43.99,Textil y Confeccion,True
+6103.49.01,Textil y Confeccion,True
+6103.49.02,Textil y Confeccion,True
+6103.49.99,Textil y Confeccion,True
+6104.13.01,Textil y Confeccion,True
+6104.13.99,Textil y Confeccion,True
+6104.19.01,Textil y Confeccion,True
+6104.19.02,Textil y Confeccion,True
+6104.19.03,Textil y Confeccion,True
+6104.19.04,Textil y Confeccion,True
+6104.19.05,Textil y Confeccion,True
+6104.19.99,Textil y Confeccion,True
+6104.22.01,Textil y Confeccion,True
+6104.23.01,Textil y Confeccion,True
+6104.29.01,Textil y Confeccion,True
+6104.29.99,Textil y Confeccion,True
+6104.31.01,Textil y Confeccion,True
+6104.32.01,Textil y Confeccion,True
+6104.33.01,Textil y Confeccion,True
+6104.33.99,Textil y Confeccion,True
+6104.39.01,Textil y Confeccion,True
+6104.39.02,Textil y Confeccion,True
+6104.39.99,Textil y Confeccion,True
+6104.41.01,Textil y Confeccion,True
+6104.42.02,Textil y Confeccion,True
+6104.42.99,Textil y Confeccion,True
+6104.43.01,Textil y Confeccion,True
+6104.43.91,Textil y Confeccion,True
+6104.43.92,Textil y Confeccion,True
+6104.44.01,Textil y Confeccion,True
+6104.44.99,Textil y Confeccion,True
+6104.49.01,Textil y Confeccion,True
+6104.49.99,Textil y Confeccion,True
+6104.51.01,Textil y Confeccion,True
+6104.52.01,Textil y Confeccion,True
+6104.53.01,Textil y Confeccion,True
+6104.53.91,Textil y Confeccion,True
+6104.53.92,Textil y Confeccion,True
+6104.59.01,Textil y Confeccion,True
+6104.59.02,Textil y Confeccion,True
+6104.59.99,Textil y Confeccion,True
+6104.61.01,Textil y Confeccion,True
+6104.62.01,Textil y Confeccion,True
+6104.62.02,Textil y Confeccion,True
+6104.62.99,Textil y Confeccion,True
+6104.63.01,Textil y Confeccion,True
+6104.63.02,Textil y Confeccion,True
+6104.63.99,Textil y Confeccion,True
+6104.69.01,Textil y Confeccion,True
+6104.69.02,Textil y Confeccion,True
+6104.69.99,Textil y Confeccion,True
+6105.10.01,Textil y Confeccion,True
+6105.10.99,Textil y Confeccion,True
+6105.20.02,Textil y Confeccion,True
+6105.20.99,Textil y Confeccion,True
+6105.90.01,Textil y Confeccion,True
+6105.90.99,Textil y Confeccion,True
+6106.10.01,Textil y Confeccion,True
+6106.10.91,Textil y Confeccion,True
+6106.10.92,Textil y Confeccion,True
+6106.20.01,Textil y Confeccion,True
+6106.20.91,Textil y Confeccion,True
+6106.20.92,Textil y Confeccion,True
+6106.90.01,Textil y Confeccion,True
+6106.90.02,Textil y Confeccion,True
+6106.90.99,Textil y Confeccion,True
+6107.11.02,Textil y Confeccion,True
+6107.11.99,Textil y Confeccion,True
+6107.12.02,Textil y Confeccion,True
+6107.12.99,Textil y Confeccion,True
+6107.19.01,Textil y Confeccion,True
+6107.21.01,Textil y Confeccion,True
+6107.22.01,Textil y Confeccion,True
+6107.29.01,Textil y Confeccion,True
+6107.29.99,Textil y Confeccion,True
+6107.91.01,Textil y Confeccion,True
+6107.99.01,Textil y Confeccion,True
+6107.99.02,Textil y Confeccion,True
+6107.99.99,Textil y Confeccion,True
+6108.11.01,Textil y Confeccion,True
+6108.19.01,Textil y Confeccion,True
+6108.21.02,Textil y Confeccion,True
+6108.21.99,Textil y Confeccion,True
+6108.22.02,Textil y Confeccion,True
+6108.22.99,Textil y Confeccion,True
+6108.29.01,Textil y Confeccion,True
+6108.31.02,Textil y Confeccion,True
+6108.31.99,Textil y Confeccion,True
+6108.32.02,Textil y Confeccion,True
+6108.32.99,Textil y Confeccion,True
+6108.39.01,Textil y Confeccion,True
+6108.39.99,Textil y Confeccion,True
+6108.91.01,Textil y Confeccion,True
+6108.91.99,Textil y Confeccion,True
+6108.92.01,Textil y Confeccion,True
+6108.92.99,Textil y Confeccion,True
+6108.99.01,Textil y Confeccion,True
+6108.99.99,Textil y Confeccion,True
+6109.10.02,Textil y Confeccion,True
+6109.10.99,Textil y Confeccion,True
+6109.90.02,Textil y Confeccion,True
+6109.90.03,Textil y Confeccion,True
+6109.90.91,Textil y Confeccion,True
+6109.90.92,Textil y Confeccion,True
+6109.90.93,Textil y Confeccion,True
+6110.11.02,Textil y Confeccion,True
+6110.11.99,Textil y Confeccion,True
+6110.12.01,Textil y Confeccion,True
+6110.19.99,Textil y Confeccion,True
+6110.20.02,Textil y Confeccion,True
+6110.20.03,Textil y Confeccion,True
+6110.20.04,Textil y Confeccion,True
+6110.20.91,Textil y Confeccion,True
+6110.20.92,Textil y Confeccion,True
+6110.20.93,Textil y Confeccion,True
+6110.20.99,Textil y Confeccion,True
+6110.30.01,Textil y Confeccion,True
+6110.30.02,Textil y Confeccion,True
+6110.30.03,Textil y Confeccion,True
+6110.30.91,Textil y Confeccion,True
+6110.30.99,Textil y Confeccion,True
+6110.90.01,Textil y Confeccion,True
+6110.90.99,Textil y Confeccion,True
+6111.20.02,Textil y Confeccion,True
+6111.20.03,Textil y Confeccion,True
+6111.20.04,Textil y Confeccion,True
+6111.20.05,Textil y Confeccion,True
+6111.20.06,Textil y Confeccion,True
+6111.20.07,Textil y Confeccion,True
+6111.20.08,Textil y Confeccion,True
+6111.20.09,Textil y Confeccion,True
+6111.20.10,Textil y Confeccion,True
+6111.20.11,Textil y Confeccion,True
+6111.20.99,Textil y Confeccion,True
+6111.30.02,Textil y Confeccion,True
+6111.30.03,Textil y Confeccion,True
+6111.30.04,Textil y Confeccion,True
+6111.30.05,Textil y Confeccion,True
+6111.30.06,Textil y Confeccion,True
+6111.30.99,Textil y Confeccion,True
+6111.90.01,Textil y Confeccion,True
+6111.90.02,Textil y Confeccion,True
+6111.90.03,Textil y Confeccion,True
+6111.90.04,Textil y Confeccion,True
+6111.90.99,Textil y Confeccion,True
+6112.11.01,Textil y Confeccion,True
+6112.12.01,Textil y Confeccion,True
+6112.19.01,Textil y Confeccion,True
+6112.19.02,Textil y Confeccion,True
+6112.19.99,Textil y Confeccion,True
+6112.20.01,Textil y Confeccion,True
+6112.20.99,Textil y Confeccion,True
+6112.31.01,Textil y Confeccion,True
+6112.39.01,Textil y Confeccion,True
+6112.41.01,Textil y Confeccion,True
+6112.49.01,Textil y Confeccion,True
+6113.00.01,Textil y Confeccion,True
+6113.00.99,Textil y Confeccion,True
+6114.20.01,Textil y Confeccion,True
+6114.30.01,Textil y Confeccion,True
+6114.30.99,Textil y Confeccion,True
+6114.90.01,Textil y Confeccion,True
+6114.90.99,Textil y Confeccion,True
+6115.10.01,Textil y Confeccion,True
+6115.21.01,Textil y Confeccion,True
+6115.22.01,Textil y Confeccion,True
+6115.29.01,Textil y Confeccion,True
+6115.30.01,Textil y Confeccion,True
+6115.94.01,Textil y Confeccion,True
+6115.95.01,Textil y Confeccion,True
+6115.96.01,Textil y Confeccion,True
+6115.99.01,Textil y Confeccion,True
+6116.10.01,Textil y Confeccion,True
+6116.10.99,Textil y Confeccion,True
+6116.91.01,Textil y Confeccion,True
+6116.92.01,Textil y Confeccion,True
+6116.93.01,Textil y Confeccion,True
+6116.99.01,Textil y Confeccion,True
+6117.10.01,Textil y Confeccion,True
+6117.10.99,Textil y Confeccion,True
+6117.80.01,Textil y Confeccion,True
+6117.80.02,Textil y Confeccion,True
+6117.80.99,Textil y Confeccion,True
+6117.90.01,Textil y Confeccion,True
+6201.11.01,Textil y Confeccion,True
+6201.12.01,Textil y Confeccion,True
+6201.12.91,Textil y Confeccion,True
+6201.12.92,Textil y Confeccion,True
+6201.13.01,Textil y Confeccion,True
+6201.13.02,Textil y Confeccion,True
+6201.13.91,Textil y Confeccion,True
+6201.13.92,Textil y Confeccion,True
+6201.19.01,Textil y Confeccion,True
+6201.91.01,Textil y Confeccion,True
+6201.92.01,Textil y Confeccion,True
+6201.92.91,Textil y Confeccion,True
+6201.92.92,Textil y Confeccion,True
+6201.93.01,Textil y Confeccion,True
+6201.93.99,Textil y Confeccion,True
+6201.99.01,Textil y Confeccion,True
+6202.11.01,Textil y Confeccion,True
+6202.12.01,Textil y Confeccion,True
+6202.12.91,Textil y Confeccion,True
+6202.12.92,Textil y Confeccion,True
+6202.13.01,Textil y Confeccion,True
+6202.13.02,Textil y Confeccion,True
+6202.13.91,Textil y Confeccion,True
+6202.13.92,Textil y Confeccion,True
+6202.19.01,Textil y Confeccion,True
+6202.91.01,Textil y Confeccion,True
+6202.92.01,Textil y Confeccion,True
+6202.92.91,Textil y Confeccion,True
+6202.92.92,Textil y Confeccion,True
+6202.93.01,Textil y Confeccion,True
+6202.93.91,Textil y Confeccion,True
+6202.93.92,Textil y Confeccion,True
+6202.99.01,Textil y Confeccion,True
+6203.11.01,Textil y Confeccion,True
+6203.12.01,Textil y Confeccion,True
+6203.19.01,Textil y Confeccion,True
+6203.19.02,Textil y Confeccion,True
+6203.19.99,Textil y Confeccion,True
+6203.22.01,Textil y Confeccion,True
+6203.23.01,Textil y Confeccion,True
+6203.29.01,Textil y Confeccion,True
+6203.29.99,Textil y Confeccion,True
+6203.31.01,Textil y Confeccion,True
+6203.32.02,Textil y Confeccion,True
+6203.32.99,Textil y Confeccion,True
+6203.33.01,Textil y Confeccion,True
+6203.33.91,Textil y Confeccion,True
+6203.33.92,Textil y Confeccion,True
+6203.39.01,Textil y Confeccion,True
+6203.39.02,Textil y Confeccion,True
+6203.39.03,Textil y Confeccion,True
+6203.39.99,Textil y Confeccion,True
+6203.41.01,Textil y Confeccion,True
+6203.42.01,Textil y Confeccion,True
+6203.42.02,Textil y Confeccion,True
+6203.42.03,Textil y Confeccion,True
+6203.42.07,Textil y Confeccion,True
+6203.42.08,Textil y Confeccion,True
+6203.42.09,Textil y Confeccion,True
+6203.42.91,Textil y Confeccion,True
+6203.42.92,Textil y Confeccion,True
+6203.42.93,Textil y Confeccion,True
+6203.42.94,Textil y Confeccion,True
+6203.42.95,Textil y Confeccion,True
+6203.43.01,Textil y Confeccion,True
+6203.43.03,Textil y Confeccion,True
+6203.43.04,Textil y Confeccion,True
+6203.43.05,Textil y Confeccion,True
+6203.43.07,Textil y Confeccion,True
+6203.43.08,Textil y Confeccion,True
+6203.43.09,Textil y Confeccion,True
+6203.43.91,Textil y Confeccion,True
+6203.43.92,Textil y Confeccion,True
+6203.43.93,Textil y Confeccion,True
+6203.43.94,Textil y Confeccion,True
+6203.49.01,Textil y Confeccion,True
+6204.11.01,Textil y Confeccion,True
+6204.12.01,Textil y Confeccion,True
+6204.13.01,Textil y Confeccion,True
+6204.13.99,Textil y Confeccion,True
+6204.19.01,Textil y Confeccion,True
+6204.19.02,Textil y Confeccion,True
+6204.19.03,Textil y Confeccion,True
+6204.19.99,Textil y Confeccion,True
+6204.21.01,Textil y Confeccion,True
+6204.22.01,Textil y Confeccion,True
+6204.23.01,Textil y Confeccion,True
+6204.29.01,Textil y Confeccion,True
+6204.31.01,Textil y Confeccion,True
+6204.32.02,Textil y Confeccion,True
+6204.32.99,Textil y Confeccion,True
+6204.33.01,Textil y Confeccion,True
+6204.33.02,Textil y Confeccion,True
+6204.33.91,Textil y Confeccion,True
+6204.33.92,Textil y Confeccion,True
+6204.39.01,Textil y Confeccion,True
+6204.39.02,Textil y Confeccion,True
+6204.39.03,Textil y Confeccion,True
+6204.39.99,Textil y Confeccion,True
+6204.41.01,Textil y Confeccion,True
+6204.42.01,Textil y Confeccion,True
+6204.42.91,Textil y Confeccion,True
+6204.42.92,Textil y Confeccion,True
+6204.43.01,Textil y Confeccion,True
+6204.43.02,Textil y Confeccion,True
+6204.43.91,Textil y Confeccion,True
+6204.43.92,Textil y Confeccion,True
+6204.44.01,Textil y Confeccion,True
+6204.44.02,Textil y Confeccion,True
+6204.44.91,Textil y Confeccion,True
+6204.44.92,Textil y Confeccion,True
+6204.49.01,Textil y Confeccion,True
+6204.49.99,Textil y Confeccion,True
+6204.51.01,Textil y Confeccion,True
+6204.52.02,Textil y Confeccion,True
+6204.52.99,Textil y Confeccion,True
+6204.53.01,Textil y Confeccion,True
+6204.53.02,Textil y Confeccion,True
+6204.53.91,Textil y Confeccion,True
+6204.53.92,Textil y Confeccion,True
+6204.59.01,Textil y Confeccion,True
+6204.59.02,Textil y Confeccion,True
+6204.59.03,Textil y Confeccion,True
+6204.59.04,Textil y Confeccion,True
+6204.59.05,Textil y Confeccion,True
+6204.59.99,Textil y Confeccion,True
+6204.61.01,Textil y Confeccion,True
+6204.62.03,Textil y Confeccion,True
+6204.62.06,Textil y Confeccion,True
+6204.62.07,Textil y Confeccion,True
+6204.62.08,Textil y Confeccion,True
+6204.62.91,Textil y Confeccion,True
+6204.62.92,Textil y Confeccion,True
+6204.62.93,Textil y Confeccion,True
+6204.62.94,Textil y Confeccion,True
+6204.62.95,Textil y Confeccion,True
+6204.63.01,Textil y Confeccion,True
+6204.63.03,Textil y Confeccion,True
+6204.63.04,Textil y Confeccion,True
+6204.63.05,Textil y Confeccion,True
+6204.63.06,Textil y Confeccion,True
+6204.63.07,Textil y Confeccion,True
+6204.63.08,Textil y Confeccion,True
+6204.63.91,Textil y Confeccion,True
+6204.63.92,Textil y Confeccion,True
+6204.63.93,Textil y Confeccion,True
+6204.69.02,Textil y Confeccion,True
+6204.69.03,Textil y Confeccion,True
+6204.69.04,Textil y Confeccion,True
+6204.69.05,Textil y Confeccion,True
+6204.69.99,Textil y Confeccion,True
+6205.20.01,Textil y Confeccion,True
+6205.20.91,Textil y Confeccion,True
+6205.20.92,Textil y Confeccion,True
+6205.30.01,Textil y Confeccion,True
+6205.30.91,Textil y Confeccion,True
+6205.30.92,Textil y Confeccion,True
+6205.90.01,Textil y Confeccion,True
+6205.90.02,Textil y Confeccion,True
+6205.90.99,Textil y Confeccion,True
+6206.10.01,Textil y Confeccion,True
+6206.20.01,Textil y Confeccion,True
+6206.20.99,Textil y Confeccion,True
+6206.30.02,Textil y Confeccion,True
+6206.30.03,Textil y Confeccion,True
+6206.40.01,Textil y Confeccion,True
+6206.40.02,Textil y Confeccion,True
+6206.40.91,Textil y Confeccion,True
+6206.40.92,Textil y Confeccion,True
+6206.90.01,Textil y Confeccion,True
+6206.90.99,Textil y Confeccion,True
+6207.11.01,Textil y Confeccion,True
+6207.19.01,Textil y Confeccion,True
+6207.21.01,Textil y Confeccion,True
+6207.22.01,Textil y Confeccion,True
+6207.29.01,Textil y Confeccion,True
+6207.29.99,Textil y Confeccion,True
+6207.91.01,Textil y Confeccion,True
+6207.99.01,Textil y Confeccion,True
+6207.99.02,Textil y Confeccion,True
+6207.99.99,Textil y Confeccion,True
+6208.11.01,Textil y Confeccion,True
+6208.19.01,Textil y Confeccion,True
+6208.21.01,Textil y Confeccion,True
+6208.22.01,Textil y Confeccion,True
+6208.29.01,Textil y Confeccion,True
+6208.29.99,Textil y Confeccion,True
+6208.91.01,Textil y Confeccion,True
+6208.92.01,Textil y Confeccion,True
+6208.92.99,Textil y Confeccion,True
+6208.99.01,Textil y Confeccion,True
+6208.99.02,Textil y Confeccion,True
+6208.99.99,Textil y Confeccion,True
+6209.20.02,Textil y Confeccion,True
+6209.20.03,Textil y Confeccion,True
+6209.20.04,Textil y Confeccion,True
+6209.20.05,Textil y Confeccion,True
+6209.20.06,Textil y Confeccion,True
+6209.20.99,Textil y Confeccion,True
+6209.30.02,Textil y Confeccion,True
+6209.30.03,Textil y Confeccion,True
+6209.30.04,Textil y Confeccion,True
+6209.30.99,Textil y Confeccion,True
+6209.90.01,Textil y Confeccion,True
+6209.90.02,Textil y Confeccion,True
+6209.90.03,Textil y Confeccion,True
+6209.90.04,Textil y Confeccion,True
+6209.90.99,Textil y Confeccion,True
+6210.10.01,Textil y Confeccion,True
+6210.20.01,Textil y Confeccion,True
+6210.30.01,Textil y Confeccion,True
+6210.40.01,Textil y Confeccion,True
+6210.50.01,Textil y Confeccion,True
+6211.11.01,Textil y Confeccion,True
+6211.12.01,Textil y Confeccion,True
+6211.20.01,Textil y Confeccion,True
+6211.20.99,Textil y Confeccion,True
+6211.32.01,Textil y Confeccion,True
+6211.32.99,Textil y Confeccion,True
+6211.33.01,Textil y Confeccion,True
+6211.33.99,Textil y Confeccion,True
+6211.39.01,Textil y Confeccion,True
+6211.39.02,Textil y Confeccion,True
+6211.39.99,Textil y Confeccion,True
+6211.42.01,Textil y Confeccion,True
+6211.42.99,Textil y Confeccion,True
+6211.43.01,Textil y Confeccion,True
+6211.43.99,Textil y Confeccion,True
+6211.49.01,Textil y Confeccion,True
+6212.10.02,Textil y Confeccion,True
+6212.10.03,Textil y Confeccion,True
+6212.10.04,Textil y Confeccion,True
+6212.10.05,Textil y Confeccion,True
+6212.10.06,Textil y Confeccion,True
+6212.20.01,Textil y Confeccion,True
+6212.30.01,Textil y Confeccion,True
+6212.90.01,Textil y Confeccion,True
+6212.90.02,Textil y Confeccion,True
+6212.90.99,Textil y Confeccion,True
+6213.20.01,Textil y Confeccion,True
+6213.90.01,Textil y Confeccion,True
+6213.90.99,Textil y Confeccion,True
+6214.10.01,Textil y Confeccion,True
+6214.20.01,Textil y Confeccion,True
+6214.30.01,Textil y Confeccion,True
+6214.40.01,Textil y Confeccion,True
+6214.90.01,Textil y Confeccion,True
+6215.10.01,Textil y Confeccion,True
+6215.20.01,Textil y Confeccion,True
+6215.90.01,Textil y Confeccion,True
+6216.00.01,Textil y Confeccion,True
+6217.10.01,Textil y Confeccion,True
+6217.90.01,Textil y Confeccion,True
+6301.10.01,Textil y Confeccion,True
+6301.20.01,Textil y Confeccion,True
+6301.30.01,Textil y Confeccion,True
+6301.40.01,Textil y Confeccion,True
+6301.90.01,Textil y Confeccion,True
+6302.10.01,Textil y Confeccion,True
+6302.21.01,Textil y Confeccion,True
+6302.22.01,Textil y Confeccion,True
+6302.29.01,Textil y Confeccion,True
+6302.31.02,Textil y Confeccion,True
+6302.31.03,Textil y Confeccion,True
+6302.31.04,Textil y Confeccion,True
+6302.31.05,Textil y Confeccion,True
+6302.31.99,Textil y Confeccion,True
+6302.32.02,Textil y Confeccion,True
+6302.32.03,Textil y Confeccion,True
+6302.32.04,Textil y Confeccion,True
+6302.32.05,Textil y Confeccion,True
+6302.32.99,Textil y Confeccion,True
+6302.39.01,Textil y Confeccion,True
+6302.40.01,Textil y Confeccion,True
+6302.51.01,Textil y Confeccion,True
+6302.53.01,Textil y Confeccion,True
+6302.59.01,Textil y Confeccion,True
+6302.59.99,Textil y Confeccion,True
+6302.60.02,Textil y Confeccion,True
+6302.60.03,Textil y Confeccion,True
+6302.60.04,Textil y Confeccion,True
+6302.60.05,Textil y Confeccion,True
+6302.60.99,Textil y Confeccion,True
+6302.91.01,Textil y Confeccion,True
+6302.93.01,Textil y Confeccion,True
+6302.99.01,Textil y Confeccion,True
+6302.99.99,Textil y Confeccion,True
+6303.12.01,Textil y Confeccion,True
+6303.19.01,Textil y Confeccion,True
+6303.19.99,Textil y Confeccion,True
+6303.91.01,Textil y Confeccion,True
+6303.92.01,Textil y Confeccion,True
+6303.92.99,Textil y Confeccion,True
+6303.99.01,Textil y Confeccion,True
+6304.11.01,Textil y Confeccion,True
+6304.19.99,Textil y Confeccion,True
+6304.91.01,Textil y Confeccion,True
+6304.92.01,Textil y Confeccion,True
+6304.93.01,Textil y Confeccion,True
+6304.99.01,Textil y Confeccion,True
+6305.10.01,Textil y Confeccion,True
+6305.20.01,Textil y Confeccion,True
+6305.32.01,Textil y Confeccion,True
+6305.33.01,Textil y Confeccion,True
+6305.39.99,Textil y Confeccion,True
+6305.90.01,Textil y Confeccion,True
+6306.12.01,Textil y Confeccion,True
+6306.19.01,Textil y Confeccion,True
+6306.19.99,Textil y Confeccion,True
+6306.22.01,Textil y Confeccion,True
+6306.29.01,Textil y Confeccion,True
+6306.29.99,Textil y Confeccion,True
+6306.30.01,Textil y Confeccion,True
+6306.30.99,Textil y Confeccion,True
+6306.40.01,Textil y Confeccion,True
+6306.40.99,Textil y Confeccion,True
+6306.90.01,Textil y Confeccion,True
+6306.90.99,Textil y Confeccion,True
+6307.10.01,Textil y Confeccion,True
+6307.20.01,Textil y Confeccion,True
+6307.90.01,Textil y Confeccion,True
+6307.90.99,Textil y Confeccion,True
+6308.00.01,Textil y Confeccion,True
+6309.00.01,Textil y Confeccion,True
+6310.10.01,Textil y Confeccion,True
+6310.10.99,Textil y Confeccion,True
+6310.90.01,Textil y Confeccion,True
+6310.90.99,Textil y Confeccion,True
+6401.10.01,Calzado,True
+6401.92.02,Calzado,True
+6401.92.03,Calzado,True
+6401.92.04,Calzado,True
+6401.92.05,Calzado,True
+6401.92.06,Calzado,True
+6401.92.07,Calzado,True
+6401.92.08,Calzado,True
+6401.92.09,Calzado,True
+6401.92.10,Calzado,True
+6401.99.01,Calzado,True
+6401.99.02,Calzado,True
+6401.99.03,Calzado,True
+6401.99.04,Calzado,True
+6401.99.05,Calzado,True
+6401.99.06,Calzado,True
+6401.99.07,Calzado,True
+6401.99.08,Calzado,True
+6402.12.01,Calzado,True
+6402.19.01,Calzado,True
+6402.19.02,Calzado,True
+6402.19.03,Calzado,True
+6402.19.04,Calzado,True
+6402.19.05,Calzado,True
+6402.19.06,Calzado,True
+6402.19.07,Calzado,True
+6402.19.08,Calzado,True
+6402.19.09,Calzado,True
+6402.20.02,Calzado,True
+6402.20.03,Calzado,True
+6402.91.02,Calzado,True
+6402.91.03,Calzado,True
+6402.91.04,Calzado,True
+6402.91.05,Calzado,True
+6402.99.03,Calzado,True
+6402.99.04,Calzado,True
+6402.99.05,Calzado,True
+6402.99.06,Calzado,True
+6402.99.07,Calzado,True
+6402.99.08,Calzado,True
+6402.99.09,Calzado,True
+6402.99.10,Calzado,True
+6402.99.11,Calzado,True
+6402.99.12,Calzado,True
+6402.99.13,Calzado,True
+6402.99.14,Calzado,True
+6402.99.15,Calzado,True
+6402.99.16,Calzado,True
+6402.99.17,Calzado,True
+6402.99.18,Calzado,True
+6403.12.01,Calzado,True
+6403.19.01,Calzado,True
+6403.19.02,Calzado,True
+6403.19.03,Calzado,True
+6403.19.04,Calzado,True
+6403.19.99,Calzado,True
+6403.20.01,Calzado,True
+6403.40.02,Calzado,True
+6403.40.03,Calzado,True
+6403.40.04,Calzado,True
+6403.51.01,Calzado,True
+6403.51.02,Calzado,True
+6403.51.03,Calzado,True
+6403.51.04,Calzado,True
+6403.59.01,Calzado,True
+6403.59.02,Calzado,True
+6403.59.03,Calzado,True
+6403.59.04,Calzado,True
+6403.59.05,Calzado,True
+6403.59.06,Calzado,True
+6403.59.07,Calzado,True
+6403.91.01,Calzado,True
+6403.91.04,Calzado,True
+6403.91.05,Calzado,True
+6403.91.06,Calzado,True
+6403.91.07,Calzado,True
+6403.91.08,Calzado,True
+6403.91.09,Calzado,True
+6403.91.10,Calzado,True
+6403.91.11,Calzado,True
+6403.99.01,Calzado,True
+6403.99.03,Calzado,True
+6403.99.04,Calzado,True
+6403.99.05,Calzado,True
+6403.99.06,Calzado,True
+6403.99.07,Calzado,True
+6403.99.08,Calzado,True
+6403.99.09,Calzado,True
+6403.99.10,Calzado,True
+6403.99.11,Calzado,True
+6403.99.12,Calzado,True
+6404.11.04,Calzado,True
+6404.11.05,Calzado,True
+6404.11.06,Calzado,True
+6404.11.07,Calzado,True
+6404.11.08,Calzado,True
+6404.11.09,Calzado,True
+6404.11.10,Calzado,True
+6404.11.11,Calzado,True
+6404.11.12,Calzado,True
+6404.11.13,Calzado,True
+6404.11.14,Calzado,True
+6404.11.15,Calzado,True
+6404.19.01,Calzado,True
+6404.19.02,Calzado,True
+6404.19.03,Calzado,True
+6404.19.04,Calzado,True
+6404.19.05,Calzado,True
+6404.19.06,Calzado,True
+6404.19.07,Calzado,True
+6404.19.08,Calzado,True
+6404.19.09,Calzado,True
+6404.19.10,Calzado,True
+6404.19.11,Calzado,True
+6404.19.12,Calzado,True
+6404.20.01,Calzado,True
+6405.10.01,Calzado,True
+6405.20.01,Calzado,True
+6405.20.02,Calzado,True
+6405.20.03,Calzado,True
+6405.20.04,Calzado,True
+6405.20.05,Calzado,True
+6405.90.01,Calzado,True
+6405.90.99,Calzado,True
+6406.10.01,Calzado,True
+6406.10.02,Calzado,True
+6406.10.03,Calzado,True
+6406.10.04,Calzado,True
+6406.10.05,Calzado,True
+6406.10.06,Calzado,True
+6406.10.07,Calzado,True
+6406.10.99,Calzado,True
+6406.20.01,Calzado,True
+6406.20.02,Calzado,True
+6406.90.01,Calzado,True
+6406.90.02,Calzado,True
+6406.90.99,Calzado,True
+7201.10.01,Siderurgicos,True
+7201.20.01,Siderurgicos,True
+7201.50.01,Siderurgicos,True
+7201.50.99,Siderurgicos,True
+7202.11.01,Siderurgicos,True
+7202.19.99,Siderurgicos,True
+7202.21.01,Siderurgicos,True
+7202.21.99,Siderurgicos,True
+7202.29.99,Siderurgicos,True
+7202.30.01,Siderurgicos,True
+7202.41.01,Siderurgicos,True
+7202.49.99,Siderurgicos,True
+7202.50.01,Siderurgicos,True
+7202.60.01,Siderurgicos,True
+7202.70.01,Siderurgicos,True
+7202.80.01,Siderurgicos,True
+7202.91.01,Siderurgicos,True
+7202.91.02,Siderurgicos,True
+7202.91.03,Siderurgicos,True
+7202.92.01,Siderurgicos,True
+7202.92.99,Siderurgicos,True
+7202.93.01,Siderurgicos,True
+7202.99.01,Siderurgicos,True
+7202.99.02,Siderurgicos,True
+7202.99.03,Siderurgicos,True
+7202.99.99,Siderurgicos,True
+7203.10.01,Siderurgicos,True
+7203.90.99,Siderurgicos,True
+7204.10.01,Siderurgicos,True
+7204.21.01,Siderurgicos,True
+7204.29.99,Siderurgicos,True
+7204.30.01,Siderurgicos,True
+7204.41.01,Siderurgicos,True
+7204.49.99,Siderurgicos,True
+7204.50.01,Siderurgicos,True
+7205.10.01,Siderurgicos,True
+7205.21.01,Siderurgicos,True
+7205.29.99,Siderurgicos,True
+7206.10.01,Siderurgicos,True
+7206.90.99,Siderurgicos,True
+7207.11.01,Siderurgicos,True
+7207.12.01,Siderurgicos,True
+7207.12.99,Siderurgicos,True
+7207.19.99,Siderurgicos,True
+7207.20.01,Siderurgicos,True
+7207.20.99,Siderurgicos,True
+7208.10.01,Siderurgicos,True
+7208.10.02,Siderurgicos,True
+7208.10.99,Siderurgicos,True
+7208.25.01,Siderurgicos,True
+7208.25.99,Siderurgicos,True
+7208.26.01,Siderurgicos,True
+7208.27.01,Siderurgicos,True
+7208.36.01,Siderurgicos,True
+7208.37.01,Siderurgicos,True
+7208.38.01,Siderurgicos,True
+7208.39.01,Siderurgicos,True
+7208.40.01,Siderurgicos,True
+7208.40.99,Siderurgicos,True
+7208.51.01,Siderurgicos,True
+7208.51.02,Siderurgicos,True
+7208.51.03,Siderurgicos,True
+7208.52.01,Siderurgicos,True
+7208.53.01,Siderurgicos,True
+7208.54.01,Siderurgicos,True
+7208.90.99,Siderurgicos,True
+7209.15.01,Siderurgicos,True
+7209.15.02,Siderurgicos,True
+7209.15.03,Siderurgicos,True
+7209.15.99,Siderurgicos,True
+7209.16.01,Siderurgicos,True
+7209.17.01,Siderurgicos,True
+7209.18.01,Siderurgicos,True
+7209.25.01,Siderurgicos,True
+7209.26.01,Siderurgicos,True
+7209.27.01,Siderurgicos,True
+7209.28.01,Siderurgicos,True
+7209.90.99,Siderurgicos,True
+7210.11.01,Siderurgicos,True
+7210.12.01,Siderurgicos,True
+7210.12.02,Siderurgicos,True
+7210.12.03,Siderurgicos,True
+7210.12.99,Siderurgicos,True
+7210.20.01,Siderurgicos,True
+7210.30.01,Siderurgicos,True
+7210.30.99,Siderurgicos,True
+7210.41.01,Siderurgicos,True
+7210.41.99,Siderurgicos,True
+7210.49.03,Siderurgicos,True
+7210.49.99,Siderurgicos,True
+7210.50.01,Siderurgicos,True
+7210.50.02,Siderurgicos,True
+7210.50.99,Siderurgicos,True
+7210.61.01,Siderurgicos,True
+7210.69.01,Siderurgicos,True
+7210.69.99,Siderurgicos,True
+7210.70.01,Siderurgicos,True
+7210.70.99,Siderurgicos,True
+7210.90.01,Siderurgicos,True
+7210.90.99,Siderurgicos,True
+7211.13.01,Siderurgicos,True
+7211.14.01,Siderurgicos,True
+7211.14.02,Siderurgicos,True
+7211.14.99,Siderurgicos,True
+7211.19.01,Siderurgicos,True
+7211.19.02,Siderurgicos,True
+7211.19.03,Siderurgicos,True
+7211.19.04,Siderurgicos,True
+7211.19.99,Siderurgicos,True
+7211.23.01,Siderurgicos,True
+7211.23.02,Siderurgicos,True
+7211.23.99,Siderurgicos,True
+7211.29.01,Siderurgicos,True
+7211.29.02,Siderurgicos,True
+7211.29.03,Siderurgicos,True
+7211.29.99,Siderurgicos,True
+7211.90.99,Siderurgicos,True
+7212.10.01,Siderurgicos,True
+7212.10.02,Siderurgicos,True
+7212.10.99,Siderurgicos,True
+7212.20.01,Siderurgicos,True
+7212.20.02,Siderurgicos,True
+7212.20.99,Siderurgicos,True
+7212.30.01,Siderurgicos,True
+7212.30.02,Siderurgicos,True
+7212.30.99,Siderurgicos,True
+7212.40.01,Siderurgicos,True
+7212.40.02,Siderurgicos,True
+7212.40.03,Siderurgicos,True
+7212.40.99,Siderurgicos,True
+7212.50.01,Siderurgicos,True
+7212.60.01,Siderurgicos,True
+7212.60.02,Siderurgicos,True
+7212.60.03,Siderurgicos,True
+7212.60.99,Siderurgicos,True
+7213.10.01,Siderurgicos,True
+7213.20.01,Siderurgicos,True
+7213.91.01,Siderurgicos,True
+7213.91.02,Siderurgicos,True
+7213.99.01,Siderurgicos,True
+7213.99.99,Siderurgicos,True
+7214.10.01,Siderurgicos,True
+7214.20.01,Siderurgicos,True
+7214.20.99,Siderurgicos,True
+7214.30.01,Siderurgicos,True
+7214.91.01,Siderurgicos,True
+7214.91.02,Siderurgicos,True
+7214.91.99,Siderurgicos,True
+7214.99.01,Siderurgicos,True
+7214.99.02,Siderurgicos,True
+7214.99.99,Siderurgicos,True
+7215.10.01,Siderurgicos,True
+7215.50.01,Siderurgicos,True
+7215.50.99,Siderurgicos,True
+7215.90.99,Siderurgicos,True
+7216.10.01,Siderurgicos,True
+7216.21.01,Siderurgicos,True
+7216.22.01,Siderurgicos,True
+7216.31.01,Siderurgicos,True
+7216.31.02,Siderurgicos,True
+7216.31.99,Siderurgicos,True
+7216.32.01,Siderurgicos,True
+7216.32.02,Siderurgicos,True
+7216.32.04,Siderurgicos,True
+7216.32.99,Siderurgicos,True
+7216.33.01,Siderurgicos,True
+7216.33.02,Siderurgicos,True
+7216.40.01,Siderurgicos,True
+7216.50.01,Siderurgicos,True
+7216.50.99,Siderurgicos,True
+7216.61.01,Siderurgicos,True
+7216.61.02,Siderurgicos,True
+7216.61.99,Siderurgicos,True
+7216.69.01,Siderurgicos,True
+7216.69.02,Siderurgicos,True
+7216.69.99,Siderurgicos,True
+7216.91.01,Siderurgicos,True
+7216.99.99,Siderurgicos,True
+7217.10.01,Siderurgicos,True
+7217.10.99,Siderurgicos,True
+7217.20.01,Siderurgicos,True
+7217.20.99,Siderurgicos,True
+7217.30.01,Siderurgicos,True
+7217.30.99,Siderurgicos,True
+7217.90.99,Siderurgicos,True
+7218.10.01,Siderurgicos,True
+7218.91.01,Siderurgicos,True
+7218.99.99,Siderurgicos,True
+7219.11.01,Siderurgicos,True
+7219.12.01,Siderurgicos,True
+7219.12.99,Siderurgicos,True
+7219.13.01,Siderurgicos,True
+7219.14.01,Siderurgicos,True
+7219.21.01,Siderurgicos,True
+7219.22.01,Siderurgicos,True
+7219.23.01,Siderurgicos,True
+7219.24.01,Siderurgicos,True
+7219.31.01,Siderurgicos,True
+7219.32.01,Siderurgicos,True
+7219.32.99,Siderurgicos,True
+7219.33.01,Siderurgicos,True
+7219.34.01,Siderurgicos,True
+7219.35.01,Siderurgicos,True
+7219.35.99,Siderurgicos,True
+7219.90.99,Siderurgicos,True
+7220.11.01,Siderurgicos,True
+7220.12.01,Siderurgicos,True
+7220.20.01,Siderurgicos,True
+7220.20.02,Siderurgicos,True
+7220.20.99,Siderurgicos,True
+7220.90.99,Siderurgicos,True
+7221.00.01,Siderurgicos,True
+7222.11.01,Siderurgicos,True
+7222.11.99,Siderurgicos,True
+7222.19.99,Siderurgicos,True
+7222.20.01,Siderurgicos,True
+7222.30.01,Siderurgicos,True
+7222.30.99,Siderurgicos,True
+7222.40.01,Siderurgicos,True
+7223.00.01,Siderurgicos,True
+7223.00.99,Siderurgicos,True
+7224.10.01,Siderurgicos,True
+7224.10.02,Siderurgicos,True
+7224.10.03,Siderurgicos,True
+7224.10.04,Siderurgicos,True
+7224.10.05,Siderurgicos,True
+7224.10.99,Siderurgicos,True
+7224.90.01,Siderurgicos,True
+7224.90.02,Siderurgicos,True
+7224.90.99,Siderurgicos,True
+7225.11.01,Siderurgicos,True
+7225.19.99,Siderurgicos,True
+7225.30.01,Siderurgicos,True
+7225.30.02,Siderurgicos,True
+7225.30.03,Siderurgicos,True
+7225.30.04,Siderurgicos,True
+7225.30.05,Siderurgicos,True
+7225.30.06,Siderurgicos,True
+7225.30.99,Siderurgicos,True
+7225.40.01,Siderurgicos,True
+7225.40.02,Siderurgicos,True
+7225.40.03,Siderurgicos,True
+7225.40.04,Siderurgicos,True
+7225.40.05,Siderurgicos,True
+7225.40.99,Siderurgicos,True
+7225.50.01,Siderurgicos,True
+7225.50.02,Siderurgicos,True
+7225.50.03,Siderurgicos,True
+7225.50.04,Siderurgicos,True
+7225.50.05,Siderurgicos,True
+7225.50.06,Siderurgicos,True
+7225.50.99,Siderurgicos,True
+7225.91.01,Siderurgicos,True
+7225.92.01,Siderurgicos,True
+7225.99.99,Siderurgicos,True
+7226.11.01,Siderurgicos,True
+7226.19.99,Siderurgicos,True
+7226.20.01,Siderurgicos,True
+7226.91.01,Siderurgicos,True
+7226.91.02,Siderurgicos,True
+7226.91.03,Siderurgicos,True
+7226.91.04,Siderurgicos,True
+7226.91.05,Siderurgicos,True
+7226.91.06,Siderurgicos,True
+7226.91.99,Siderurgicos,True
+7226.92.01,Siderurgicos,True
+7226.92.02,Siderurgicos,True
+7226.92.03,Siderurgicos,True
+7226.92.04,Siderurgicos,True
+7226.92.05,Siderurgicos,True
+7226.92.99,Siderurgicos,True
+7226.99.01,Siderurgicos,True
+7226.99.02,Siderurgicos,True
+7226.99.99,Siderurgicos,True
+7227.10.01,Siderurgicos,True
+7227.20.01,Siderurgicos,True
+7227.90.01,Siderurgicos,True
+7227.90.99,Siderurgicos,True
+7228.10.01,Siderurgicos,True
+7228.10.99,Siderurgicos,True
+7228.20.01,Siderurgicos,True
+7228.20.99,Siderurgicos,True
+7228.30.01,Siderurgicos,True
+7228.30.99,Siderurgicos,True
+7228.40.01,Siderurgicos,True
+7228.40.99,Siderurgicos,True
+7228.50.01,Siderurgicos,True
+7228.50.99,Siderurgicos,True
+7228.60.01,Siderurgicos,True
+7228.60.99,Siderurgicos,True
+7228.70.01,Siderurgicos,True
+7228.80.01,Siderurgicos,True
+7229.20.01,Siderurgicos,True
+7229.90.01,Siderurgicos,True
+7229.90.02,Siderurgicos,True
+7229.90.03,Siderurgicos,True
+7229.90.04,Siderurgicos,True
+7229.90.99,Siderurgicos,True
+7301.10.01,Siderurgicos,True
+7301.20.01,Siderurgicos,True
+7302.10.01,Siderurgicos,True
+7302.10.99,Siderurgicos,True
+7302.30.01,Siderurgicos,True
+7302.40.01,Siderurgicos,True
+7302.40.99,Siderurgicos,True
+7302.90.01,Siderurgicos,True
+7302.90.02,Siderurgicos,True
+7302.90.99,Siderurgicos,True
+7303.00.01,Siderurgicos,True
+7303.00.99,Siderurgicos,True
+7304.11.01,Siderurgicos,True
+7304.11.02,Siderurgicos,True
+7304.11.03,Siderurgicos,True
+7304.11.04,Siderurgicos,True
+7304.11.05,Siderurgicos,True
+7304.11.99,Siderurgicos,True
+7304.19.01,Siderurgicos,True
+7304.19.02,Siderurgicos,True
+7304.19.03,Siderurgicos,True
+7304.19.04,Siderurgicos,True
+7304.19.05,Siderurgicos,True
+7304.19.99,Siderurgicos,True
+7304.22.01,Siderurgicos,True
+7304.22.02,Siderurgicos,True
+7304.22.03,Siderurgicos,True
+7304.22.99,Siderurgicos,True
+7304.23.01,Siderurgicos,True
+7304.23.02,Siderurgicos,True
+7304.23.03,Siderurgicos,True
+7304.23.99,Siderurgicos,True
+7304.24.01,Siderurgicos,True
+7304.24.02,Siderurgicos,True
+7304.24.03,Siderurgicos,True
+7304.24.04,Siderurgicos,True
+7304.24.05,Siderurgicos,True
+7304.24.06,Siderurgicos,True
+7304.24.99,Siderurgicos,True
+7304.29.01,Siderurgicos,True
+7304.29.02,Siderurgicos,True
+7304.29.03,Siderurgicos,True
+7304.29.04,Siderurgicos,True
+7304.29.05,Siderurgicos,True
+7304.29.06,Siderurgicos,True
+7304.29.99,Siderurgicos,True
+7304.31.01,Siderurgicos,True
+7304.31.02,Siderurgicos,True
+7304.31.03,Siderurgicos,True
+7304.31.04,Siderurgicos,True
+7304.31.05,Siderurgicos,True
+7304.31.06,Siderurgicos,True
+7304.31.07,Siderurgicos,True
+7304.31.08,Siderurgicos,True
+7304.31.09,Siderurgicos,True
+7304.31.10,Siderurgicos,True
+7304.31.99,Siderurgicos,True
+7304.39.01,Siderurgicos,True
+7304.39.02,Siderurgicos,True
+7304.39.03,Siderurgicos,True
+7304.39.04,Siderurgicos,True
+7304.39.05,Siderurgicos,True
+7304.39.06,Siderurgicos,True
+7304.39.07,Siderurgicos,True
+7304.39.08,Siderurgicos,True
+7304.39.09,Siderurgicos,True
+7304.39.99,Siderurgicos,True
+7304.41.01,Siderurgicos,True
+7304.41.02,Siderurgicos,True
+7304.41.99,Siderurgicos,True
+7304.49.01,Siderurgicos,True
+7304.49.99,Siderurgicos,True
+7304.51.01,Siderurgicos,True
+7304.51.02,Siderurgicos,True
+7304.51.03,Siderurgicos,True
+7304.51.04,Siderurgicos,True
+7304.51.05,Siderurgicos,True
+7304.51.06,Siderurgicos,True
+7304.51.07,Siderurgicos,True
+7304.51.08,Siderurgicos,True
+7304.51.09,Siderurgicos,True
+7304.51.10,Siderurgicos,True
+7304.51.11,Siderurgicos,True
+7304.51.99,Siderurgicos,True
+7304.59.01,Siderurgicos,True
+7304.59.02,Siderurgicos,True
+7304.59.03,Siderurgicos,True
+7304.59.04,Siderurgicos,True
+7304.59.05,Siderurgicos,True
+7304.59.06,Siderurgicos,True
+7304.59.07,Siderurgicos,True
+7304.59.08,Siderurgicos,True
+7304.59.09,Siderurgicos,True
+7304.59.10,Siderurgicos,True
+7304.59.99,Siderurgicos,True
+7304.90.99,Siderurgicos,True
+7305.11.01,Siderurgicos,True
+7305.11.99,Siderurgicos,True
+7305.12.01,Siderurgicos,True
+7305.12.99,Siderurgicos,True
+7305.19.01,Siderurgicos,True
+7305.19.99,Siderurgicos,True
+7305.20.01,Siderurgicos,True
+7305.20.99,Siderurgicos,True
+7305.31.01,Siderurgicos,True
+7305.31.02,Siderurgicos,True
+7305.31.03,Siderurgicos,True
+7305.31.04,Siderurgicos,True
+7305.31.05,Siderurgicos,True
+7305.31.06,Siderurgicos,True
+7305.31.99,Siderurgicos,True
+7305.39.01,Siderurgicos,True
+7305.39.02,Siderurgicos,True
+7305.39.03,Siderurgicos,True
+7305.39.04,Siderurgicos,True
+7305.39.05,Siderurgicos,True
+7305.39.99,Siderurgicos,True
+7305.90.01,Siderurgicos,True
+7305.90.99,Siderurgicos,True
+7306.11.01,Siderurgicos,True
+7306.19.99,Siderurgicos,True
+7306.21.01,Siderurgicos,True
+7306.29.99,Siderurgicos,True
+7306.30.01,Siderurgicos,True
+7306.30.02,Siderurgicos,True
+7306.30.99,Siderurgicos,True
+7306.40.01,Siderurgicos,True
+7306.40.99,Siderurgicos,True
+7306.50.01,Siderurgicos,True
+7306.50.99,Siderurgicos,True
+7306.61.01,Siderurgicos,True
+7306.69.99,Siderurgicos,True
+7306.90.99,Siderurgicos,True
+7307.11.01,Siderurgicos,True
+7307.11.99,Siderurgicos,True
+7307.19.01,Siderurgicos,True
+7307.19.02,Siderurgicos,True
+7307.19.03,Siderurgicos,True
+7307.19.04,Siderurgicos,True
+7307.19.05,Siderurgicos,True
+7307.19.06,Siderurgicos,True
+7307.19.99,Siderurgicos,True
+7307.21.01,Siderurgicos,True
+7307.22.01,Siderurgicos,True
+7307.22.99,Siderurgicos,True
+7307.23.01,Siderurgicos,True
+7307.23.99,Siderurgicos,True
+7307.29.99,Siderurgicos,True
+7307.91.01,Siderurgicos,True
+7307.92.01,Siderurgicos,True
+7307.92.99,Siderurgicos,True
+7307.93.01,Siderurgicos,True
+7307.99.01,Siderurgicos,True
+7307.99.02,Siderurgicos,True
+7307.99.03,Siderurgicos,True
+7307.99.04,Siderurgicos,True
+7307.99.05,Siderurgicos,True
+7307.99.99,Siderurgicos,True
+7308.10.01,Siderurgicos,True
+7308.20.01,Siderurgicos,True
+7308.20.99,Siderurgicos,True
+7308.30.01,Siderurgicos,True
+7308.30.99,Siderurgicos,True
+7308.40.01,Siderurgicos,True
+7308.90.01,Siderurgicos,True
+7308.90.02,Siderurgicos,True
+7308.90.99,Siderurgicos,True
+7309.00.01,Siderurgicos,True
+7309.00.02,Siderurgicos,True
+7309.00.03,Siderurgicos,True
+7309.00.99,Siderurgicos,True
+7310.10.01,Siderurgicos,True
+7310.10.02,Siderurgicos,True
+7310.10.03,Siderurgicos,True
+7310.10.04,Siderurgicos,True
+7310.10.99,Siderurgicos,True
+7310.21.01,Siderurgicos,True
+7310.29.01,Siderurgicos,True
+7310.29.02,Siderurgicos,True
+7310.29.03,Siderurgicos,True
+7310.29.04,Siderurgicos,True
+7310.29.05,Siderurgicos,True
+7310.29.99,Siderurgicos,True
+7311.00.01,Siderurgicos,True
+7311.00.02,Siderurgicos,True
+7311.00.03,Siderurgicos,True
+7311.00.04,Siderurgicos,True
+7311.00.99,Siderurgicos,True
+7312.10.01,Siderurgicos,True
+7312.10.02,Siderurgicos,True
+7312.10.03,Siderurgicos,True
+7312.10.04,Siderurgicos,True
+7312.10.05,Siderurgicos,True
+7312.10.06,Siderurgicos,True
+7312.10.07,Siderurgicos,True
+7312.10.08,Siderurgicos,True
+7312.10.09,Siderurgicos,True
+7312.10.10,Siderurgicos,True
+7312.10.99,Siderurgicos,True
+7312.90.99,Siderurgicos,True
+7313.00.01,Siderurgicos,True
+7314.12.01,Siderurgicos,True
+7314.14.01,Siderurgicos,True
+7314.19.01,Siderurgicos,True
+7314.19.02,Siderurgicos,True
+7314.19.03,Siderurgicos,True
+7314.19.99,Siderurgicos,True
+7314.20.01,Siderurgicos,True
+7314.31.01,Siderurgicos,True
+7314.39.99,Siderurgicos,True
+7314.41.01,Siderurgicos,True
+7314.42.01,Siderurgicos,True
+7314.49.99,Siderurgicos,True
+7314.50.01,Siderurgicos,True
+7315.11.01,Siderurgicos,True
+7315.11.02,Siderurgicos,True
+7315.11.03,Siderurgicos,True
+7315.11.04,Siderurgicos,True
+7315.11.05,Siderurgicos,True
+7315.11.99,Siderurgicos,True
+7315.12.01,Siderurgicos,True
+7315.12.02,Siderurgicos,True
+7315.12.99,Siderurgicos,True
+7315.19.01,Siderurgicos,True
+7315.19.02,Siderurgicos,True
+7315.19.03,Siderurgicos,True
+7315.19.99,Siderurgicos,True
+7315.20.01,Siderurgicos,True
+7315.81.01,Siderurgicos,True
+7315.81.02,Siderurgicos,True
+7315.81.99,Siderurgicos,True
+7315.82.01,Siderurgicos,True
+7315.82.02,Siderurgicos,True
+7315.82.99,Siderurgicos,True
+7315.89.01,Siderurgicos,True
+7315.89.02,Siderurgicos,True
+7315.89.99,Siderurgicos,True
+7315.90.01,Siderurgicos,True
+7316.00.01,Siderurgicos,True
+7317.00.01,Siderurgicos,True
+7317.00.02,Siderurgicos,True
+7317.00.03,Siderurgicos,True
+7317.00.04,Siderurgicos,True
+7317.00.99,Siderurgicos,True
+7318.11.01,Siderurgicos,True
+7318.12.01,Siderurgicos,True
+7318.13.01,Siderurgicos,True
+7318.14.01,Siderurgicos,True
+7318.15.01,Siderurgicos,True
+7318.15.02,Siderurgicos,True
+7318.15.03,Siderurgicos,True
+7318.15.04,Siderurgicos,True
+7318.15.05,Siderurgicos,True
+7318.15.06,Siderurgicos,True
+7318.15.07,Siderurgicos,True
+7318.15.08,Siderurgicos,True
+7318.15.09,Siderurgicos,True
+7318.15.10,Siderurgicos,True
+7318.15.99,Siderurgicos,True
+7318.16.01,Siderurgicos,True
+7318.16.02,Siderurgicos,True
+7318.16.03,Siderurgicos,True
+7318.16.04,Siderurgicos,True
+7318.16.05,Siderurgicos,True
+7318.19.01,Siderurgicos,True
+7318.19.02,Siderurgicos,True
+7318.19.99,Siderurgicos,True
+7318.21.01,Siderurgicos,True
+7318.21.99,Siderurgicos,True
+7318.22.01,Siderurgicos,True
+7318.22.99,Siderurgicos,True
+7318.23.01,Siderurgicos,True
+7318.23.99,Siderurgicos,True
+7318.24.01,Siderurgicos,True
+7318.24.02,Siderurgicos,True
+7318.24.99,Siderurgicos,True
+7318.29.01,Siderurgicos,True
+7318.29.99,Siderurgicos,True
+7319.40.01,Siderurgicos,True
+7319.90.01,Siderurgicos,True
+7319.90.99,Siderurgicos,True
+7320.10.01,Siderurgicos,True
+7320.10.99,Siderurgicos,True
+7320.20.01,Siderurgicos,True
+7320.20.02,Siderurgicos,True
+7320.20.03,Siderurgicos,True
+7320.20.04,Siderurgicos,True
+7320.20.99,Siderurgicos,True
+7320.90.01,Siderurgicos,True
+7320.90.02,Siderurgicos,True
+7320.90.03,Siderurgicos,True
+7320.90.99,Siderurgicos,True
+7321.11.01,Siderurgicos,True
+7321.11.02,Siderurgicos,True
+7321.11.99,Siderurgicos,True
+7321.12.01,Siderurgicos,True
+7321.19.01,Siderurgicos,True
+7321.81.01,Siderurgicos,True
+7321.81.99,Siderurgicos,True
+7321.82.01,Siderurgicos,True
+7321.82.99,Siderurgicos,True
+7321.89.01,Siderurgicos,True
+7321.90.01,Siderurgicos,True
+7321.90.02,Siderurgicos,True
+7321.90.03,Siderurgicos,True
+7321.90.04,Siderurgicos,True
+7321.90.05,Siderurgicos,True
+7321.90.06,Siderurgicos,True
+7321.90.07,Siderurgicos,True
+7321.90.99,Siderurgicos,True
+7322.11.01,Siderurgicos,True
+7322.11.99,Siderurgicos,True
+7322.19.01,Siderurgicos,True
+7322.19.99,Siderurgicos,True
+7322.90.01,Siderurgicos,True
+7322.90.99,Siderurgicos,True
+7323.10.01,Siderurgicos,True
+7323.91.01,Siderurgicos,True
+7323.91.02,Siderurgicos,True
+7323.91.99,Siderurgicos,True
+7323.92.01,Siderurgicos,True
+7323.92.02,Siderurgicos,True
+7323.92.03,Siderurgicos,True
+7323.92.99,Siderurgicos,True
+7323.93.01,Siderurgicos,True
+7323.93.02,Siderurgicos,True
+7323.93.03,Siderurgicos,True
+7323.93.04,Siderurgicos,True
+7323.93.99,Siderurgicos,True
+7323.94.01,Siderurgicos,True
+7323.94.02,Siderurgicos,True
+7323.94.03,Siderurgicos,True
+7323.94.04,Siderurgicos,True
+7323.94.99,Siderurgicos,True
+7323.99.99,Siderurgicos,True
+7324.10.01,Siderurgicos,True
+7324.21.01,Siderurgicos,True
+7324.29.99,Siderurgicos,True
+7324.90.01,Siderurgicos,True
+7324.90.02,Siderurgicos,True
+7324.90.03,Siderurgicos,True
+7324.90.99,Siderurgicos,True
+7325.10.01,Siderurgicos,True
+7325.10.02,Siderurgicos,True
+7325.10.03,Siderurgicos,True
+7325.10.04,Siderurgicos,True
+7325.10.99,Siderurgicos,True
+7325.91.01,Siderurgicos,True
+7325.91.02,Siderurgicos,True
+7325.91.99,Siderurgicos,True
+7325.99.01,Siderurgicos,True
+7325.99.02,Siderurgicos,True
+7325.99.03,Siderurgicos,True
+7325.99.04,Siderurgicos,True
+7325.99.05,Siderurgicos,True
+7325.99.06,Siderurgicos,True
+7325.99.99,Siderurgicos,True
+7326.11.01,Siderurgicos,True
+7326.11.02,Siderurgicos,True
+7326.11.99,Siderurgicos,True
+7326.19.01,Siderurgicos,True
+7326.19.02,Siderurgicos,True
+7326.19.03,Siderurgicos,True
+7326.19.04,Siderurgicos,True
+7326.19.05,Siderurgicos,True
+7326.19.06,Siderurgicos,True
+7326.19.07,Siderurgicos,True
+7326.19.08,Siderurgicos,True
+7326.19.09,Siderurgicos,True
+7326.19.10,Siderurgicos,True
+7326.19.11,Siderurgicos,True
+7326.19.12,Siderurgicos,True
+7326.19.13,Siderurgicos,True
+7326.19.14,Siderurgicos,True
+7326.19.99,Siderurgicos,True
+7326.20.01,Siderurgicos,True
+7326.20.02,Siderurgicos,True
+7326.20.03,Siderurgicos,True
+7326.20.04,Siderurgicos,True
+7326.20.05,Siderurgicos,True
+7326.20.99,Siderurgicos,True
+7326.90.01,Siderurgicos,True
+7326.90.02,Siderurgicos,True
+7326.90.03,Siderurgicos,True
+7326.90.04,Siderurgicos,True
+7326.90.05,Siderurgicos,True
+7326.90.06,Siderurgicos,True
+7326.90.07,Siderurgicos,True
+7326.90.08,Siderurgicos,True
+7326.90.09,Siderurgicos,True
+7326.90.10,Siderurgicos,True
+7326.90.11,Siderurgicos,True
+7326.90.12,Siderurgicos,True
+7326.90.13,Siderurgicos,True
+7326.90.14,Siderurgicos,True
+7326.90.15,Siderurgicos,True
+7326.90.16,Siderurgicos,True
+7326.90.17,Siderurgicos,True
+7326.90.18,Siderurgicos,True
+7326.90.99,Siderurgicos,True
+7601.10.01,Aluminio,True
+7601.10.99,Aluminio,True
+7601.20.01,Aluminio,True
+7601.20.99,Aluminio,True
+7602.00.01,Aluminio,True
+7602.00.99,Aluminio,True
+7603.10.01,Aluminio,True
+7603.20.01,Aluminio,True
+7604.10.01,Aluminio,True
+7604.10.02,Aluminio,True
+7604.10.99,Aluminio,True
+7604.21.01,Aluminio,True
+7604.29.01,Aluminio,True
+7604.29.02,Aluminio,True
+7604.29.99,Aluminio,True
+7605.11.01,Aluminio,True
+7605.11.99,Aluminio,True
+7605.19.99,Aluminio,True
+7605.21.01,Aluminio,True
+7605.21.02,Aluminio,True
+7605.21.99,Aluminio,True
+7605.29.01,Aluminio,True
+7605.29.02,Aluminio,True
+7605.29.99,Aluminio,True
+7606.11.01,Aluminio,True
+7606.11.99,Aluminio,True
+7606.12.01,Aluminio,True
+7606.12.02,Aluminio,True
+7606.12.03,Aluminio,True
+7606.12.99,Aluminio,True
+7606.91.01,Aluminio,True
+7606.91.99,Aluminio,True
+7606.92.01,Aluminio,True
+7606.92.99,Aluminio,True
+7607.11.01,Aluminio,True
+7607.19.01,Aluminio,True
+7607.19.02,Aluminio,True
+7607.19.03,Aluminio,True
+7607.19.99,Aluminio,True
+7607.20.01,Aluminio,True
+7607.20.99,Aluminio,True
+7608.10.01,Aluminio,True
+7608.10.02,Aluminio,True
+7608.10.03,Aluminio,True
+7608.10.99,Aluminio,True
+7608.20.01,Aluminio,True
+7608.20.02,Aluminio,True
+7608.20.03,Aluminio,True
+7608.20.99,Aluminio,True
+7609.00.01,Aluminio,True
+7609.00.99,Aluminio,True
+7610.10.01,Aluminio,True
+7610.90.01,Aluminio,True
+7610.90.99,Aluminio,True
+7611.00.01,Aluminio,True
+7612.10.01,Aluminio,True
+7612.90.01,Aluminio,True
+7612.90.99,Aluminio,True
+7613.00.01,Aluminio,True
+7614.10.01,Aluminio,True
+7614.90.99,Aluminio,True
+7615.10.01,Aluminio,True
+7615.10.99,Aluminio,True
+7615.20.01,Aluminio,True
+7616.10.01,Aluminio,True
+7616.10.02,Aluminio,True
+7616.10.03,Aluminio,True
+7616.10.99,Aluminio,True
+7616.91.01,Aluminio,True
+7616.99.01,Aluminio,True
+7616.99.02,Aluminio,True
+7616.99.03,Aluminio,True
+7616.99.04,Aluminio,True
+7616.99.05,Aluminio,True
+7616.99.06,Aluminio,True
+7616.99.07,Aluminio,True
+7616.99.08,Aluminio,True
+7616.99.09,Aluminio,True
+7616.99.10,Aluminio,True
+7616.99.11,Aluminio,True
+7616.99.12,Aluminio,True
+7616.99.13,Aluminio,True
+7616.99.14,Aluminio,True
+7616.99.15,Aluminio,True
+7616.99.99,Aluminio,True
