@@ -1,7 +1,7 @@
 /* ===== North Cross — Front logic ===== */
 
 // 1) Cambia esto por tu API pública (Render, Railway o Codespaces)
-const API_BASE_URL = "https://TU-API.onrender.com/consulta"; 
+const API_BASE_URL = "https://northcross-api.onrender.com/consulta"; 
 // Ej. Codespaces: "https://8000-xxxxx-xxxxx.githubpreview.dev/consulta"
 
 const $ = (sel) => document.querySelector(sel);
