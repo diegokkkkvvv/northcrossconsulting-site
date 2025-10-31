@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>North Cross Consulting — Importaciones a México sin fricción</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --brand:#0078D7;      /* Windows blue */
+      --ink:#4A4A4A;        /* Gray for text */
+      --bg:#ffffff;         /* White */
+      --soft:#F5F6FA;       /* Light section background */
+      --ok:#14b8a6;         /* Teal ok */
+      --danger:#e11d48;     /* Red error */
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Poppins,system-ui,Segoe UI,Helvetica,Arial,sans-serif}
+    a{color:var(--brand);text-decoration:none}
+    img{max-width:100%;display:block}
+
+    /* Header */
+    header{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter:saturate(180%) blur(6px);
+      background:rgba(255,255,255,.8);
+      border-bottom:1px solid #eee;
+    }
+    .wrap{max-width:1100px;margin:auto;padding:0 20px}
+    .nav{
+      display:flex;align-items:center;justify-content:space-between;height:72px;
+    }
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand img{height:40px}
+    .brand span{font-weight:700;letter-spacing:.2px}
+    .menu{display:flex;gap:20px}
+    .menu a{font-weight:600;color:var(--ink)}
+    .menu a:hover{color:var(--brand)}
+
+    /* Hero */
+    .hero{
+      position:relative;isolation:isolate;
+      background:linear-gradient(rgba(0,120,215,.75),rgba(0,120,215,.75)),
+                  url("https://images.unsplash.com/photo-1581093588401-22d44f46c8ef?q=80&w=2000&auto=format&fit=crop");
+      background-size:cover;background-position:center;
+      color:#fff;
+    }
+    .hero .inner{max-width:1100px;margin:auto;padding:80px 20px 96px}
+    .hero h1{font-size:clamp(28px,4vw,44px);margin:0 0 12px;font-weight:700}
+    .hero p{font-size:clamp(16px,2.2vw,18px);opacity:.95;max-width:760px}
+    .cta-row{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
+    .btn{border:0;border-radius:10px;padding:14px 20px;font-weight:700;cursor:pointer}
+    .btn-primary{background:#fff;color:var(--brand)}
+    .btn-primary:hover{background:#f0f6ff}
+    .btn-ghost{background:transparent;color:#fff;border:1.5px solid #ffffff66}
+    .btn-ghost:hover{background:#ffffff14}
+
+    /* Sections */
+    section{padding:70px 20px}
+    .section{max-width:1100px;margin:auto}
+    h2.section-title{font-size:clamp(22px,3vw,30px);color:var(--brand);margin:0 0 18px}
+
+    /* Value cards */
+    .grid{display:grid;gap:18px}
+    @media(min-width:760px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
+    .card{background:#fff;border:1px solid #ececec;border-radius:14px;padding:22px;box-shadow:0 8px 24px rgba(0,0,0,.04)}
+    .card h3{margin:6px 0 8px}
+    .muted{color:#6b7280}
+
+    /* Checker */
+    .checker{background:var(--soft);border:1px solid #e8ebf1;border-radius:16px;padding:22px}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    .field{flex:1 1 240px;display:flex;flex-direction:column;gap:6px}
+    label{font-size:13px;font-weight:600}
+    input,select,button,textarea{
+      border:1px solid #dfe3ea;border-radius:10px;padding:12px 14px;font:inherit
+    }
+    input:focus,select:focus,textarea:focus{outline:2px solid #cfe5fb;border-color:#cfe5fb}
+    .result{margin-top:12px;font-weight:700}
+    .result.ok{color:var(--ok)}
+    .result.bad{color:var(--danger)}
+    .result.neutral{color:#64748b}
+
+    /* Contact */
+    .contact{background:var(--soft);border:1px solid #e8ebf1;border-radius:16px;padding:22px}
+    .two{display:grid;gap:16px}
+    @media(min-width:760px){.two{grid-template-columns:1fr 1fr}}
+
+    /* Footer */
+    footer{border-top:1px solid #eee;background:#fff}
+    .foot{max-width:1100px;margin:auto;padding:26px 20px;color:#6b7280;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <div class="brand">
+          <!-- Reemplaza el src si tu logo está en otra ruta del repo -->
+          <img src="https://raw.githubusercontent.com/diegokkkkvvv/northcrossconsulting-site/main/web/assets/logo.png" alt="North Cross Consulting">
+          <span>North Cross Consulting</span>
+        </div>
+        <nav class="menu">
+          <a href="#nosotros">Nosotros</a>
+          <a href="#ventajas">Ventajas</a>
+          <a href="#aviso">Aviso Automático</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="inner">
+      <h1>Importa a México sin fricción</h1>
+      <p>Desatoramos trámites y logramos la autorización del aviso automático ante la Secretaría de Economía para que tus importaciones crucen rápido. Especialistas en industrias con mayor índice de rechazos (siderúrgicos, textil, electrónico, automotriz y más).</p>
+      <div class="cta-row">
+        <button class="btn btn-primary" onclick="document.querySelector('#aviso').scrollIntoView({behavior:'smooth'})">Verificar aviso automático</button>
+        <button class="btn btn-ghost" onclick="document.querySelector('#contacto').scrollIntoView({behavior:'smooth'})">Hablar con un experto</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="nosotros">
+    <div class="section">
+      <h2 class="section-title">¿Quiénes somos?</h2>
+      <p class="muted">Somos un equipo binacional con experiencia práctica en comercio exterior, TIGIE y normatividad mexicana. Si tu expediente lleva semanas “en revisión”, aceleramos la ruta correcta y te decimos con claridad qué sí procede y cómo destrabarlo.</p>
+    </div>
+  </section>
+
+  <!-- VALUE -->
+  <section id="ventajas">
+    <div class="section">
+      <h2 class="section-title">Por qué elegir North Cross</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Velocidad</h3>
+          <p class="muted">Acortamos tiempos para que tu mercancía cruce sin costos ocultos por demoras o almacenajes.</p>
+        </div>
+        <div class="card">
+          <h3>Especialistas TIGIE</h3>
+          <p class="muted">Experiencia con fracciones sensibles y sectores con mayores rechazos (acero, textil, electrónicos, automotriz).</p>
+        </div>
+        <div class="card">
+          <h3>Acompañamiento real</h3>
+          <p class="muted">Te guiamos paso a paso y te mantenemos informado. Menos estrés, más certeza.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHECKER -->
+  <section id="aviso">
+    <div class="section">
+      <h2 class="section-title">¿Tu fracción requiere aviso automático?</h2>
+      <div class="checker">
+        <div class="row" style="margin-bottom:10px">
+          <div class="field">
+            <label for="industria">Industria</label>
+            <select id="industria">
+              <option value="" selected disabled>Selecciona una industria</option>
+              <option>Siderurgicos</option>
+              <option>Textil y Confeccion</option>
+              <option>Electronica</option>
+              <option>Automotriz</option>
+              <option>Quimicos</option>
+              <option>Calzado</option>
+              <!-- Puedes ampliar esta lista cuando agregues más al CSV -->
+            </select>
+          </div>
+          <div class="field">
+            <label for="fraccion">Fracción arancelaria (formato 0000.00.00)</label>
+            <input id="fraccion" placeholder="Ej. 7208.10.01" />
+          </div>
+        </div>
+        <button class="btn btn-primary" id="btnCheck">Verificar</button>
+        <div id="resultado" class="result neutral"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contacto">
+    <div class="section">
+      <h2 class="section-title">Contáctanos</h2>
+      <div class="contact">
+        <form action="https://formsubmit.co/contact@northcrossconsulting.com" method="POST" class="two" id="contactForm">
+          <!-- Opcionales de FormSubmit -->
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde northcrossconsulting.com">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="box">
+          <input type="hidden" name="_next" value="https://www.northcrossconsulting.com/#contacto">
+
+          <div class="field">
+            <label>Nombre</label>
+            <input name="nombre" required>
+          </div>
+          <div class="field">
+            <label>Apellido</label>
+            <input name="apellido" required>
+          </div>
+          <div class="field">
+            <label>Empresa</label>
+            <input name="empresa">
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input name="email" type="email" required>
+          </div>
+          <div class="field" style="grid-column:1/-1">
+            <label>Mensaje</label>
+            <textarea name="mensaje" rows="4" required></textarea>
+          </div>
+          <div style="grid-column:1/-1;display:flex;gap:12px;align-items:center">
+            <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+            <span id="contactMsg" class="muted"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="foot">
+      <div>© <span id="yy"></span> North Cross Consulting</div>
+      <div><a href="mailto:contact@northcrossconsulting.com">contact@northcrossconsulting.com</a></div>
+    </div>
+  </footer>
+
+  <script>
+    // Año en footer
+    document.getElementById('yy').textContent = new Date().getFullYear();
+
+    // Verificador conectado a tu API en Render
+    const API_URL = "https://api.northcrossconsulting.com/consulta";
+    const btn = document.getElementById('btnCheck');
+    const out = document.getElementById('resultado');
+
+    btn.addEventListener('click', async () => {
+      const industria = document.getElementById('industria').value || "";
+      const fraccion = document.getElementById('fraccion').value || "";
+      if(!industria || !fraccion){
+        out.textContent = "Ingresa industria y fracción para continuar.";
+        out.className = "result neutral";
+        return;
+      }
+      out.textContent = "Consultando…";
+      out.className = "result neutral";
+
+      try{
+        const url = `${API_URL}?industria=${encodeURIComponent(industria)}&fraccion=${encodeURIComponent(fraccion)}`;
+        const res = await fetch(url);
+        const data = await res.json();
+
+        if (data.requiere_aviso_automatico === true){
+          out.textContent = "✅ Sí, requiere aviso automático.";
+          out.className = "result ok";
+        } else if (data.requiere_aviso_automatico === false){
+          out.textContent = "❌ No requiere aviso automático.";
+          out.className = "result bad";
+        } else {
+          out.textContent = "⚠️ No se encontró información para esa combinación.";
+          out.className = "result neutral";
+        }
+      }catch(e){
+        out.textContent = "Error al conectar con el servidor. Inténtalo nuevamente.";
+        out.className = "result bad";
+      }
+    });
+
+    // UX del formulario de contacto (mensaje local inmediato)
+    const contactForm = document.getElementById('contactForm');
+    const contactMsg = document.getElementById('contactMsg');
+    contactForm.addEventListener('submit', ()=>{
+      contactMsg.textContent = "Enviando…";
+      setTimeout(()=>{ contactMsg.textContent = "✔️ Gracias, tu mensaje fue enviado."; }, 1200);
+    });
+  </script>
+</body>
+</html>
