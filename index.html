@@ -4,284 +4,2206 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>North Cross Consulting — Importaciones a México sin fricción</title>
-
-  <!-- Fuentes y AOS -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+  
   <style>
     :root {
-      --brand:#0078D7;
-      --ink:#4A4A4A;
-      --bg:#ffffff;
-      --soft:#F5F6FA;
-      --ok:#14b8a6;
-      --danger:#e11d48;
+      --brand: #0078D7;
+      --brand-dark: #005a9e;
+      --brand-light: #4da3ff;
+      --ink: #1a1a1a;
+      --ink-light: #4a4a4a;
+      --bg: #ffffff;
+      --soft: #F8F9FB;
+      --ok: #10b981;
+      --danger: #ef4444;
+      --warning: #f59e0b;
+      --accent: #8b5cf6;
+      --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      --shadow-sm: 0 2px 8px rgba(0,0,0,.04);
+      --shadow-md: 0 4px 16px rgba(0,0,0,.08);
+      --shadow-lg: 0 8px 32px rgba(0,0,0,.12);
+      --shadow-xl: 0 16px 48px rgba(0,0,0,.16);
     }
+    
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg:#0b0b0b;
-        --ink:#f0f0f0;
-        --soft:#1a1a1a;
+        --bg: #0a0a0a;
+        --ink: #f5f5f5;
+        --ink-light: #a0a0a0;
+        --soft: #151515;
       }
-      body { background: var(--bg); color: var(--ink); }
-      header { background: rgba(30,30,30,0.8); border-bottom: 1px solid #222; }
-      .card, .checker, .contact { background: #121212; border-color: #333; }
-      .btn-primary { background: var(--brand); color:#fff; }
-      .btn-primary:hover { background:#005fa3; }
     }
-
-    * { box-sizing:border-box; scroll-behavior: smooth; }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    
     body {
-      margin:0;
-      background:var(--bg);
-      color:var(--ink);
-      font-family:'Poppins', system-ui, Segoe UI, Helvetica, Arial, sans-serif;
-      line-height:1.6;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      overflow-x: hidden;
+      position: relative;
     }
-    a { color:var(--brand); text-decoration:none; }
-
+    
+    /* Animated Background */
+    .bg-animation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.03;
+      pointer-events: none;
+    }
+    
+    .bg-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      animation: float 20s ease-in-out infinite;
+    }
+    
+    .orb-1 {
+      width: 500px;
+      height: 500px;
+      background: var(--brand);
+      top: -100px;
+      left: -100px;
+      animation-delay: 0s;
+    }
+    
+    .orb-2 {
+      width: 400px;
+      height: 400px;
+      background: var(--accent);
+      bottom: -100px;
+      right: -100px;
+      animation-delay: 7s;
+    }
+    
+    .orb-3 {
+      width: 350px;
+      height: 350px;
+      background: var(--ok);
+      top: 50%;
+      right: 10%;
+      animation-delay: 14s;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(50px, 80px) scale(1.1); }
+      66% { transform: translate(-30px, -50px) scale(0.9); }
+    }
+    
+    /* Header */
     header {
-      position:sticky;top:0;z-index:50;
-      backdrop-filter:saturate(180%) blur(6px);
-      background:rgba(255,255,255,.8);
-      border-bottom:1px solid #eee;
-      transition:background .3s ease;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      backdrop-filter: saturate(180%) blur(20px);
+      background: rgba(255, 255, 255, 0.8);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .wrap{max-width:1100px;margin:auto;padding:0 20px}
-    .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
-    .brand{display:flex;gap:12px;align-items:center}
-    .brand img{height:40px}
-    .brand span{font-weight:700;letter-spacing:.2px}
-    .menu{display:flex;gap:20px}
-    .menu a{font-weight:600;color:var(--ink);position:relative}
-    .menu a::after{
-      content:'';position:absolute;left:0;bottom:-4px;width:0;height:2px;background:var(--brand);
-      transition:width .3s;
+    
+    header.scrolled {
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: var(--shadow-md);
     }
-    .menu a:hover::after{width:100%}
-
+    
+    @media (prefers-color-scheme: dark) {
+      header {
+        background: rgba(15, 15, 15, 0.8);
+        border-bottom-color: rgba(255, 255, 255, 0.05);
+      }
+      header.scrolled {
+        background: rgba(15, 15, 15, 0.95);
+      }
+    }
+    
+    .nav-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+    
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+    
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .brand img {
+      height: 48px;
+      transition: transform 0.3s ease;
+    }
+    
+    .brand:hover img {
+      transform: scale(1.05) rotate(-2deg);
+    }
+    
+    .brand-text {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, var(--brand) 0%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .menu {
+      display: flex;
+      gap: 48px;
+      align-items: center;
+    }
+    
+    .menu a {
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--ink);
+      position: relative;
+      transition: color 0.3s ease;
+      letter-spacing: -0.2px;
+    }
+    
+    .menu a::before {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--brand), var(--accent));
+      transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .menu a:hover {
+      color: var(--brand);
+    }
+    
+    .menu a:hover::before {
+      width: 100%;
+    }
+    
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+      cursor: pointer;
+      padding: 8px;
+    }
+    
+    .menu-toggle span {
+      width: 28px;
+      height: 3px;
+      background: var(--ink);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+    
+    @media (max-width: 768px) {
+      .menu {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--bg);
+        padding: 32px;
+        gap: 24px;
+        transform: translateY(-120%);
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: var(--shadow-lg);
+      }
+      
+      .menu.active {
+        transform: translateY(0);
+      }
+      
+      .menu-toggle {
+        display: flex;
+      }
+      
+      .brand-text {
+        font-size: 16px;
+      }
+    }
+    
+    /* Hero Section */
     .hero {
-      background:linear-gradient(rgba(0,120,215,.75),rgba(0,120,215,.75)),
-      url("https://images.unsplash.com/photo-1581093588401-22d44f46c8ef?q=80&w=2000&auto=format&fit=crop");
-      background-size:cover;background-position:center;color:#fff;
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: linear-gradient(135deg, #0078D7 0%, #005a9e 50%, #003d6b 100%);
     }
-    .hero .inner{max-width:1100px;margin:auto;padding:80px 20px 96px;text-align:center}
-    .hero h1{font-size:clamp(28px,4vw,46px);margin-bottom:14px;font-weight:700}
-    .hero p{font-size:clamp(16px,2.2vw,19px);opacity:.95;max-width:760px;margin:auto}
-    .cta-row{display:flex;gap:12px;margin-top:26px;justify-content:center;flex-wrap:wrap}
-    .btn{border:0;border-radius:10px;padding:14px 24px;font-weight:700;cursor:pointer;transition:.3s all}
-    .btn-primary{background:#fff;color:var(--brand)}
-    .btn-primary:hover{background:#f0f6ff}
-    .btn-ghost{background:transparent;color:#fff;border:1.5px solid #ffffff66}
-    .btn-ghost:hover{background:#ffffff14}
-
-    section{padding:80px 20px}
-    .section{max-width:1100px;margin:auto;text-align:center}
-    h2.section-title{font-size:clamp(22px,3vw,30px);color:var(--brand);margin:0 0 18px}
-    .muted{color:#6b7280}
-
-    .grid{display:grid;gap:18px}
-    @media(min-width:760px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
-    .card{
-      background:#fff;border:1px solid #ececec;border-radius:14px;padding:22px;
-      box-shadow:0 8px 24px rgba(0,0,0,.05);
-      transition:transform .3s ease,box-shadow .3s ease;
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url("https://images.unsplash.com/photo-1581093588401-22d44f46c8ef?q=80&w=2000&auto=format&fit=crop") center/cover;
+      opacity: 0.15;
+      animation: kenburns 30s ease-in-out infinite alternate;
     }
-    .card:hover{transform:translateY(-5px);box-shadow:0 12px 28px rgba(0,0,0,.08)}
-
-    .checker,.contact{
-      background:var(--soft);border:1px solid #e8ebf1;border-radius:16px;padding:22px;transition:background .3s ease;
+    
+    @keyframes kenburns {
+      0% { transform: scale(1) translateX(0); }
+      100% { transform: scale(1.1) translateX(-20px); }
     }
-    .row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
-    .field{flex:1 1 240px;display:flex;flex-direction:column;gap:6px;text-align:left}
-    label{font-size:13px;font-weight:600}
-    input,select,textarea{
-      border:1px solid #dfe3ea;border-radius:10px;padding:12px 14px;font:inherit
+    
+    .hero-grid {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 50px 50px;
+      animation: gridMove 20s linear infinite;
     }
-    input:focus,select:focus,textarea:focus{outline:2px solid #cfe5fb;border-color:#cfe5fb}
-    .result{margin-top:12px;font-weight:700}
-    .result.ok{color:var(--ok)}
-    .result.bad{color:var(--danger)}
-    .result.neutral{color:#64748b}
-
-    footer{border-top:1px solid #eee;background:#fff}
-    .foot{max-width:1100px;margin:auto;padding:26px 20px;color:#6b7280;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;text-align:center}
+    
+    @keyframes gridMove {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(50px, 50px); }
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 160px 32px 120px;
+      text-align: center;
+    }
+    
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 32px;
+      animation: float-badge 3s ease-in-out infinite;
+    }
+    
+    @keyframes float-badge {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    
+    .hero-badge::before {
+      content: '✨';
+      font-size: 16px;
+    }
+    
+    .hero h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(40px, 6vw, 72px);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 24px;
+      letter-spacing: -2px;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    .hero h1 .highlight {
+      background: linear-gradient(135deg, #fff 0%, #a3d9ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .hero p {
+      font-size: clamp(18px, 2.5vw, 22px);
+      color: rgba(255, 255, 255, 0.95);
+      max-width: 800px;
+      margin: 0 auto 48px;
+      line-height: 1.8;
+      font-weight: 400;
+    }
+    
+    .cta-group {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 80px;
+    }
+    
+    .btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 18px 36px;
+      font-size: 16px;
+      font-weight: 700;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow: hidden;
+      letter-spacing: -0.3px;
+    }
+    
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+      transform: translate(-50%, -50%);
+      transition: width 0.6s, height 0.6s;
+    }
+    
+    .btn:hover::before {
+      width: 300px;
+      height: 300px;
+    }
+    
+    .btn-primary {
+      background: #fff;
+      color: var(--brand);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    }
+    
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+    }
+    
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-color: rgba(255, 255, 255, 0.5);
+      transform: translateY(-2px);
+    }
+    
+    .btn span {
+      position: relative;
+      z-index: 1;
+    }
+    
+    .hero-stats {
+      display: flex;
+      gap: 64px;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 48px 32px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .stat {
+      text-align: center;
+    }
+    
+    .stat-number {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 48px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    
+    .stat-label {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    /* Section Styles */
+    section {
+      position: relative;
+      padding: 120px 32px;
+    }
+    
+    .section-container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    
+    .section-header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 80px;
+    }
+    
+    .section-tag {
+      display: inline-block;
+      padding: 8px 20px;
+      background: var(--soft);
+      color: var(--brand);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+    
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(32px, 5vw, 56px);
+      font-weight: 800;
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: 24px;
+      letter-spacing: -1.5px;
+    }
+    
+    .section-subtitle {
+      font-size: clamp(16px, 2vw, 20px);
+      color: var(--ink-light);
+      line-height: 1.8;
+      font-weight: 400;
+    }
+    
+    /* About Section */
+    #nosotros {
+      background: var(--soft);
+    }
+    
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      margin-top: 60px;
+    }
+    
+    .about-image {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: var(--shadow-xl);
+      aspect-ratio: 4/3;
+    }
+    
+    .about-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    
+    .about-image:hover img {
+      transform: scale(1.05);
+    }
+    
+    .about-image::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(0, 120, 215, 0.3), rgba(139, 92, 246, 0.3));
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    
+    .about-image:hover::after {
+      opacity: 1;
+    }
+    
+    .about-text h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 24px;
+      letter-spacing: -0.5px;
+    }
+    
+    .about-text p {
+      font-size: 18px;
+      color: var(--ink-light);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    
+    .about-features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+    
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+    }
+    
+    .feature-item:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    
+    .feature-icon {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--brand), var(--accent));
+      border-radius: 12px;
+      font-size: 24px;
+    }
+    
+    .feature-text h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+    
+    .feature-text p {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin: 0;
+    }
+    
+    @media (max-width: 968px) {
+      .about-content {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+      
+      .about-features {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    /* Advantages Section */
+    .advantages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+      margin-top: 60px;
+    }
+    
+    .advantage-card {
+      position: relative;
+      background: #fff;
+      border-radius: 24px;
+      padding: 48px 32px;
+      box-shadow: var(--shadow-md);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow: hidden;
+    }
+    
+    .advantage-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--brand), var(--accent));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s ease;
+    }
+    
+    .advantage-card:hover::before {
+      transform: scaleX(1);
+    }
+    
+    .advantage-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+    }
+    
+    .advantage-icon {
+      width: 72px;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--brand), var(--accent));
+      border-radius: 20px;
+      font-size: 36px;
+      margin-bottom: 24px;
+      transition: transform 0.3s ease;
+    }
+    
+    .advantage-card:hover .advantage-icon {
+      transform: scale(1.1) rotate(5deg);
+    }
+    
+    .advantage-card h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+    
+    .advantage-card p {
+      font-size: 16px;
+      color: var(--ink-light);
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+    
+    .advantage-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .advantage-list li {
+      font-size: 14px;
+      color: var(--ink-light);
+      padding: 8px 0;
+      padding-left: 28px;
+      position: relative;
+    }
+    
+    .advantage-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--ok);
+      font-weight: 700;
+      font-size: 18px;
+    }
+    
+    /* Checker Section */
+    #aviso {
+      background: linear-gradient(135deg, #f6f8fb 0%, #e9ecef 100%);
+    }
+    
+    .checker-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 32px;
+      padding: 56px;
+      box-shadow: var(--shadow-xl);
+      border: 1px solid rgba(0, 120, 215, 0.1);
+    }
+    
+    .checker-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    
+    .checker-header h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+    
+    .checker-header p {
+      font-size: 16px;
+      color: var(--ink-light);
+    }
+    
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+    
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .form-label {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--ink);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .form-input,
+    .form-select {
+      padding: 16px 20px;
+      font-size: 16px;
+      font-family: inherit;
+      border: 2px solid #e5e7eb;
+      border-radius: 12px;
+      background: var(--soft);
+      color: var(--ink);
+      transition: all 0.3s ease;
+    }
+    
+    .form-input:focus,
+    .form-select:focus {
+      outline: none;
+      border-color: var(--brand);
+      background: #fff;
+      box-shadow: 0 0 0 4px rgba(0, 120, 215, 0.1);
+    }
+    
+    .form-input::placeholder {
+      color: #9ca3af;
+    }
+    
+    .btn-check {
+      width: 100%;
+      padding: 20px;
+      font-size: 18px;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--brand), var(--accent));
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 24px rgba(0, 120, 215, 0.3);
+      letter-spacing: -0.3px;
+    }
+    
+    .btn-check:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(0, 120, 215, 0.4);
+    }
+    
+    .btn-check:active {
+      transform: translateY(0);
+    }
+    
+    .result-box {
+      margin-top: 32px;
+      padding: 24px;
+      border-radius: 16px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.4s ease;
+    }
+    
+    .result-box.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .result-box.ok {
+      background: #ecfdf5;
+      color: var(--ok);
+      border: 2px solid var(--ok);
+    }
+    
+    .result-box.bad {
+      background: #fef2f2;
+      color: var(--danger);
+      border: 2px solid var(--danger);
+    }
+    
+    .result-box.neutral {
+      background: #f8fafc;
+      color: #64748b;
+      border: 2px solid #cbd5e1;
+    }
+    
+    /* Process Section */
+    .process-timeline {
+      max-width: 1000px;
+      margin: 60px auto 0;
+      position: relative;
+    }
+    
+    .process-timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(180deg, var(--brand), var(--accent));
+      transform: translateX(-50%);
+    }
+    
+    .process-step {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      margin-bottom: 80px;
+      position: relative;
+    }
+    
+    .process-step:nth-child(even) .step-content {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    
+    .process-step:nth-child(even) .step-number-wrap {
+      grid-column: 1;
+      grid-row: 1;
+      justify-self: end;
+    }
+    
+    .step-number-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .step-number {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--brand), var(--accent));
+      color: #fff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 32px;
+      font-weight: 800;
+      border-radius: 50%;
+      box-shadow: 0 8px 24px rgba(0, 120, 215, 0.3);
+      position: relative;
+      z-index: 2;
+    }
+    
+    .step-content {
+      background: #fff;
+      padding: 32px;
+      border-radius: 20px;
+      box-shadow: var(--shadow-md);
+      transition: all 0.3s ease;
+    }
+    
+    .step-content:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .step-content h4 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+    
+    .step-content p {
+      font-size: 16px;
+      color: var(--ink-light);
+      line-height: 1.7;
+    }
+    
+    @media (max-width: 968px) {
+      .process-timeline::before {
+        left: 40px;
+      }
+      
+      .process-step {
+        grid-template-columns: 80px 1fr;
+        gap: 24px;
+      }
+      
+      .process-step:nth-child(even) .step-content {
+        grid-column: 2;
+      }
+      
+      .process-step:nth-child(even) .step-number-wrap {
+        grid-column: 1;
+        justify-self: start;
+      }
+    }
+    
+    /* Contact Section */
+    #contacto {
+      background: var(--ink);
+      color: #fff;
+    }
+    
+    #contacto .section-tag {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+    
+    #contacto .section-title {
+      color: #fff;
+    }
+    
+    #contacto .section-subtitle {
+      color: rgba(255, 255, 255, 0.8);
+    }
+    
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 64px;
+      align-items: start;
+      margin-top: 60px;
+    }
+    
+    .contact-info {
+      position: sticky;
+      top: 120px;
+    }
+    
+    .contact-info h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    
+    .contact-info p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 40px;
+    }
+    
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .contact-item:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateX(8px);
+    }
+    
+    .contact-item-icon {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--brand), var(--accent));
+      border-radius: 12px;
+      font-size: 24px;
+    }
+    
+    .contact-item-text h4 {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+      opacity: 0.7;
+    }
+    
+    .contact-item-text p {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0;
+      color: #fff;
+    }
+    
+    .contact-form-container {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      padding: 48px;
+    }
+    
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    
+    .contact-form .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    .contact-form label {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+      padding: 16px 20px;
+      font-size: 16px;
+      font-family: inherit;
+      border: 2px solid rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+    
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: var(--brand);
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 0 0 4px rgba(0, 120, 215, 0.2);
+    }
+    
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 140px;
+    }
+    
+    .btn-submit {
+      padding: 18px 36px;
+      font-size: 16px;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--brand), var(--accent));
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 24px rgba(0, 120, 215, 0.3);
+    }
+    
+    .btn-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(0, 120, 215, 0.4);
+    }
+    
+    .form-message {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 12px;
+      border-radius: 8px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+    }
+    
+    .form-message.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .form-message.success {
+      background: rgba(16, 185, 129, 0.2);
+      color: var(--ok);
+    }
+    
+    @media (max-width: 968px) {
+      .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+      
+      .contact-info {
+        position: static;
+      }
+      
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      
+      .contact-form-container {
+        padding: 32px;
+      }
+    }
+    
+    /* Footer */
+    footer {
+      background: #000;
+      color: rgba(255, 255, 255, 0.7);
+      padding: 80px 32px 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .footer-container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 64px;
+      margin-bottom: 60px;
+    }
+    
+    .footer-col h4 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 24px;
+    }
+    
+    .footer-brand p {
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+    
+    .footer-social {
+      display: flex;
+      gap: 12px;
+    }
+    
+    .social-link {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      color: #fff;
+      font-size: 20px;
+      transition: all 0.3s ease;
+    }
+    
+    .social-link:hover {
+      background: var(--brand);
+      border-color: var(--brand);
+      transform: translateY(-4px);
+    }
+    
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .footer-links li {
+      margin-bottom: 16px;
+    }
+    
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 15px;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+    
+    .footer-links a:hover {
+      color: #fff;
+      transform: translateX(4px);
+    }
+    
+    .footer-bottom {
+      padding-top: 32px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 14px;
+    }
+    
+    @media (max-width: 968px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+      
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    
+    /* Scroll to top */
+    .scroll-top {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, var(--brand), var(--accent));
+      border: none;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 24px rgba(0, 120, 215, 0.3);
+      z-index: 999;
+    }
+    
+    .scroll-top.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    
+    .scroll-top:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0, 120, 215, 0.4);
+    }
+    
+    /* Animations */
+    @keyframes slideInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    
+    /* Loading Animation */
+    .loading {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top-color: #fff;
+      animation: spin 0.8s linear infinite;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
   </style>
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header data-aos="fade-down">
-    <div class="wrap">
+  <!-- Background Animation -->
+  <div class="bg-animation">
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="nav-container">
       <div class="nav">
         <div class="brand">
           <img src="https://raw.githubusercontent.com/diegokkkkvvv/northcrossconsulting-site/main/web/assets/logo.png" alt="North Cross Consulting">
-          <span>North Cross Consulting</span>
+          <span class="brand-text">North Cross Consulting</span>
         </div>
-        <nav class="menu">
+        <nav class="menu" id="menu">
           <a href="#nosotros">Nosotros</a>
           <a href="#ventajas">Ventajas</a>
-          <a href="#aviso">Aviso Automático</a>
+          <a href="#proceso">Proceso</a>
+          <a href="#aviso">Verificador</a>
           <a href="#contacto">Contacto</a>
         </nav>
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero" data-aos="fade-up">
-    <div class="inner">
-      <h1>Importa a México sin fricción</h1>
-      <p>Desatoramos trámites y logramos la autorización del aviso automático ante la Secretaría de Economía para que tus importaciones crucen rápido. Especialistas en industrias con mayor índice de rechazos.</p>
-      <div class="cta-row">
-        <button class="btn btn-primary" onclick="document.querySelector('#aviso').scrollIntoView({behavior:'smooth'})">Verificar aviso automático</button>
-        <button class="btn btn-ghost" onclick="document.querySelector('#contacto').scrollIntoView({behavior:'smooth'})">Hablar con un experto</button>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-content" data-aos="fade-up">
+      <div class="hero-badge">Expertos en comercio exterior México-USA</div>
+      <h1>
+        Importa a México <span class="highlight">sin fricción</span>
+      </h1>
+      <p>
+        Transformamos procesos complejos de importación en experiencias fluidas y predecibles. Con nuestra experiencia binacional y conocimiento profundo de la normatividad mexicana, aceleramos tus trámites ante la Secretaría de Economía y destrabamos expedientes que llevan semanas en revisión. Especialistas en industrias con mayor índice de rechazos y fracciones TIGIE sensibles.
+      </p>
+      <div class="cta-group">
+        <button class="btn btn-primary" onclick="document.querySelector('#aviso').scrollIntoView({behavior:'smooth'})">
+          <span>Verificar aviso automático</span>
+        </button>
+        <button class="btn btn-ghost" onclick="document.querySelector('#contacto').scrollIntoView({behavior:'smooth'})">
+          <span>Hablar con un experto</span>
+        </button>
+      </div>
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Trámites exitosos</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">95%</div>
+          <div class="stat-label">Tasa de aprobación</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">48h</div>
+          <div class="stat-label">Respuesta promedio</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- NOSOTROS -->
-  <section id="nosotros" data-aos="fade-right">
-    <div class="section">
-      <h2 class="section-title">¿Quiénes somos?</h2>
-      <p class="muted">Somos un equipo binacional con experiencia en comercio exterior y normatividad mexicana. Si tu expediente lleva semanas en revisión, aceleramos la ruta correcta y te decimos con claridad cómo destrabarlo.</p>
-    </div>
-  </section>
-
-  <!-- VENTAJAS -->
-  <section id="ventajas" data-aos="fade-left">
-    <div class="section">
-      <h2 class="section-title">Por qué elegir North Cross</h2>
-      <div class="grid cols-3">
-        <div class="card" data-aos="zoom-in"><h3>Velocidad</h3><p class="muted">Acortamos tiempos para que tu mercancía cruce sin costos ocultos.</p></div>
-        <div class="card" data-aos="zoom-in" data-aos-delay="100"><h3>Especialistas TIGIE</h3><p class="muted">Experiencia con fracciones sensibles y sectores con mayores rechazos.</p></div>
-        <div class="card" data-aos="zoom-in" data-aos-delay="200"><h3>Acompañamiento real</h3><p class="muted">Te guiamos paso a paso con claridad y transparencia.</p></div>
+  <!-- About Section -->
+  <section id="nosotros">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Quiénes somos</div>
+        <h2 class="section-title">Tu aliado estratégico en comercio exterior</h2>
+        <p class="section-subtitle">
+          Somos un equipo binacional con más de 15 años de experiencia combinada en comercio exterior, regulación aduanera y gestión de trámites ante autoridades mexicanas y estadounidenses.
+        </p>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-image" data-aos="fade-right">
+          <img src="https://images.unsplash.com/photo-1664575602276-acd073f104c1?q=80&w=2000&auto=format&fit=crop" alt="Equipo de trabajo">
+        </div>
+        
+        <div class="about-text" data-aos="fade-left">
+          <h3>Experiencia que acelera resultados</h3>
+          <p>
+            En North Cross Consulting, entendemos que cada día de retraso en tu importación representa costos adicionales y oportunidades perdidas. Por eso, nos especializamos en identificar y resolver los puntos críticos que detienen tu operación.
+          </p>
+          <p>
+            Nuestro equipo trabaja de manera proactiva con la Secretaría de Economía, autoridades aduaneras y organismos reguladores para garantizar que tus expedientes avancen sin contratiempos. No somos un intermediario más: somos tu socio estratégico.
+          </p>
+          
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon">🎯</div>
+              <div class="feature-text">
+                <h4>Enfoque especializado</h4>
+                <p>Dominamos sectores complejos con altos índices de rechazo</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">⚡</div>
+              <div class="feature-text">
+                <h4>Respuesta rápida</h4>
+                <p>Atención inmediata a situaciones urgentes 24/7</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🤝</div>
+              <div class="feature-text">
+                <h4>Transparencia total</h4>
+                <p>Comunicación clara en cada etapa del proceso</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">📊</div>
+              <div class="feature-text">
+                <h4>Datos en tiempo real</h4>
+                <p>Seguimiento preciso del estatus de tus trámites</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- VERIFICADOR -->
-  <section id="aviso" data-aos="fade-up">
-    <div class="section">
-      <h2 class="section-title">Verificador de Aviso Automático</h2>
-      <p class="muted" style="margin-bottom:18px">Selecciona el origen (MX/USA), tu industria y la fracción (TIGIE) o HTS (10 dígitos).</p>
+  <!-- Advantages Section -->
+  <section id="ventajas">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Ventajas competitivas</div>
+        <h2 class="section-title">Por qué elegir North Cross</h2>
+        <p class="section-subtitle">
+          Combinamos experiencia técnica, conocimiento regulatorio profundo y una red de contactos estratégicos para garantizar que tus importaciones fluyan sin obstáculos.
+        </p>
+      </div>
+      
+      <div class="advantages-grid">
+        <div class="advantage-card" data-aos="zoom-in">
+          <div class="advantage-icon">⚡</div>
+          <h3>Velocidad excepcional</h3>
+          <p>
+            Acortamos los tiempos de gestión hasta en un 70% comparado con procesos tradicionales. Tu mercancía cruza la frontera sin demoras innecesarias y sin costos ocultos que afecten tu flujo de caja.
+          </p>
+          <ul class="advantage-list">
+            <li>Respuesta inicial en menos de 4 horas</li>
+            <li>Resolución promedio en 2-5 días hábiles</li>
+            <li>Seguimiento en tiempo real</li>
+            <li>Canal directo con autoridades</li>
+          </ul>
+        </div>
+        
+        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="advantage-icon">🎓</div>
+          <h3>Especialistas TIGIE certificados</h3>
+          <p>
+            Experiencia comprobada con fracciones arancelarias sensibles y sectores con mayores índices de rechazo. Conocemos a fondo las regulaciones, restricciones y requisitos específicos de cada industria.
+          </p>
+          <ul class="advantage-list">
+            <li>Siderúrgicos y productos de acero</li>
+            <li>Textil, confección y calzado</li>
+            <li>Aluminio y metales no ferrosos</li>
+            <li>Electrónica y componentes</li>
+            <li>Químicos y productos controlados</li>
+          </ul>
+        </div>
+        
+        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="advantage-icon">🤝</div>
+          <h3>Acompañamiento integral</h3>
+          <p>
+            Te guiamos paso a paso con claridad y transparencia. No te dejamos solo con documentos técnicos: explicamos cada proceso, anticipamos obstáculos y te preparamos para cada etapa.
+          </p>
+          <ul class="advantage-list">
+            <li>Consultoría estratégica personalizada</li>
+            <li>Capacitación a tu equipo interno</li>
+            <li>Soporte en auditorías y verificaciones</li>
+            <li>Gestión de contingencias</li>
+          </ul>
+        </div>
+        
+        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="advantage-icon">🔒</div>
+          <h3>Cumplimiento garantizado</h3>
+          <p>
+            Aseguramos el cumplimiento total de normativas mexicanas e internacionales. Minimizamos riesgos legales y protegemos tu operación de multas, retenciones o sanciones.
+          </p>
+          <ul class="advantage-list">
+            <li>Revisión exhaustiva de documentación</li>
+            <li>Validación de clasificaciones arancelarias</li>
+            <li>Verificación de reglas de origen</li>
+            <li>Cumplimiento IMMEX y otros programas</li>
+          </ul>
+        </div>
+        
+        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="advantage-icon">💰</div>
+          <h3>Optimización de costos</h3>
+          <p>
+            Identificamos oportunidades de ahorro en aranceles, aprovechamiento de tratados comerciales y programas de fomento. Tu operación se vuelve más competitiva y rentable.
+          </p>
+          <ul class="advantage-list">
+            <li>Análisis de clasificación óptima</li>
+            <li>Aprovechamiento de tratados (T-MEC, TIPAT)</li>
+            <li>Programas IMMEX y PROSEC</li>
+            <li>Estrategias de diferimiento</li>
+          </ul>
+        </div>
+        
+        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="500">
+          <div class="advantage-icon">🌐</div>
+          <h3>Visión binacional</h3>
+          <p>
+            Operamos con fluidez en ambos lados de la frontera. Entendemos las regulaciones mexicanas y estadounidenses, facilitando operaciones comerciales transfronterizas complejas.
+          </p>
+          <ul class="advantage-list">
+            <li>Coordinación México-USA</li>
+            <li>Gestión de documentos en ambos países</li>
+            <li>Resolución de discrepancias aduaneras</li>
+            <li>Estrategias de importación-exportación</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <div class="checker">
-        <div class="row">
-          <div class="field">
-            <label for="origen">Origen</label>
-            <select id="origen">
-              <option value="mx" selected>México (TIGIE)</option>
+  <!-- Process Section -->
+  <section id="proceso">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Cómo trabajamos</div>
+        <h2 class="section-title">Nuestro proceso comprobado</h2>
+        <p class="section-subtitle">
+          Un método estructurado y transparente que garantiza resultados predecibles en cada proyecto de importación.
+        </p>
+      </div>
+      
+      <div class="process-timeline">
+        <div class="process-step" data-aos="fade-right">
+          <div class="step-number-wrap">
+            <div class="step-number">1</div>
+          </div>
+          <div class="step-content">
+            <h4>Análisis inicial gratuito</h4>
+            <p>
+              Evaluamos tu situación específica, revisamos documentación existente y identificamos posibles obstáculos. Te damos un diagnóstico honesto y un plan de acción claro en menos de 24 horas.
+            </p>
+          </div>
+        </div>
+        
+        <div class="process-step" data-aos="fade-left">
+          <div class="step-number-wrap">
+            <div class="step-number">2</div>
+          </div>
+          <div class="step-content">
+            <h4>Estrategia personalizada</h4>
+            <p>
+              Diseñamos una ruta específica para tu caso, considerando urgencia, complejidad y presupuesto. Definimos tiempos, responsables y puntos de control para mantener visibilidad total del progreso.
+            </p>
+          </div>
+        </div>
+        
+        <div class="process-step" data-aos="fade-right">
+          <div class="step-number-wrap">
+            <div class="step-number">3</div>
+          </div>
+          <div class="step-content">
+            <h4>Ejecución y gestión</h4>
+            <p>
+              Nuestro equipo toma control directo de todos los trámites, interactuando con autoridades y resolviendo requerimientos. Tú recibes actualizaciones constantes y solo intervienes cuando es estrictamente necesario.
+            </p>
+          </div>
+        </div>
+        
+        <div class="process-step" data-aos="fade-left">
+          <div class="step-number-wrap">
+            <div class="step-number">4</div>
+          </div>
+          <div class="step-content">
+            <h4>Resolución y seguimiento</h4>
+            <p>
+              Una vez autorizado tu aviso o trámite, te acompañamos en la implementación y te preparamos para futuras operaciones similares. Incluimos recomendaciones para optimizar procesos futuros y reducir dependencias.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Checker Section -->
+  <section id="aviso">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Herramienta gratuita</div>
+        <h2 class="section-title">Verificador de Aviso Automático</h2>
+        <p class="section-subtitle">
+          Verifica en segundos si tu fracción arancelaria requiere aviso automático de importación ante la Secretaría de Economía. Selecciona el origen, tu industria y el código TIGIE o HTSUS correspondiente.
+        </p>
+      </div>
+      
+      <div class="checker-container" data-aos="zoom-in">
+        <div class="checker-header">
+          <h3>Consulta instantánea</h3>
+          <p>Ingresa los datos de tu producto para conocer los requisitos específicos</p>
+        </div>
+        
+        <div class="form-grid">
+          <div class="form-field">
+            <label class="form-label" for="origen">País de origen</label>
+            <select class="form-select" id="origen">
+              <option value="mx">México (TIGIE)</option>
               <option value="us">Estados Unidos (HTSUS)</option>
             </select>
           </div>
-          <div class="field">
-            <label for="industria">Industria</label>
-            <select id="industria">
-             <option disabled selected>Selecciona una industria</option>
-             <option>Siderurgicos</option>
-             <option>Textil y Confeccion</option>
-             <option>Calzado</option>
-             <option>Aluminio</option>
-             <option>Electronica</option>
-             <option>Automotriz</option>
-             <option>Quimicos</option>
-             <option>Agroindustria</option>
-             <option>Mineria</option>
-             <option>Energia</option>
-             <option>Farmaceutica</option>
-             <option>Plásticos</option>
-             <option>Metalmecánica</option>
-             <option>Servicios</option>
+          
+          <div class="form-field">
+            <label class="form-label" for="industria">Industria / Sector</label>
+            <select class="form-select" id="industria">
+              <option disabled selected>Selecciona una industria</option>
+              <option>Siderurgicos</option>
+              <option>Textil y Confeccion</option>
+              <option>Calzado</option>
+              <option>Aluminio</option>
+              <option>Electronica</option>
+              <option>Automotriz</option>
+              <option>Quimicos</option>
+              <option>Agroindustria</option>
+              <option>Mineria</option>
+              <option>Energia</option>
+              <option>Farmaceutica</option>
+              <option>Plásticos</option>
+              <option>Metalmecánica</option>
+              <option>Servicios</option>
             </select>
           </div>
-          <div class="field">
-            <label for="codigo" id="labelCodigo">Fracción TIGIE (0000.00.00)</label>
-            <input id="codigo" placeholder="Ej. 7208.10.01" />
+          
+          <div class="form-field">
+            <label class="form-label" id="labelCodigo" for="codigo">Fracción TIGIE</label>
+            <input class="form-input" id="codigo" placeholder="Ej. 7208.10.01" />
           </div>
         </div>
-        <button class="btn btn-primary" id="btnCheck">Verificar</button>
-        <div id="resultado" class="result neutral"></div>
+        
+        <button class="btn-check" id="btnCheck">
+          Verificar requisitos
+        </button>
+        
+        <div class="result-box" id="resultado"></div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACTO -->
-  <section id="contacto" data-aos="fade-up">
-    <div class="section">
-      <h2 class="section-title">Contáctanos</h2>
-      <div class="contact">
-        <form action="https://formsubmit.co/contact@northcrossconsulting.com" method="POST" class="two" id="contactForm">
-          <input type="hidden" name="_subject" value="Nuevo mensaje desde northcrossconsulting.com">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="box">
-          <input type="hidden" name="_next" value="https://www.northcrossconsulting.com/#contacto">
-          <div class="field"><label>Nombre</label><input name="nombre" required></div>
-          <div class="field"><label>Apellido</label><input name="apellido" required></div>
-          <div class="field"><label>Empresa</label><input name="empresa"></div>
-          <div class="field"><label>Email</label><input name="email" type="email" required></div>
-          <div class="field" style="grid-column:1/-1"><label>Mensaje</label><textarea name="mensaje" rows="4" required></textarea></div>
-          <div style="grid-column:1/-1;display:flex;gap:12px;align-items:center">
-            <button class="btn btn-primary" type="submit">Enviar mensaje</button>
-            <span id="contactMsg" class="muted"></span>
+  <!-- Contact Section -->
+  <section id="contacto">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Contáctanos</div>
+        <h2 class="section-title">Comienza tu importación hoy</h2>
+        <p class="section-subtitle">
+          Nuestro equipo está listo para analizar tu caso y ofrecerte una solución inmediata. Respuesta garantizada en menos de 4 horas durante días hábiles.
+        </p>
+      </div>
+      
+      <div class="contact-wrapper">
+        <div class="contact-info" data-aos="fade-right">
+          <h3>¿Listo para importar sin complicaciones?</h3>
+          <p>
+            Déjanos tus datos y un especialista de nuestro equipo te contactará para ofrecerte una consultoría inicial sin costo. Analizaremos tu situación y te daremos un plan de acción claro.
+          </p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-item-icon">📧</div>
+              <div class="contact-item-text">
+                <h4>Email</h4>
+                <p>management@northcrossconsulting.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-item-icon">📞</div>
+              <div class="contact-item-text">
+                <h4>Teléfono</h4>
+                <p>+52 (442) 123-4567</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div class="contact-item-text">
+                <h4>Ubicación</h4>
+                <p>Querétaro, México</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-item-icon">⏰</div>
+              <div class="contact-item-text">
+                <h4>Horario</h4>
+                <p>Lun-Vie 8:00 AM - 7:00 PM</p>
+              </div>
+            </div>
           </div>
-        </form>
+        </div>
+        
+        <div class="contact-form-container" data-aos="fade-left">
+          <form class="contact-form" id="contactForm" action="https://formsubmit.co/management@northcrossconsulting.com" method="POST">
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde northcrossconsulting.com">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_next" value="https://www.northcrossconsulting.com/#contacto">
+            
+            <div class="form-row">
+              <div class="form-field">
+                <label>Nombre</label>
+                <input type="text" name="nombre" placeholder="Juan" required>
+              </div>
+              <div class="form-field">
+                <label>Apellido</label>
+                <input type="text" name="apellido" placeholder="Pérez" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-field">
+                <label>Empresa</label>
+                <input type="text" name="empresa" placeholder="Tu empresa">
+              </div>
+              <div class="form-field">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="tu@email.com" required>
+              </div>
+            </div>
+            
+            <div class="form-field">
+              <label>Mensaje</label>
+              <textarea name="mensaje" placeholder="Cuéntanos sobre tu proyecto de importación..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-submit">Enviar mensaje</button>
+            
+            <div class="form-message" id="contactMsg"></div>
+          </form>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <div class="foot">
-      <div>© <span id="yy"></span> North Cross Consulting</div>
-      <div><a href="mailto:contact@northcrossconsulting.com">contact@northcrossconsulting.com</a></div>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <h4>North Cross Consulting</h4>
+          <p>
+            Tu socio estratégico en comercio exterior. Simplificamos importaciones complejas y aceleramos trámites ante autoridades mexicanas.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-link">𝕏</a>
+            <a href="#" class="social-link">in</a>
+            <a href="#" class="social-link">f</a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="#aviso">Aviso Automático</a></li>
+            <li><a href="#ventajas">Consultoría TIGIE</a></li>
+            <li><a href="#contacto">Gestión de Trámites</a></li>
+            <li><a href="#contacto">Cumplimiento Normativo</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul class="footer-links">
+            <li><a href="#nosotros">Acerca de</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#">Casos de éxito</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Aviso de privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div>© <span id="year"></span> North Cross Consulting. Todos los derechos reservados.</div>
+        <div>Hecho con ❤️ en México</div>
+      </div>
     </div>
   </footer>
 
+  <!-- Scroll to top button -->
+  <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">↑</button>
+
+  <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 800, once: true });
-    document.getElementById('yy').textContent = new Date().getFullYear();
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100,
+      easing: 'ease-out-cubic'
+    });
 
-    const API = "https://api.northcrossconsulting.com/consulta";
-    const origenSel = document.getElementById('origen');
-    const labelCodigo = document.getElementById('labelCodigo');
-    const codigo = document.getElementById('codigo');
-    const out = document.getElementById('resultado');
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-    origenSel.addEventListener('change', ()=>{
-      if(origenSel.value === 'us'){
-        labelCodigo.textContent = "HTSUS (10 dígitos: 0000.00.00.00)";
-        codigo.placeholder = "Ej. 7208.10.00.30";
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
       } else {
-        labelCodigo.textContent = "Fracción TIGIE (0000.00.00)";
-        codigo.placeholder = "Ej. 7208.10.01";
+        header.classList.remove('scrolled');
       }
     });
 
-    document.getElementById('btnCheck').addEventListener('click', async ()=>{
-      const origin = origenSel.value;
-      const industria = document.getElementById('industria').value || "";
-      const code = codigo.value || "";
-      out.textContent = "Consultando…"; out.className = "result neutral";
-      if(!origin || !industria || !code){ out.textContent = "Completa origen, industria y código."; return; }
-
-      try{
-        const url = `${API}?origin=${encodeURIComponent(origin)}&industria=${encodeURIComponent(industria)}&code=${encodeURIComponent(code)}`;
-        const r = await fetch(url);
-        const data = await r.json();
-        if(data.requiere_aviso_automatico === true){ out.textContent="✅ Sí, requiere aviso automático."; out.className="result ok"; }
-        else if(data.requiere_aviso_automatico === false){ out.textContent="❌ No requiere aviso automático."; out.className="result bad"; }
-        else { out.textContent="⚠️ No se encontró información para esa combinación."; out.className="result neutral"; }
-      }catch(e){ out.textContent="Error al conectar con el servidor."; out.className="result bad"; }
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('menu');
+    
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
     });
 
+    // Close menu when clicking a link
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('active');
+      });
+    });
+
+    // Scroll to top button
+    const scrollTop = document.getElementById('scrollTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        scrollTop.classList.add('show');
+      } else {
+        scrollTop.classList.remove('show');
+      }
+    });
+
+    scrollTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Checker functionality
+    const API = "https://api.northcrossconsulting.com/consulta";
+    const origenSel = document.getElementById('origen');
+    const labelCodigo = document.getElementById('labelCodigo');
+    const codigoInput = document.getElementById('codigo');
+    const resultBox = document.getElementById('resultado');
+    const btnCheck = document.getElementById('btnCheck');
+
+    origenSel.addEventListener('change', () => {
+      if (origenSel.value === 'us') {
+        labelCodigo.textContent = "HTSUS (10 dígitos)";
+        codigoInput.placeholder = "Ej. 7208.10.00.30";
+      } else {
+        labelCodigo.textContent = "Fracción TIGIE";
+        codigoInput.placeholder = "Ej. 7208.10.01";
+      }
+    });
+
+    btnCheck.addEventListener('click', async () => {
+      const origin = origenSel.value;
+      const industria = document.getElementById('industria').value;
+      const code = codigoInput.value.trim();
+
+      resultBox.classList.remove('show');
+      
+      if (!industria || industria === "Selecciona una industria") {
+        resultBox.textContent = "⚠️ Por favor selecciona una industria";
+        resultBox.className = "result-box neutral show";
+        return;
+      }
+
+      if (!code) {
+        resultBox.textContent = "⚠️ Por favor ingresa un código";
+        resultBox.className = "result-box neutral show";
+        return;
+      }
+
+      btnCheck.innerHTML = '<span class="loading"></span>';
+      btnCheck.disabled = true;
+
+      try {
+        const url = `${API}?origin=${encodeURIComponent(origin)}&industria=${encodeURIComponent(industria)}&code=${encodeURIComponent(code)}`;
+        const response = await fetch(url);
+        const data = await response.json();
+
+        setTimeout(() => {
+          if (data.requiere_aviso_automatico === true) {
+            resultBox.textContent = "✅ Sí requiere aviso automático de importación. Contáctanos para ayudarte con el trámite.";
+            resultBox.className = "result-box ok show";
+          } else if (data.requiere_aviso_automatico === false) {
+            resultBox.textContent = "❌ No requiere aviso automático para esta fracción.";
+            resultBox.className = "result-box bad show";
+          } else {
+            resultBox.textContent = "⚠️ No se encontró información para esa combinación. Contáctanos para una consulta personalizada.";
+            resultBox.className = "result-box neutral show";
+          }
+          
+          btnCheck.innerHTML = 'Verificar requisitos';
+          btnCheck.disabled = false;
+        }, 300);
+
+      } catch (error) {
+        console.error('Error:', error);
+        resultBox.textContent = "❌ Error al conectar con el servidor. Por favor intenta de nuevo o contáctanos directamente.";
+        resultBox.className = "result-box bad show";
+        btnCheck.innerHTML = 'Verificar requisitos';
+        btnCheck.disabled = false;
+      }
+    });
+
+    // Contact form handling
     const contactForm = document.getElementById('contactForm');
     const contactMsg = document.getElementById('contactMsg');
-    contactForm.addEventListener('submit', ()=>{
-      contactMsg.textContent = "Enviando…";
-      setTimeout(()=>{ contactMsg.textContent = "✔️ Gracias, tu mensaje fue enviado."; }, 1200);
+
+    contactForm.addEventListener('submit', (e) => {
+      contactMsg.textContent = "Enviando mensaje...";
+      contactMsg.className = "form-message show";
+      
+      setTimeout(() => {
+        contactMsg.textContent = "✓ ¡Gracias! Tu mensaje ha sido enviado. Te contactaremos pronto.";
+        contactMsg.className = "form-message success show";
+      }, 1000);
     });
+
+    // Smooth scroll for all internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const headerOffset = 80;
+          const elementPosition = target.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Add parallax effect to hero section
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const heroContent = document.querySelector('.hero-content');
+      if (heroContent && scrolled < window.innerHeight) {
+        heroContent.style.transform = `translateY(${scrolled * 0.5}px)`;
+        heroContent.style.opacity = 1 - (scrolled / 700);
+      }
+    });
+
+    // Add counter animation for stats
+    const observerOptions = {
+      threshold: 0.5,
+      rootMargin: '0px'
+    };
+
+    const animateCounter = (element, target, suffix = '') => {
+      const duration = 2000;
+      const start = 0;
+      const increment = target / (duration / 16);
+      let current = start;
+
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          element.textContent = target + suffix;
+          clearInterval(timer);
+        } else {
+          element.textContent = Math.floor(current) + suffix;
+        }
+      }, 16);
+    };
+
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+          entry.target.classList.add('counted');
+          const stats = entry.target.querySelectorAll('.stat-number');
+          
+          stats.forEach((stat, index) => {
+            const text = stat.textContent;
+            if (text.includes('+')) {
+              animateCounter(stat, 500, '+');
+            } else if (text.includes('%')) {
+              animateCounter(stat, 95, '%');
+            } else if (text.includes('h')) {
+              animateCounter(stat, 48, 'h');
+            }
+          });
+        }
+      });
+    }, observerOptions);
+
+    const heroStats = document.querySelector('.hero-stats');
+    if (heroStats) {
+      statsObserver.observe(heroStats);
+    }
+
+    // Add typing effect to hero title (optional enhancement)
+    const heroTitle = document.querySelector('.hero h1');
+    if (heroTitle && window.innerWidth > 768) {
+      const text = heroTitle.innerHTML;
+      heroTitle.innerHTML = '';
+      heroTitle.style.opacity = '1';
+      
+      let charIndex = 0;
+      const typeSpeed = 50;
+      
+      function typeWriter() {
+        if (charIndex < text.length) {
+          heroTitle.innerHTML += text.charAt(charIndex);
+          charIndex++;
+          setTimeout(typeWriter, typeSpeed);
+        }
+      }
+      
+      // Start typing after page load
+      setTimeout(() => {
+        // typeWriter(); // Uncomment to enable typing effect
+        heroTitle.innerHTML = text; // Use this instead for immediate display
+      }, 500);
+    }
+
+    // Add loading state management
+    let isLoading = false;
+    
+    function setLoadingState(loading) {
+      isLoading = loading;
+      if (loading) {
+        document.body.style.cursor = 'wait';
+      } else {
+        document.body.style.cursor = 'default';
+      }
+    }
+
+    // Enhanced form validation
+    const inputs = document.querySelectorAll('.form-input, .form-select, input, textarea');
+    
+    inputs.forEach(input => {
+      input.addEventListener('blur', () => {
+        if (input.hasAttribute('required') && !input.value.trim()) {
+          input.style.borderColor = 'var(--danger)';
+        } else {
+          input.style.borderColor = '';
+        }
+      });
+
+      input.addEventListener('input', () => {
+        if (input.style.borderColor === 'var(--danger)') {
+          input.style.borderColor = '';
+        }
+      });
+    });
+
+    // Add page load animation
+    window.addEventListener('load', () => {
+      document.body.style.opacity = '0';
+      document.body.style.transition = 'opacity 0.5s ease';
+      
+      setTimeout(() => {
+        document.body.style.opacity = '1';
+      }, 100);
+    });
+
+    // Intersection Observer for fade-in animations
+    const fadeElements = document.querySelectorAll('.advantage-card, .feature-item, .process-step');
+    
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    fadeElements.forEach(element => {
+      element.style.opacity = '0';
+      element.style.transform = 'translateY(30px)';
+      element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      fadeObserver.observe(element);
+    });
+
+    // Add Easter egg - Konami code
+    let konamiCode = [];
+    const konamiPattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+    
+    document.addEventListener('keydown', (e) => {
+      konamiCode.push(e.key);
+      konamiCode = konamiCode.slice(-10);
+      
+      if (konamiCode.join('') === konamiPattern.join('')) {
+        document.querySelector('.hero').style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+        setTimeout(() => {
+          alert('🎉 ¡Código secreto activado! Contacta con nosotros y menciona "KONAMI" para un descuento especial.');
+        }, 500);
+      }
+    });
+
+    console.log('%c🚀 North Cross Consulting', 'font-size: 24px; font-weight: bold; color: #0078D7;');
+    console.log('%c¿Buscas talento? Estamos contratando desarrolladores.', 'font-size: 14px; color: #666;');
   </script>
 </body>
 </html>

@@ -81,5 +81,5 @@ byId("mailtoFallback").addEventListener("click", (e) => {
   const body = encodeURIComponent(
     `Nombre: ${nombre} ${ape}\nEmpresa: ${empresa}\nEmail: ${email}\n\nMensaje:\n${msg}`
   );
-  window.location.href = `mailto:contacto@northcrossconsulting.com?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:management@northcrossconsulting.com?subject=${subject}&body=${body}`;
 });
