@@ -1408,6 +1408,16 @@
     @keyframes spin {
       to { transform: rotate(360deg); }
     }
+    /* --- Fix titles that clash with the background --- */
+#proceso .section-title,
+#ventajas .section-title,
+#nosotros .section-title {
+  background: linear-gradient(135deg, var(--brand) 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
+
   </style>
 </head>
 
