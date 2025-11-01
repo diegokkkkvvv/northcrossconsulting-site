@@ -44,7 +44,7 @@
         border-color: #333;
       }
       
-      .form-input, .form-select, .contact-form input, .contact-form textarea {
+      .form-input, .form-select {
         background: #1a1a1a;
         border-color: #333;
         color: #f5f5f5;
@@ -1446,3 +1446,854 @@
       -webkit-text-fill-color: transparent;
       text-shadow: none;
     }
+  </style>
+</head>
+
+<body>
+  <!-- Background Animation -->
+  <div class="bg-animation">
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="nav-container">
+      <div class="nav">
+        <div class="brand">
+          <img src="https://raw.githubusercontent.com/diegokkkkvvv/northcrossconsulting-site/main/web/assets/logo.png" alt="North Cross Consulting">
+          <span class="brand-text">North Cross Consulting</span>
+        </div>
+        <nav class="menu" id="menu">
+          <a href="#nosotros">Nosotros</a>
+          <a href="#ventajas">Ventajas</a>
+          <a href="#proceso">Proceso</a>
+          <a href="#aviso">Verificador</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Checker Section -->
+  <section id="aviso">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Herramienta gratuita</div>
+        <h2 class="section-title">Verificador de Aviso Automático</h2>
+        <p class="section-subtitle">
+          Verifica en segundos si tu fracción arancelaria requiere aviso automático de importación ante la Secretaría de Economía. Selecciona el origen, tu industria y el código TIGIE o HTSUS correspondiente.
+        </p>
+      </div>
+      
+      <div class="checker-container" data-aos="zoom-in">
+        <div class="checker-header">
+          <h3>Consulta instantánea</h3>
+          <p>Ingresa los datos de tu producto para conocer los requisitos específicos</p>
+        </div>
+        
+        <div class="form-grid">
+          <div class="form-field">
+            <label class="form-label" for="origen">País de origen</label>
+            <select class="form-select" id="origen">
+              <option value="mx">México (TIGIE)</option>
+              <option value="us">Estados Unidos (HTSUS)</option>
+            </select>
+          </div>
+          
+          <div class="form-field">
+            <label class="form-label" for="industria">Industria / Sector</label>
+            <select class="form-select" id="industria">
+              <option disabled selected>Selecciona una industria</option>
+              <option>Siderurgicos</option>
+              <option>Textil y Confeccion</option>
+              <option>Calzado</option>
+              <option>Aluminio</option>
+              <option>Electronica</option>
+              <option>Automotriz</option>
+              <option>Quimicos</option>
+              <option>Agroindustria</option>
+              <option>Mineria</option>
+              <option>Energia</option>
+              <option>Farmaceutica</option>
+              <option>Plásticos</option>
+              <option>Metalmecánica</option>
+              <option>Servicios</option>
+            </select>
+          </div>
+          
+          <div class="form-field">
+            <label class="form-label" id="labelCodigo" for="codigo">Fracción TIGIE</label>
+            <input class="form-input" id="codigo" placeholder="Ej. 7208.10.01" />
+          </div>
+        </div>
+        
+        <button class="btn-check" id="btnCheck">
+          Verificar requisitos
+        </button>
+        
+        <div class="result-box" id="resultado"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contacto">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Contáctanos</div>
+        <h2 class="section-title">Comienza tu importación hoy</h2>
+        <p class="section-subtitle">
+          Nuestro equipo está listo para analizar tu caso y ofrecerte una solución inmediata. Respuesta garantizada en menos de 4 horas durante días hábiles.
+        </p>
+      </div>
+      
+      <div class="contact-wrapper">
+        <div class="contact-info" data-aos="fade-right">
+          <h3>¿Listo para importar sin complicaciones?</h3>
+          <p>
+            Déjanos tus datos y un especialista de nuestro equipo te contactará para ofrecerte una consultoría inicial sin costo. Analizaremos tu situación y te daremos un plan de acción claro.
+          </p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-item-icon">📧</div>
+              <div class="contact-item-text">
+                <h4>Email</h4>
+                <p>management@northcrossconsulting.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-item-icon">📞</div>
+              <div class="contact-item-text">
+                <h4>Teléfono</h4>
+                <p>+52 (442) 123-4567</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div class="contact-item-text">
+                <h4>Ubicación</h4>
+                <p>Querétaro, México</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-item-icon">⏰</div>
+              <div class="contact-item-text">
+                <h4>Horario</h4>
+                <p>Lun-Vie 8:00 AM - 7:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-container" data-aos="fade-left">
+          <form class="contact-form" id="contactForm" action="https://formsubmit.co/management@northcrossconsulting.com" method="POST">
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde northcrossconsulting.com">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_next" value="https://www.northcrossconsulting.com/#contacto">
+            
+            <div class="form-row">
+              <div class="form-field">
+                <label>Nombre</label>
+                <input type="text" name="nombre" placeholder="Juan" required>
+              </div>
+              <div class="form-field">
+                <label>Apellido</label>
+                <input type="text" name="apellido" placeholder="Pérez" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-field">
+                <label>Empresa</label>
+                <input type="text" name="empresa" placeholder="Tu empresa">
+              </div>
+              <div class="form-field">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="tu@email.com" required>
+              </div>
+            </div>
+            
+            <div class="form-field">
+              <label>Mensaje</label>
+              <textarea name="mensaje" placeholder="Cuéntanos sobre tu proyecto de importación..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-submit">Enviar mensaje</button>
+            
+            <div class="form-message" id="contactMsg"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <img src="https://raw.githubusercontent.com/diegokkkkvvv/northcrossconsulting-site/main/web/assets/logo.png" alt="North Cross Consulting" class="footer-logo">
+          <h4>North Cross Consulting</h4>
+          <p>
+            Tu socio estratégico en comercio exterior. Simplificamos importaciones complejas y aceleramos trámites ante autoridades mexicanas.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-link">𝕏</a>
+            <a href="#" class="social-link">in</a>
+            <a href="#" class="social-link">f</a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="#aviso">Aviso Automático</a></li>
+            <li><a href="#ventajas">Consultoría TIGIE</a></li>
+            <li><a href="#contacto">Gestión de Trámites</a></li>
+            <li><a href="#contacto">Cumplimiento Normativo</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul class="footer-links">
+            <li><a href="#nosotros">Acerca de</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#">Casos de éxito</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Aviso de privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div>© <span id="year"></span> North Cross Consulting. Todos los derechos reservados.</div>
+        <div><a href="mailto:management@northcrossconsulting.com" style="color: rgba(255, 255, 255, 0.7);">management@northcrossconsulting.com</a></div>
+        <div>Hecho con ❤️ en México</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">↑</button>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100,
+      easing: 'ease-out-cubic'
+    });
+
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('menu');
+    
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('active');
+      });
+    });
+
+    // Scroll to top button
+    const scrollTop = document.getElementById('scrollTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        scrollTop.classList.add('show');
+      } else {
+        scrollTop.classList.remove('show');
+      }
+    });
+
+    scrollTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Checker functionality
+    const API = "https://api.northcrossconsulting.com/consulta";
+    const origenSel = document.getElementById('origen');
+    const labelCodigo = document.getElementById('labelCodigo');
+    const codigoInput = document.getElementById('codigo');
+    const resultBox = document.getElementById('resultado');
+    const btnCheck = document.getElementById('btnCheck');
+
+    origenSel.addEventListener('change', () => {
+      if (origenSel.value === 'us') {
+        labelCodigo.textContent = "HTSUS (10 dígitos)";
+        codigoInput.placeholder = "Ej. 7208.10.00.30";
+      } else {
+        labelCodigo.textContent = "Fracción TIGIE";
+        codigoInput.placeholder = "Ej. 7208.10.01";
+      }
+    });
+
+    btnCheck.addEventListener('click', async () => {
+      const origin = origenSel.value;
+      const industria = document.getElementById('industria').value;
+      const code = codigoInput.value.trim();
+
+      resultBox.classList.remove('show');
+      
+      if (!industria || industria === "Selecciona una industria") {
+        resultBox.textContent = "⚠️ Por favor selecciona una industria";
+        resultBox.className = "result-box neutral show";
+        return;
+      }
+
+      if (!code) {
+        resultBox.textContent = "⚠️ Por favor ingresa un código";
+        resultBox.className = "result-box neutral show";
+        return;
+      }
+
+      btnCheck.innerHTML = '<span class="loading"></span>';
+      btnCheck.disabled = true;
+
+      try {
+        const url = `${API}?origin=${encodeURIComponent(origin)}&industria=${encodeURIComponent(industria)}&code=${encodeURIComponent(code)}`;
+        const response = await fetch(url);
+        const data = await response.json();
+
+        setTimeout(() => {
+          if (data.requiere_aviso_automatico === true) {
+            resultBox.textContent = "✅ Sí requiere aviso automático de importación. Contáctanos para ayudarte con el trámite.";
+            resultBox.className = "result-box ok show";
+          } else if (data.requiere_aviso_automatico === false) {
+            resultBox.textContent = "❌ No requiere aviso automático para esta fracción.";
+            resultBox.className = "result-box bad show";
+          } else {
+            resultBox.textContent = "⚠️ No se encontró información para esa combinación. Contáctanos para una consulta personalizada.";
+            resultBox.className = "result-box neutral show";
+          }
+          
+          btnCheck.innerHTML = 'Verificar requisitos';
+          btnCheck.disabled = false;
+        }, 300);
+
+      } catch (error) {
+        console.error('Error:', error);
+        resultBox.textContent = "❌ Error al conectar con el servidor. Por favor intenta de nuevo o contáctanos directamente.";
+        resultBox.className = "result-box bad show";
+        btnCheck.innerHTML = 'Verificar requisitos';
+        btnCheck.disabled = false;
+      }
+    });
+
+    // Contact form handling
+    const contactForm = document.getElementById('contactForm');
+    const contactMsg = document.getElementById('contactMsg');
+
+    contactForm.addEventListener('submit', (e) => {
+      contactMsg.textContent = "Enviando mensaje...";
+      contactMsg.className = "form-message show";
+      
+      setTimeout(() => {
+        contactMsg.textContent = "✓ ¡Gracias! Tu mensaje ha sido enviado. Te contactaremos pronto.";
+        contactMsg.className = "form-message success show";
+      }, 1000);
+    });
+
+    // Smooth scroll for all internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const headerOffset = 80;
+          const elementPosition = target.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Add parallax effect to hero section (reduced for readability)
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const heroContent = document.querySelector('.hero-content');
+      if (heroContent && scrolled < window.innerHeight) {
+        heroContent.style.transform = `translateY(${scrolled * 0.2}px)`;
+        heroContent.style.opacity = Math.max(0.7, 1 - (scrolled / 1200));
+      }
+    });
+
+    // Add counter animation for stats
+    const observerOptions = {
+      threshold: 0.5,
+      rootMargin: '0px'
+    };
+
+    const animateCounter = (element, target, suffix = '') => {
+      const duration = 2000;
+      const start = 0;
+      const increment = target / (duration / 16);
+      let current = start;
+
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          element.textContent = target + suffix;
+          clearInterval(timer);
+        } else {
+          element.textContent = Math.floor(current) + suffix;
+        }
+      }, 16);
+    };
+
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+          entry.target.classList.add('counted');
+          const stats = entry.target.querySelectorAll('.stat-number');
+          
+          stats.forEach((stat, index) => {
+            const text = stat.textContent;
+            if (text.includes('+')) {
+              animateCounter(stat, 500, '+');
+            } else if (text.includes('%')) {
+              animateCounter(stat, 95, '%');
+            } else if (text.includes('h')) {
+              animateCounter(stat, 48, 'h');
+            }
+          });
+        }
+      });
+    }, observerOptions);
+
+    const heroStats = document.querySelector('.hero-stats');
+    if (heroStats) {
+      statsObserver.observe(heroStats);
+    }
+
+    // Add typing effect to hero title (optional enhancement)
+    const heroTitle = document.querySelector('.hero h1');
+    if (heroTitle && window.innerWidth > 768) {
+      const text = heroTitle.innerHTML;
+      heroTitle.innerHTML = '';
+      heroTitle.style.opacity = '1';
+      
+      let charIndex = 0;
+      const typeSpeed = 50;
+      
+      function typeWriter() {
+        if (charIndex < text.length) {
+          heroTitle.innerHTML += text.charAt(charIndex);
+          charIndex++;
+          setTimeout(typeWriter, typeSpeed);
+        }
+      }
+      
+      setTimeout(() => {
+        heroTitle.innerHTML = text;
+      }, 500);
+    }
+
+    // Add loading state management
+    let isLoading = false;
+    
+    function setLoadingState(loading) {
+      isLoading = loading;
+      if (loading) {
+        document.body.style.cursor = 'wait';
+      } else {
+        document.body.style.cursor = 'default';
+      }
+    }
+
+    // Enhanced form validation
+    const inputs = document.querySelectorAll('.form-input, .form-select, input, textarea');
+    
+    inputs.forEach(input => {
+      input.addEventListener('blur', () => {
+        if (input.hasAttribute('required') && !input.value.trim()) {
+          input.style.borderColor = 'var(--danger)';
+        } else {
+          input.style.borderColor = '';
+        }
+      });
+
+      input.addEventListener('input', () => {
+        if (input.style.borderColor === 'var(--danger)') {
+          input.style.borderColor = '';
+        }
+      });
+    });
+
+    // Add page load animation
+    window.addEventListener('load', () => {
+      document.body.style.opacity = '0';
+      document.body.style.transition = 'opacity 0.5s ease';
+      
+      setTimeout(() => {
+        document.body.style.opacity = '1';
+      }, 100);
+    });
+
+    // Intersection Observer for fade-in animations
+    const fadeElements = document.querySelectorAll('.advantage-card, .feature-item, .process-step');
+    
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    fadeElements.forEach(element => {
+      element.style.opacity = '0';
+      element.style.transform = 'translateY(30px)';
+      element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      fadeObserver.observe(element);
+    });
+
+    // Add Easter egg - Konami code
+    let konamiCode = [];
+    const konamiPattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+    
+    document.addEventListener('keydown', (e) => {
+      konamiCode.push(e.key);
+      konamiCode = konamiCode.slice(-10);
+      
+      if (konamiCode.join('') === konamiPattern.join('')) {
+        document.querySelector('.hero').style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+        setTimeout(() => {
+          alert('🎉 ¡Código secreto activado! Contacta con nosotros y menciona "KONAMI" para un descuento especial.');
+        }, 500);
+      }
+    });
+
+    console.log('%c🚀 North Cross Consulting', 'font-size: 24px; font-weight: bold; color: #0078D7;');
+    console.log('%c¿Buscas talento? Estamos contratando desarrolladores.', 'font-size: 14px; color: #666;');
+  </script>
+</body>
+</html>>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-content" data-aos="fade-up">
+      <div class="hero-badge">Expertos en comercio exterior México-USA</div>
+      <h1>
+        Importa a México <span class="highlight">sin fricción</span>
+      </h1>
+      <p>
+        Transformamos procesos complejos de importación en experiencias fluidas y predecibles. Con nuestra experiencia binacional y conocimiento profundo de la normatividad mexicana, aceleramos tus trámites ante la Secretaría de Economía y destrabamos expedientes que llevan semanas en revisión. Especialistas en industrias con mayor índice de rechazos y fracciones TIGIE sensibles.
+      </p>
+      <div class="cta-group">
+        <button class="btn btn-primary" onclick="document.querySelector('#aviso').scrollIntoView({behavior:'smooth'})">
+          <span>Verificar aviso automático</span>
+        </button>
+        <button class="btn btn-ghost" onclick="document.querySelector('#contacto').scrollIntoView({behavior:'smooth'})">
+          <span>Hablar con un experto</span>
+        </button>
+      </div>
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Trámites exitosos</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">95%</div>
+          <div class="stat-label">Tasa de aprobación</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">48h</div>
+          <div class="stat-label">Respuesta promedio</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="nosotros">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Quiénes somos</div>
+        <h2 class="section-title">Tu aliado estratégico en comercio exterior</h2>
+        <p class="section-subtitle">
+          Somos un equipo binacional con más de 15 años de experiencia combinada en comercio exterior, regulación aduanera y gestión de trámites ante autoridades mexicanas y estadounidenses.
+        </p>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-image" data-aos="fade-right">
+          <img src="https://images.unsplash.com/photo-1664575602276-acd073f104c1?q=80&w=2000&auto=format&fit=crop" alt="Equipo de trabajo">
+        </div>
+        
+        <div class="about-text" data-aos="fade-left">
+          <h3>Experiencia que acelera resultados</h3>
+          <p>
+            En North Cross Consulting, entendemos que cada día de retraso en tu importación representa costos adicionales y oportunidades perdidas. Por eso, nos especializamos en identificar y resolver los puntos críticos que detienen tu operación.
+          </p>
+          <p>
+            Nuestro equipo trabaja de manera proactiva con la Secretaría de Economía, autoridades aduaneras y organismos reguladores para garantizar que tus expedientes avancen sin contratiempos. No somos un intermediario más: somos tu socio estratégico.
+          </p>
+          
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon">🎯</div>
+              <div class="feature-text">
+                <h4>Enfoque especializado</h4>
+                <p>Dominamos sectores complejos con altos índices de rechazo</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">⚡</div>
+              <div class="feature-text">
+                <h4>Respuesta rápida</h4>
+                <p>Atención inmediata a situaciones urgentes 24/7</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🤝</div>
+              <div class="feature-text">
+                <h4>Transparencia total</h4>
+                <p>Comunicación clara en cada etapa del proceso</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">📊</div>
+              <div class="feature-text">
+                <h4>Datos en tiempo real</h4>
+                <p>Seguimiento preciso del estatus de tus trámites</p>
+              </div>
+            </div>
+            
+            <div class="logistics-features">
+              <div class="feature-item">
+                <div class="feature-icon">🚛</div>
+                <div class="feature-text">
+                  <h4>Transporte integral</h4>
+                  <p>Soluciones terrestre, aérea, ferroviaria e intermodal México-USA</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">📦</div>
+                <div class="feature-text">
+                  <h4>Almacenaje estratégico</h4>
+                  <p>Bodegas en puntos clave de México y Estados Unidos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advantages Section -->
+  <section id="ventajas">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Ventajas competitivas</div>
+        <h2 class="section-title">Por qué elegir North Cross</h2>
+        <p class="section-subtitle">
+          Combinamos experiencia técnica, conocimiento regulatorio profundo y una red de contactos estratégicos para garantizar que tus importaciones fluyan sin obstáculos.
+        </p>
+      </div>
+      
+      <div class="advantages-grid">
+        <div class="advantage-card" data-aos="zoom-in">
+          <div class="advantage-icon">⚡</div>
+          <h3>Velocidad excepcional</h3>
+          <p>
+            Acortamos los tiempos de gestión hasta en un 70% comparado con procesos tradicionales. Tu mercancía cruza la frontera sin demoras innecesarias y sin costos ocultos que afecten tu flujo de caja.
+          </p>
+          <ul class="advantage-list">
+            <li>Respuesta inicial en menos de 4 horas</li>
+            <li>Resolución promedio en 2-5 días hábiles</li>
+            <li>Seguimiento en tiempo real</li>
+            <li>Canal directo con autoridades</li>
+          </ul>
+        </div>
+        
+        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="advantage-icon">🎓</div>
+          <h3>Especialistas TIGIE certificados</h3>
+          <p>
+            Experiencia comprobada con fracciones arancelarias sensibles y sectores con mayores índices de rechazo. Conocemos a fondo las regulaciones, restricciones y requisitos específicos de cada industria.
+          </p>
+          <ul class="advantage-list">
+            <li>Siderúrgicos y productos de acero</li>
+            <li>Textil, confección y calzado</li>
+            <li>Aluminio y metales no ferrosos</li>
+            <li>Electrónica y componentes</li>
+            <li>Químicos y productos controlados</li>
+          </ul>
+        </div>
+        
+        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="advantage-icon">🤝</div>
+          <h3>Acompañamiento integral</h3>
+          <p>
+            Te guiamos paso a paso con claridad y transparencia. No te dejamos solo con documentos técnicos: explicamos cada proceso, anticipamos obstáculos y te preparamos para cada etapa.
+          </p>
+          <ul class="advantage-list">
+            <li>Consultoría estratégica personalizada</li>
+            <li>Capacitación a tu equipo interno</li>
+            <li>Soporte en auditorías y verificaciones</li>
+            <li>Gestión de contingencias</li>
+          </ul>
+        </div>
+        
+        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="advantage-icon">🔒</div>
+          <h3>Cumplimiento garantizado</h3>
+          <p>
+            Aseguramos el cumplimiento total de normativas mexicanas e internacionales. Minimizamos riesgos legales y protegemos tu operación de multas, retenciones o sanciones.
+          </p>
+          <ul class="advantage-list">
+            <li>Revisión exhaustiva de documentación</li>
+            <li>Validación de clasificaciones arancelarias</li>
+            <li>Verificación de reglas de origen</li>
+            <li>Cumplimiento IMMEX y otros programas</li>
+          </ul>
+        </div>
+        
+        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="advantage-icon">💰</div>
+          <h3>Optimización de costos</h3>
+          <p>
+            Identificamos oportunidades de ahorro en aranceles, aprovechamiento de tratados comerciales y programas de fomento. Tu operación se vuelve más competitiva y rentable.
+          </p>
+          <ul class="advantage-list">
+            <li>Análisis de clasificación óptima</li>
+            <li>Aprovechamiento de tratados (T-MEC, TIPAT)</li>
+            <li>Programas IMMEX y PROSEC</li>
+            <li>Estrategias de diferimiento</li>
+          </ul>
+        </div>
+        
+        <div class="advantage-card" data-aos="zoom-in" data-aos-delay="500">
+          <div class="advantage-icon">🌐</div>
+          <h3>Visión binacional</h3>
+          <p>
+            Operamos con fluidez en ambos lados de la frontera. Entendemos las regulaciones mexicanas y estadounidenses, facilitando operaciones comerciales transfronterizas complejas.
+          </p>
+          <ul class="advantage-list">
+            <li>Coordinación México-USA</li>
+            <li>Gestión de documentos en ambos países</li>
+            <li>Resolución de discrepancias aduaneras</li>
+            <li>Estrategias de importación-exportación</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="proceso">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Cómo trabajamos</div>
+        <h2 class="section-title">Nuestro proceso comprobado</h2>
+        <p class="section-subtitle">
+          Un método estructurado y transparente que garantiza resultados predecibles en cada proyecto de importación.
+        </p>
+      </div>
+      
+      <div class="process-timeline">
+        <div class="process-step" data-aos="fade-right">
+          <div class="step-number-wrap">
+            <div class="step-number">1</div>
+          </div>
+          <div class="step-content">
+            <h4>Análisis inicial gratuito</h4>
+            <p>
+              Evaluamos tu situación específica, revisamos documentación existente y identificamos posibles obstáculos. Te damos un diagnóstico honesto y un plan de acción claro en menos de 24 horas.
+            </p>
+          </div>
+        </div>
+        
+        <div class="process-step" data-aos="fade-left">
+          <div class="step-number-wrap">
+            <div class="step-number">2</div>
+          </div>
+          <div class="step-content">
+            <h4>Estrategia personalizada</h4>
+            <p>
+              Diseñamos una ruta específica para tu caso, considerando urgencia, complejidad y presupuesto. Definimos tiempos, responsables y puntos de control para mantener visibilidad total del progreso.
+            </p>
+          </div>
+        </div>
+        
+        <div class="process-step" data-aos="fade-right">
+          <div class="step-number-wrap">
+            <div class="step-number">3</div>
+          </div>
+          <div class="step-content">
+            <h4>Ejecución y gestión</h4>
+            <p>
+              Nuestro equipo toma control directo de todos los trámites, interactuando con autoridades y resolviendo requerimientos. Tú recibes actualizaciones constantes y solo intervienes cuando es estrictamente necesario.
+            </p>
+          </div>
+        </div>
+        
+        <div class="process-step" data-aos="fade-left">
+          <div class="step-number-wrap">
+            <div class="step-number">4</div>
+          </div>
+          <div class="step-content">
+            <h4>Resolución y seguimiento</h4>
+            <p>
+              Una vez autorizado tu aviso o trámite, te acompañamos en la implementación y te preparamos para futuras operaciones similares. Incluimos recomendaciones para optimizar procesos futuros y reducir dependencias.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div
