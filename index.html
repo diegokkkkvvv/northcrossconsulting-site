@@ -548,8 +548,15 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 80px;
-      align-items: center;
+      align-items: start;
       margin-top: 60px;
+    }
+
+    /* LEFT column stack: image + extra boxes */
+    .about-left-stack {
+      display: grid;
+      grid-template-rows: auto auto auto;
+      gap: 24px;
     }
     
     .about-image {
@@ -585,6 +592,69 @@
     
     .about-image:hover::after {
       opacity: 1;
+    }
+
+    /* Mini grids under the image (new) */
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .mini-card {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 16px;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid #e5e7eb;
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .mini-card:hover{
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+    .mini-icon{
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--brand), var(--accent));
+      color:#fff;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .mini-text h5{
+      font-size: 15px;
+      font-weight: 800;
+      color:#1a1a1a !important;
+      margin: 2px 0 4px;
+      letter-spacing: -.2px;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .mini-text p{
+      font-size: 13px;
+      color:#4a4a4a !important;
+      line-height: 1.55;
+      margin:0;
+    }
+    .pill-row{
+      display:flex; 
+      flex-wrap:wrap; 
+      gap:8px; 
+      margin-top:6px;
+    }
+    .pill{
+      font-size:12px;
+      font-weight:700;
+      padding:6px 10px;
+      border-radius:999px;
+      background:#F1F5F9;
+      color:#334155;
+      border:1px solid #E2E8F0;
+      letter-spacing:.2px;
     }
     
     .about-text h3 {
@@ -657,8 +727,7 @@
         grid-template-columns: 1fr;
         gap: 48px;
       }
-      
-      .about-features {
+      .about-features, .mini-grid{
         grid-template-columns: 1fr;
       }
     }
@@ -1501,10 +1570,62 @@
       </div>
       
       <div class="about-content">
-        <div class="about-image" data-aos="fade-right">
-          <img src="https://images.unsplash.com/photo-1664575602276-acd073f104c1?q=80&w=2000&auto=format&fit=crop" alt="Equipo de trabajo">
+        <!-- LEFT: image + NEW boxes -->
+        <div class="about-left-stack" data-aos="fade-right">
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1664575602276-acd073f104c1?q=80&w=2000&auto=format&fit=crop" alt="Equipo de trabajo">
+          </div>
+
+          <!-- NEW: Two extra feature boxes placed under the image -->
+          <div class="mini-grid" aria-label="Valores añadidos">
+            <div class="mini-card">
+              <div class="mini-icon">🧭</div>
+              <div class="mini-text">
+                <h5>Gestión puerta a puerta</h5>
+                <p>Coordinamos cada hito desde el despacho hasta la entrega final para eliminar cuellos de botella.</p>
+              </div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-icon">🔗</div>
+              <div class="mini-text">
+                <h5>Integraciones con tu ERP</h5>
+                <p>Sincronizamos estados y documentos con tus sistemas para máxima visibilidad y control.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- NEW: Two logistics service boxes below the previous two -->
+          <div class="mini-grid" aria-label="Servicios logísticos complementarios">
+            <div class="mini-card">
+              <div class="mini-icon">🚚</div>
+              <div class="mini-text">
+                <h5>Transporte de productos liberados</h5>
+                <p>Si lo requieres, movemos tu mercancía inmediatamente después de la liberación.</p>
+                <div class="pill-row" aria-hidden="false">
+                  <span class="pill">Aéreo</span>
+                  <span class="pill">Ferrocarril</span>
+                  <span class="pill">Camión</span>
+                </div>
+              </div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-icon">🏬</div>
+              <div class="mini-text">
+                <h5>Almacenaje binacional</h5>
+                <p>Capacidad en <strong>Estados Unidos</strong> y <strong>México</strong> con operación multimodal.</p>
+                <div class="pill-row">
+                  <span class="pill">Terrestre</span>
+                  <span class="pill">Intermodal</span>
+                  <span class="pill">Aéreo</span>
+                  <span class="pill">Ferroviario</span>
+                  <span class="pill">México ↔ USA</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         
+        <!-- RIGHT: original copy + original 4 features -->
         <div class="about-text" data-aos="fade-left">
           <h3>Experiencia que acelera resultados</h3>
           <p>
@@ -1544,6 +1665,8 @@
               </div>
             </div>
           </div>
+          <!-- Nota: No tocamos esta cuadrícula para no romper el layout original.
+               Las dos nuevas parejas de “textboxes” viven en la columna izquierda, como pediste. -->
         </div>
       </div>
     </div>
@@ -2214,7 +2337,7 @@
     });
 
     // Intersection Observer for fade-in animations
-    const fadeElements = document.querySelectorAll('.advantage-card, .feature-item, .process-step');
+    const fadeElements = document.querySelectorAll('.advantage-card, .feature-item, .process-step, .mini-card');
     
     const fadeObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
