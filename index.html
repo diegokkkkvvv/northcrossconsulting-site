@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>North Cross Consulting — Importaciones a México sin fricción</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/diegokkkkvvv/northcrossconsulting-site/main/web/assets/logo.png">
   
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -445,12 +446,14 @@
       justify-content: center;
       flex-wrap: wrap;
       padding: 48px 32px;
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.15);
       backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       border-radius: 20px;
       max-width: 900px;
       margin: 0 auto;
+      position: relative;
+      z-index: 10;
     }
     
     .stat {
@@ -468,7 +471,7 @@
     
     .stat-label {
       font-size: 14px;
-      color: rgba(255, 255, 255, 0.8);
+      color: rgba(255, 255, 255, 0.95);
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -618,6 +621,7 @@
       background: linear-gradient(135deg, var(--brand), var(--accent));
       border-radius: 12px;
       font-size: 24px;
+      color: #fff;
     }
     
     .feature-text h4 {
@@ -695,6 +699,7 @@
       font-size: 36px;
       margin-bottom: 24px;
       transition: transform 0.3s ease;
+      color: #fff;
     }
     
     .advantage-card:hover .advantage-icon {
@@ -986,21 +991,21 @@
     
     /* Contact Section */
     #contacto {
-      background: var(--ink);
-      color: #fff;
+      background: #f8f9fa;
+      color: var(--ink);
     }
     
     #contacto .section-tag {
-      background: rgba(255, 255, 255, 0.1);
-      color: #fff;
+      background: var(--soft);
+      color: var(--brand);
     }
     
     #contacto .section-title {
-      color: #fff;
+      color: var(--ink);
     }
     
     #contacto .section-subtitle {
-      color: rgba(255, 255, 255, 0.8);
+      color: var(--ink-light);
     }
     
     .contact-wrapper {
@@ -1021,12 +1026,13 @@
       font-size: 32px;
       font-weight: 700;
       margin-bottom: 24px;
+      color: var(--ink);
     }
     
     .contact-info p {
       font-size: 18px;
       line-height: 1.8;
-      color: rgba(255, 255, 255, 0.8);
+      color: var(--ink-light);
       margin-bottom: 40px;
     }
     
@@ -1041,14 +1047,15 @@
       align-items: center;
       gap: 20px;
       padding: 20px;
-      background: rgba(255, 255, 255, 0.05);
+      background: #fff;
       border-radius: 16px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      border: 1px solid #e5e7eb;
       transition: all 0.3s ease;
+      box-shadow: var(--shadow-sm);
     }
     
     .contact-item:hover {
-      background: rgba(255, 255, 255, 0.1);
+      box-shadow: var(--shadow-md);
       transform: translateX(8px);
     }
     
@@ -1061,6 +1068,7 @@
       background: linear-gradient(135deg, var(--brand), var(--accent));
       border-radius: 12px;
       font-size: 24px;
+      color: #fff;
     }
     
     .contact-item-text h4 {
@@ -1069,22 +1077,22 @@
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-bottom: 4px;
-      opacity: 0.7;
+      color: var(--ink-light);
     }
     
     .contact-item-text p {
       font-size: 16px;
       font-weight: 600;
       margin: 0;
-      color: #fff;
+      color: var(--ink);
     }
     
     .contact-form-container {
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: #fff;
+      border: 1px solid #e5e7eb;
       border-radius: 24px;
       padding: 48px;
+      box-shadow: var(--shadow-md);
     }
     
     .contact-form {
@@ -1110,7 +1118,7 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: rgba(255, 255, 255, 0.9);
+      color: var(--ink);
     }
     
     .contact-form input,
@@ -1118,10 +1126,10 @@
       padding: 16px 20px;
       font-size: 16px;
       font-family: inherit;
-      border: 2px solid rgba(255, 255, 255, 0.15);
+      border: 2px solid #e5e7eb;
       border-radius: 12px;
-      background: rgba(255, 255, 255, 0.05);
-      color: #fff;
+      background: var(--soft);
+      color: var(--ink);
       transition: all 0.3s ease;
     }
     
@@ -1129,13 +1137,13 @@
     .contact-form textarea:focus {
       outline: none;
       border-color: var(--brand);
-      background: rgba(255, 255, 255, 0.08);
-      box-shadow: 0 0 0 4px rgba(0, 120, 215, 0.2);
+      background: #fff;
+      box-shadow: 0 0 0 4px rgba(0, 120, 215, 0.1);
     }
     
     .contact-form input::placeholder,
     .contact-form textarea::placeholder {
-      color: rgba(255, 255, 255, 0.5);
+      color: #9ca3af;
     }
     
     .contact-form textarea {
@@ -1203,7 +1211,7 @@
     
     /* Footer */
     footer {
-      background: #000;
+      background: #1a1a1a;
       color: rgba(255, 255, 255, 0.7);
       padding: 80px 32px 40px;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -1221,6 +1229,17 @@
       margin-bottom: 60px;
     }
     
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    
+    .footer-logo {
+      width: 120px;
+      height: auto;
+    }
+    
     .footer-col h4 {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 20px;
@@ -1232,7 +1251,7 @@
     .footer-brand p {
       font-size: 16px;
       line-height: 1.8;
-      margin-bottom: 24px;
+      margin-bottom: 0;
     }
     
     .footer-social {
@@ -1830,6 +1849,7 @@
     <div class="footer-container">
       <div class="footer-grid">
         <div class="footer-col footer-brand">
+          <img src="https://raw.githubusercontent.com/diegokkkkvvv/northcrossconsulting-site/main/web/assets/logo.png" alt="North Cross Consulting" class="footer-logo">
           <h4>North Cross Consulting</h4>
           <p>
             Tu socio estratégico en comercio exterior. Simplificamos importaciones complejas y aceleramos trámites ante autoridades mexicanas.
@@ -1873,6 +1893,7 @@
       
       <div class="footer-bottom">
         <div>© <span id="year"></span> North Cross Consulting. Todos los derechos reservados.</div>
+        <div><a href="mailto:management@northcrossconsulting.com" style="color: rgba(255, 255, 255, 0.7);">management@northcrossconsulting.com</a></div>
         <div>Hecho con ❤️ en México</div>
       </div>
     </div>
@@ -2040,13 +2061,15 @@
       });
     });
 
-    // Add parallax effect to hero section
+    // Add parallax effect to hero section (reduced for readability)
     window.addEventListener('scroll', () => {
       const scrolled = window.pageYOffset;
       const heroContent = document.querySelector('.hero-content');
       if (heroContent && scrolled < window.innerHeight) {
-        heroContent.style.transform = `translateY(${scrolled * 0.5}px)`;
-        heroContent.style.opacity = 1 - (scrolled / 700);
+        // Reduced parallax effect to keep content readable
+        heroContent.style.transform = `translateY(${scrolled * 0.2}px)`;
+        // Keep opacity high for readability
+        heroContent.style.opacity = Math.max(0.7, 1 - (scrolled / 1200));
       }
     });
 
