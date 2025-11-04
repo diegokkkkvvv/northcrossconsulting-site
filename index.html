@@ -2447,6 +2447,72 @@
 
     console.log('%c🚀 North Cross Consulting', 'font-size: 24px; font-weight: bold; color: #0078D7;');
     console.log('%c¿Buscas talento? Estamos contratando desarrolladores.', 'font-size: 14px; color: #666;');
-  </script>
+  
+// --- Google Analytics Event Tracking ---
+
+// Hero CTA Buttons
+const heroBtnPrimary = document.querySelector('.btn.btn-primary');
+if (heroBtnPrimary) {
+  heroBtnPrimary.addEventListener('click', () => {
+    gtag('event', 'click_verificar_aviso', {
+      event_category: 'Button',
+      event_label: 'Hero - Verificar Aviso Automático'
+    });
+  });
+}
+
+const heroBtnGhost = document.querySelector('.btn.btn-ghost');
+if (heroBtnGhost) {
+  heroBtnGhost.addEventListener('click', () => {
+    gtag('event', 'click_hablar_experto', {
+      event_category: 'Button',
+      event_label: 'Hero - Hablar con un Experto'
+    });
+  });
+}
+
+// Contact form submit tracking
+const contactFormElement = document.getElementById('contactForm');
+if (contactFormElement) {
+  contactFormElement.addEventListener('submit', () => {
+    gtag('event', 'form_submit', {
+      event_category: 'Lead',
+      event_label: 'Formulario de contacto enviado'
+    });
+  });
+}
+
+// Aviso Automático Checker tracking
+const checkerButton = document.getElementById('btnCheck');
+if (checkerButton) {
+  checkerButton.addEventListener('click', () => {
+    gtag('event', 'checker_used', {
+      event_category: 'Tool',
+      event_label: 'Aviso Automático Checker - Iniciado'
+    });
+
+    setTimeout(() => {
+      gtag('event', 'checker_result', {
+        event_category: 'Tool',
+        event_label: 'Aviso Automático Checker - Resultado mostrado'
+      });
+    }, 600);
+  });
+}
+
+// Track industry dropdown selections
+const industriaSelect = document.getElementById('industria');
+if (industriaSelect) {
+  industriaSelect.addEventListener('change', () => {
+    gtag('event', 'industry_selected', {
+      event_category: 'Dropdown',
+      event_label: industriaSelect.value
+    });
+  });
+}
+
+// --- End Google Analytics Event Tracking ---
+
+</script>
 </body>
 </html>
