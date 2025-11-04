@@ -162,6 +162,7 @@
     }
     
     .nav {
+  height: 180px !important;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -177,12 +178,20 @@
     }
     
     .brand img {
+  height: 160px !important;
+  width: auto !important;
+  display: block;
+  transition: transform 0.3s ease;
       height: 72px !important;
       transition: transform 0.3s ease;
     }
 
 @media (max-width: 768px) {
   .brand img {
+  height: 160px !important;
+  width: auto !important;
+  display: block;
+  transition: transform 0.3s ease;
     height: 60px; /* mobile-friendly adjustment */
     }
 }
@@ -1495,6 +1504,7 @@
 }
 /* Bigger logo + room in the nav row */
 .nav {
+  height: 180px !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1503,6 +1513,10 @@
 
 /* Single source of truth for logo size */
 .brand img {
+  height: 160px !important;
+  width: auto !important;
+  display: block;
+  transition: transform 0.3s ease;
   height: 88px !important; /* make the change obvious */
   width: auto !important;
   display: block;
@@ -1517,14 +1531,36 @@
 /* If you ALSO want it big on phones, keep it large here too */
 @media (max-width: 768px) {
   .brand img {
+  height: 160px !important;
+  width: auto !important;
+  display: block;
+  transition: transform 0.3s ease;
     height: 72px !important; /* was 60px; remove the cap */
   }
   .nav {
+  height: 180px !important;
     height: 88px; /* keep comfortable space on mobile */
   }
 }
 
-  </style>
+  
+    .hero-watermark {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: min(80vw, 1000px);
+      aspect-ratio: 3.5 / 1;
+      background-image: url("https://raw.githubusercontent.com/diegokkkkvvv/northcrossconsulting-site/main/web/assets/logo.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      filter: brightness(0) invert(1) opacity(0.08);
+      pointer-events: none;
+      z-index: 1;
+    }
+    
+</style>
 </head>
 
 <body>
@@ -1562,6 +1598,10 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-grid"></div>
+    
+    <!-- Monochrome watermark background logo -->
+    <div class="hero-watermark"></div>
+    
     <div class="hero-content" data-aos="fade-up">
       <div class="hero-badge">Expertos en comercio exterior México-USA</div>
       <h1>
@@ -1957,7 +1997,7 @@
               <div class="contact-item-icon">📧</div>
               <div class="contact-item-text">
                 <h4>Email</h4>
-                <p>management@northcrossconsulting.com</p>
+                <p>ventas@northcrossconsulting.com</p>
               </div>
             </div>
             
@@ -1988,7 +2028,7 @@
         </div>
         
         <div class="contact-form-container" data-aos="fade-left">
-          <form class="contact-form" id="contactForm" action="https://formsubmit.co/management@northcrossconsulting.com" method="POST">
+          <form class="contact-form" id="contactForm" action="https://formsubmit.co/ventas@northcrossconsulting.com" method="POST">
             <input type="hidden" name="_subject" value="Nuevo mensaje desde northcrossconsulting.com">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="box">
@@ -2079,7 +2119,7 @@
       
       <div class="footer-bottom">
         <div>© <span id="year"></span> North Cross Consulting. Todos los derechos reservados.</div>
-        <div><a href="mailto:management@northcrossconsulting.com" style="color: rgba(255, 255, 255, 0.7);">management@northcrossconsulting.com</a></div>
+        <div><a href="mailto:ventas@northcrossconsulting.com" style="color: rgba(255, 255, 255, 0.7);">ventas@northcrossconsulting.com</a></div>
         <div>Hecho con ❤️ en México</div>
       </div>
     </div>
