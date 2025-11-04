@@ -1528,21 +1528,23 @@
 }
 
   
+
 .hero-watermark {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: min(80vw, 900px);
+  width: 150vw;
   aspect-ratio: 3.5 / 1;
   background-image: url("https://raw.githubusercontent.com/diegokkkkvvv/northcrossconsulting-site/main/web/assets/logo.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  filter: brightness(0) invert(1) opacity(0.08);
+  filter: brightness(0) invert(1) opacity(0.25) blur(2px);
   pointer-events: none;
   z-index: 1;
 }
+
 
 </style>
 <!-- Google tag (gtag.js) -->
@@ -1590,6 +1592,7 @@
 
   <!-- Hero Section -->
   <section class="hero">
+  <div class="hero-watermark"></div>
     <div class="hero-grid"></div>
     <div class="hero-content" data-aos="fade-up">
       <div class="hero-badge">Expertos en comercio exterior México-USA</div>
