@@ -181,10 +181,6 @@
       transition: transform 0.3s ease;
     }
 
-.brand:hover img {
-  transform: scale(1.08) rotate(-2deg);
-    }
-
 @media (max-width: 768px) {
   .brand img {
     height: 60px; /* mobile-friendly adjustment */
@@ -1497,6 +1493,36 @@
   -webkit-text-fill-color: transparent;
   text-shadow: none;
 }
+/* Bigger logo + room in the nav row */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 96px; /* was 80px */
+}
+
+/* Single source of truth for logo size */
+.brand img {
+  height: 88px !important; /* make the change obvious */
+  width: auto !important;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Keep just one hover rule */
+.brand:hover img {
+  transform: scale(1.06) rotate(-2deg);
+}
+
+/* If you ALSO want it big on phones, keep it large here too */
+@media (max-width: 768px) {
+  .brand img {
+    height: 72px !important; /* was 60px; remove the cap */
+  }
+  .nav {
+    height: 88px; /* keep comfortable space on mobile */
+  }
+}
 
   </style>
 </head>
@@ -2267,9 +2293,9 @@
             if (text.includes('+')) {
               animateCounter(stat, 500, '+');
             } else if (text.includes('%')) {
-              animateCounter(stat, 95, '%');
-            } else if (text.includes('h')) {
-              animateCounter(stat, 48, 'h');
+              const val = parseInt(text, 10) || 95; // handles 95% and 98%
+              animateCounter(stat, val, '%');
+
             }
           });
         }
