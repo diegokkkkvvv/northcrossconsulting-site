@@ -176,14 +176,21 @@
       z-index: 1;
     }
     
+  .brand img {
+    height: 72px; /* Aumentado de 48px */
+    transition: transform 0.3s ease;
+  }
+
+  .brand:hover img {
+    transform: scale(1.08) rotate(-2deg);
+  }
+
+  @media (max-width: 768px) {
     .brand img {
-      height: 48px;
-      transition: transform 0.3s ease;
+      height: 60px; /* mejor ajuste móvil */
     }
-    
-    .brand:hover img {
-      transform: scale(1.05) rotate(-2deg);
-    }
+  }
+</style>
     
     .brand-text {
       font-family: 'Space Grotesk', sans-serif;
@@ -1551,8 +1558,8 @@
           <div class="stat-label">Tasa de aprobación</div>
         </div>
         <div class="stat">
-          <div class="stat-number">48h</div>
-          <div class="stat-label">Respuesta promedio</div>
+          <div class="stat-number">98%</div>
+          <div class="stat-label">Clientes satisfechos</div>
         </div>
       </div>
     </div>
@@ -1688,11 +1695,11 @@
           <div class="advantage-icon">⚡</div>
           <h3>Velocidad excepcional</h3>
           <p>
-            Acortamos los tiempos de gestión hasta en un 70% comparado con procesos tradicionales. Tu mercancía cruza la frontera sin demoras innecesarias y sin costos ocultos que afecten tu flujo de caja.
+            Optimización continua de procesos y comunicación directa con autoridades para respuestas sin demoras.
           </p>
           <ul class="advantage-list">
             <li>Respuesta inicial en menos de 4 horas</li>
-            <li>Resolución promedio en 2-5 días hábiles</li>
+            <li>Priorización de trámites urgentes</li>
             <li>Seguimiento en tiempo real</li>
             <li>Canal directo con autoridades</li>
           </ul>
