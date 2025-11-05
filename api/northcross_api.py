@@ -1,136 +1,134 @@
-# api/northcross_api.py
+# ==============================
+# North Cross – FastAPI backend
+# ==============================
+import os
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
-from pathlib import Path
+from fastapi.responses import JSONResponse
 import pandas as pd
 
-BASE = Path(__file__).parent
-TIGIE_PATH = BASE / "tigie_master.csv"   # cols: fraccion, industria, aviso_automatico
-HTS_PATH   = BASE / "hts_master.csv"     # cols: hts10,   industria, aviso_automatico
+# ---- Config ----
+# Limit CORS to your production domains (comma-separated env supports previews if needed)
+DEFAULT_ORIGINS = [
+    "https://www.northcrossconsulting.com",
+    "https://northcrossconsulting-site.github.io"  # if you ever preview on GH Pages
+]
+ALLOWED_ORIGINS = [
+    o.strip() for o in os.getenv("ALLOWED_ORIGINS", ",".join(DEFAULT_ORIGINS)).split(",") if o.strip()
+]
 
-IND_CANON = {
-    "siderurgicos": "Siderurgicos",
-    "textil y confeccion": "Textil y Confeccion",
-    "textil": "Textil y Confeccion",
-    "confeccion": "Textil y Confeccion",
-    "calzado": "Calzado",
-    "aluminio": "Aluminio",
-    "electronica": "Electronica",
-    "automotriz": "Automotriz",
-    "quimicos": "Quimicos",
-}
+app = FastAPI(title="North Cross API", version="1.0.0")
 
-def canon(s: str) -> str:
-    k = (s or "").strip().lower()
-    return IND_CANON.get(k, s.strip())
-
-def norm_tigie(code: str) -> str:
-    # 0000.00.00 (8 dígitos)
-    c = (code or "").replace(".", "").replace(" ", "")
-    if len(c) < 8:
-        return code.strip()
-    c = c[:8]
-    return f"{c[:4]}.{c[4:6]}.{c[6:8]}"
-
-def norm_hts(code: str) -> str:
-    # 10 dígitos HTSUS
-    c = (code or "").replace(".", "").replace(" ", "")
-    return c[:10]
-
-def chapter_from_tigie(code: str) -> int | None:
-    # capítulo = 2 primeros dígitos del heading de 4
-    c = (code or "").replace(".", "")
-    if len(c) < 4: 
-        return None
-    return int(c[:2])
-
-def chapter_from_hts(code10: str) -> int | None:
-    c = (code10 or "").replace(".", "")
-    if len(c) < 2:
-        return None
-    return int(c[:2])
-
-def load_overrides(path: Path, cols: list[str]) -> pd.DataFrame:
-    if not path.exists():
-        return pd.DataFrame(columns=cols)
-    df = pd.read_csv(path, dtype=str).fillna("")
-    if "aviso_automatico" in df.columns:
-        df["aviso_automatico"] = df["aviso_automatico"].astype(str).str.lower().isin(["1","true","sí","si","yes"])
-    return df
-
-def regla_por_capitulo(ch: int, industria: str) -> bool | None:
-    ind = (industria or "").strip().lower()
-    # Reglas “reales” por sensibilidad histórica de monitoreo (MVP):
-    if ch in (72, 73) and ind == "siderurgicos":
-        return True
-    if 50 <= ch <= 63 and ind in ("textil y confeccion", "textil", "confeccion"):
-        return True
-    if ch == 64 and ind == "calzado":
-        return True
-    if ch == 76 and ind == "aluminio":
-        return True
-    # fuera del scope sensible (o industria no coincide): sin determinación
-    return None
-
-app = FastAPI(title="North Cross — Aviso Automático API (MX/USA)")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],   # endurece a tu dominio cuando quieras
+    allow_origins=ALLOWED_ORIGINS,
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],
 )
 
-@app.on_event("startup")
-def startup():
-    global DF_TIGIE, DF_HTS
-    DF_TIGIE = load_overrides(TIGIE_PATH, ["fraccion", "industria", "aviso_automatico"])
-    DF_HTS   = load_overrides(HTS_PATH,   ["hts10",   "industria", "aviso_automatico"])
-    print(f"✅ Overrides cargados | TIGIE: {len(DF_TIGIE)} | HTS: {len(DF_HTS)}")
+# ---- Load data once at boot ----
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-@app.get("/")
-def root():
-    return {
-        "ok": True,
-        "datasets": {"tigie": len(DF_TIGIE), "hts": len(DF_HTS)},
-        "industries": sorted(set(IND_CANON.values()))
-    }
+def _csv(path):
+    return os.path.join(BASE_DIR, path)
 
-@app.get("/industries")
-def industries():
-    return {"industries": sorted(set(IND_CANON.values()))}
+try:
+    tigie_df = pd.read_csv(_csv("tigie_master.csv"), dtype=str).fillna("")
+except Exception as e:
+    tigie_df = pd.DataFrame()
+    print("WARN: tigie_master.csv not loaded:", e)
+
+try:
+    hts_df = pd.read_csv(_csv("hts_master.csv"), dtype=str).fillna("")
+except Exception as e:
+    hts_df = pd.DataFrame()
+    print("WARN: hts_master.csv not loaded:", e)
+
+# Optional supporting file for future logic; safe if missing
+try:
+    fracciones_ind = pd.read_csv(_csv("fracciones_industrias.csv"), dtype=str).fillna("")
+except Exception:
+    fracciones_ind = pd.DataFrame()
+
+def norm_code(code: str) -> str:
+    if not code:
+        return ""
+    s = str(code).strip()
+    s = s.replace(" ", "")
+    # keep dots as provided
+    return s
+
+def match_override(df: pd.DataFrame, code_col: str, code: str):
+    if df.empty or code_col not in df.columns:
+        return None
+    # exact match first
+    row = df.loc[df[code_col].str.strip().eq(code)]
+    if not row.empty:
+        return row.iloc[0].to_dict()
+    # prefix (chapter) match if you keep chapter column e.g. 'capitulo'
+    chap_col = "capitulo" if "capitulo" in df.columns else None
+    if chap_col:
+        chapter = code.split(".")[0] if "." in code else code[:2]
+        row = df.loc[df[chap_col].astype(str).str.zfill(2).eq(str(chapter).zfill(2))]
+        if not row.empty:
+            return row.iloc[0].to_dict()
+    return None
+
+@app.get("/health")
+def health():
+    return {"status": "ok", "origins": ALLOWED_ORIGINS}
 
 @app.get("/consulta")
 def consulta(
-    origin: str = Query(..., description="mx | us"),
-    industria: str = Query(...),
-    code: str = Query(..., description="TIGIE (mx: 0000.00.00) o HTSUS (us: 10 dígitos)")
+    origin: str = Query(..., pattern="^(mx|us)$"),
+    industria: str = Query(..., min_length=2),
+    code: str = Query(..., min_length=4)
 ):
-    ind = canon(industria)
-    if origin.lower() == "mx":
-        key = norm_tigie(code)
-        # 1) Override exacto por CSV
-        if not DF_TIGIE.empty:
-            q = DF_TIGIE[(DF_TIGIE["fraccion"] == key) & (DF_TIGIE["industria"].str.lower() == ind.lower())]
-            if not q.empty:
-                return {"origin":"mx","code":key,"industry":ind,"match":"override","requiere_aviso_automatico": bool(q.iloc[0]["aviso_automatico"])}
+    """Main decision endpoint."""
+    code_n = norm_code(code)
+    origin = origin.lower()
 
-        # 2) Regla por capítulo
-        ch = chapter_from_tigie(key)
-        req = regla_por_capitulo(ch, ind) if ch is not None else None
-        return {"origin":"mx","code":key,"industry":ind,"match":"rule_chapter","chapter":ch,"requiere_aviso_automatico": req}
+    if origin == "mx":
+        if tigie_df.empty:
+            return JSONResponse({"mensaje": "Base TIGIE no disponible", "requiere_aviso_automatico": None}, status_code=503)
+        row = match_override(tigie_df, "fraccion", code_n) or match_override(tigie_df, "codigo", code_n)
+    else:
+        if hts_df.empty:
+            return JSONResponse({"mensaje": "Base HTSUS no disponible", "requiere_aviso_automatico": None}, status_code=503)
+        row = match_override(hts_df, "htsus", code_n) or match_override(hts_df, "codigo", code_n)
 
-    elif origin.lower() == "us":
-        key = norm_hts(code)
-        # 1) Override exacto por CSV
-        if not DF_HTS.empty:
-            q = DF_HTS[(DF_HTS["hts10"] == key) & (DF_HTS["industria"].str.lower() == ind.lower())]
-            if not q.empty:
-                return {"origin":"us","code":key,"industry":ind,"match":"override","requiere_aviso_automatico": bool(q.iloc[0]["aviso_automatico"])}
+    if not row:
+        return {"mensaje": "Fracción no encontrada", "requiere_aviso_automatico": None}
 
-        # 2) Regla por capítulo (usamos los 2 primeros dígitos del HTS10 → HS capítulo)
-        ch = chapter_from_hts(key)
-        req = regla_por_capitulo(ch, ind) if ch is not None else None
-        return {"origin":"us","code":key,"industry":ind,"match":"rule_chapter","chapter":ch,"requiere_aviso_automatico": req}
+    # Expected column naming (adjust if your CSVs differ)
+    # Looking for any truthy indicator in these typical columns:
+    flags = [
+        "requiere_aviso_automatico",
+        "aviso_automatico",
+        "requiere_aviso",
+        "requiere",
+        "requiere_aviso_boolean"
+    ]
+    requiere = None
+    for f in flags:
+        if f in row:
+            val = str(row[f]).strip().lower()
+            if val in ("true", "1", "sí", "si", "yes"):
+                requiere = True
+            elif val in ("false", "0", "no", ""):
+                requiere = False
+            if requiere is not None:
+                break
 
-    return {"error":"origin inválido: usa 'mx' o 'us'"}
+    payload = {
+        "requiere_aviso_automatico": requiere,
+        "industria": industria,
+        "origin": origin,
+        "code": code_n,
+        "match_source": "override/prefix",
+    }
+    if "descripcion" in row:
+        payload["descripcion"] = row["descripcion"]
+
+    return payload
