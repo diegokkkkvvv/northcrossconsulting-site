@@ -1,0 +1,51 @@
+# ===========================================
+# North Cross Consulting - .gitignore
+# ===========================================
+
+# --- System / Editor files ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# --- Python environment (Render backend) ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+env/
+.venv/
+.Python
+
+# --- Local notebooks or temp scripts ---
+*.ipynb
+*.bak
+*.tmp
+
+# --- CSV backups (keep only main ones) ---
+# Keep these if they’re part of your API data
+# comment out lines if you want to track them
+!api/tigie_master.csv
+!api/hts_master.csv
+!api/fracciones_industrias.csv
+
+# --- Node / JS cache (if any future frontend tooling) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# --- Deployment / build artifacts ---
+dist/
+build/
+.env.*
+*.sqlite
+*.db
+
+# --- Render logs ---
+render-build.sh
+render-build.log
